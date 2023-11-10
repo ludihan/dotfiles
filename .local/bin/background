@@ -1,0 +1,4 @@
+#!/bin/bash
+
+feh --no-fehbg --bg-fill $1
+sudo cp $1 /usr/share/pixmaps/background.png
