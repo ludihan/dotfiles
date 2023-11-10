@@ -1,6 +1,6 @@
 # Dotfiles
 
-This is my personal set of config files for Arch Linux
+This is my personal set of config files and scripts for Arch Linux
 
 ## Software to install:
 - TODO
