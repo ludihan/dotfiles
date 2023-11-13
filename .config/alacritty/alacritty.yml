@@ -4,8 +4,8 @@ font:
   size: 8
 
 window:
-  opacity: 0.9
-# Colors (Kanagawa Dragon alt)
+  opacity: 0.8
+# Colors (Kanagawa Dragon)
 # Source: https://github.com/rebelot/kanagawa.nvim
 colors:
   primary:
@@ -13,8 +13,8 @@ colors:
     foreground: '0xc5c9c5'
 
   normal:
-    black: '0x181616'
-    blue: '0x7D939E'
+    black: '0x0d0c0c'
+    blue: '0x8ba4b0'
     cyan: '0x8ea4a2'
     green: '0x8a9a7b'
     magenta: '0xa292a3'
@@ -30,7 +30,7 @@ colors:
     magenta: '0x938AA9'
     red: '0xE46876'
     white: '0xc5c9c5'
-    yellow: '0xFFFF00'
+    yellow: '0xE6C384'
 
   selection:
     background: '0x2d4f67'

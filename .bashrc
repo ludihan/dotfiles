@@ -20,8 +20,6 @@ alias l='ls -alh'
 alias ll='ls -lh'
 alias vim='nvim --clean'
 
-alias pamcan='pacman'
-
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$(go env GOPATH)/bin"
 export PATH="$PATH:$HOME/.cargo/bin"
