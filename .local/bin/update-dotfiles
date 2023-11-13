@@ -1,0 +1,27 @@
+#!/bin/bash
+programs=(
+    alacritty
+    dunst
+    feh
+    i3
+    i3status
+    mpv
+    nvim
+    picom
+    rofi
+    xfce4
+)
+
+mkdir -p ~/dotfiles/.local/bin/
+
+echo "copying all .config directories"
+for program in ${programs[@]}; do
+    cp -r ~/.config/$program/ ~/dotfiles/.config/
+done
+
+echo "copying bin directory in ~/.local/"
+cp -r ~/.local/bin/ ~/dotfiles/.local/
+echo "copying git config"
+cp ~/.gitconfig ~/dotfiles/
+echo "copying bashrc"
+cp ~/.bashrc ~/dotfiles/
