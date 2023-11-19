@@ -4,7 +4,7 @@ font:
   size: 8
 
 window:
-  opacity: 0.8
+  opacity: 0.9
 # Colors (Kanagawa Dragon)
 # Source: https://github.com/rebelot/kanagawa.nvim
 colors:

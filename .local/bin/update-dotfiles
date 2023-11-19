@@ -12,7 +12,9 @@ programs=(
     xfce4
 )
 
+mkdir -p ~/dotfiles/
 mkdir -p ~/dotfiles/.local/bin/
+mkdir -p ~/dotfiles/.config/
 
 echo "copying all .config directories"
 for program in ${programs[@]}; do
