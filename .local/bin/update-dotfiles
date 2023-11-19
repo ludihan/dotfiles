@@ -27,3 +27,5 @@ echo "copying git config"
 cp ~/.gitconfig ~/dotfiles/
 echo "copying bashrc"
 cp ~/.bashrc ~/dotfiles/
+echo "copying explicitly installed packages"
+pacman -Qqe > ~/dotfiles/pacmanQqe
