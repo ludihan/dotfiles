@@ -5,7 +5,7 @@ base
 base-devel
 bash-completion
 brightnessctl
-cmus
+calc
 dex
 discord
 docker
@@ -37,6 +37,8 @@ iwd
 jdk17-openjdk
 jdk8-openjdk
 jre8-openjdk
+lib32-nvidia-utils
+lib32-vulkan-intel
 libpulse
 libreoffice-still
 lightdm
@@ -50,6 +52,7 @@ lxappearance
 maim
 man-db
 man-pages
+menyoki
 mesa-utils
 micro
 mingw-w64-binutils
@@ -94,6 +97,7 @@ sdl12-compat
 smartmontools
 sof-firmware
 spotify-launcher
+steam-native-runtime
 terminus-font
 thermald
 thunar
@@ -111,6 +115,7 @@ virtualbox
 vulkan-intel
 wireless_tools
 wireplumber
+wqy-zenhei
 xarchiver
 xclip
 xcolor
