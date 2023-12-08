@@ -21,7 +21,6 @@ fuse2
 gamemode
 gdb
 genact
-ghidra
 gimp
 git
 gnome-themes-extra
@@ -52,14 +51,9 @@ lxappearance
 maim
 man-db
 man-pages
-menyoki
 mesa-utils
 micro
-mingw-w64-binutils
-mingw-w64-crt
-mingw-w64-gcc
-mingw-w64-headers
-mingw-w64-winpthreads
+minetest
 mpv
 nano
 ncdu
@@ -79,6 +73,7 @@ nvidia-prime
 nvidia-utils
 openal
 openssh
+p7zip
 pacutils
 pavucontrol
 picom
@@ -121,4 +116,5 @@ xclip
 xcolor
 xdg-utils
 xss-lock
+zip
 zram-generator
