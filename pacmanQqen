@@ -8,7 +8,6 @@ brightnessctl
 calc
 dex
 discord
-docker
 dunst
 efibootmgr
 elementary-icon-theme
@@ -17,7 +16,6 @@ fd
 feh
 ffmpegthumbnailer
 firefox
-fuse2
 gamemode
 gdb
 genact
@@ -35,11 +33,9 @@ intel-ucode
 iwd
 jdk17-openjdk
 jdk8-openjdk
-jre8-openjdk
 lib32-nvidia-utils
 lib32-vulkan-intel
 libpulse
-libreoffice-still
 lightdm
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
@@ -54,6 +50,7 @@ man-pages
 mesa-utils
 micro
 minetest
+mono
 mpv
 nano
 ncdu
@@ -92,7 +89,6 @@ sdl12-compat
 smartmontools
 sof-firmware
 spotify-launcher
-steam-native-runtime
 terminus-font
 thermald
 thunar
@@ -100,11 +96,11 @@ thunar-archive-plugin
 thunar-media-tags-plugin
 thunar-volman
 tlp
-trash-cli
 ttf-hack-nerd
 tumbler
 ufw
 unrar
+unzip
 valgrind
 virtualbox
 vulkan-intel
@@ -115,6 +111,9 @@ xarchiver
 xclip
 xcolor
 xdg-utils
+xorg-xev
+xorg-xinput
 xss-lock
+yt-dlp
 zip
 zram-generator

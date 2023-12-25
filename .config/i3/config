@@ -41,6 +41,10 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
+bindsym $mod+period exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
+bindsym $mod+comma exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
+bindsym $mod+semicolon exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl s +5% # increase screen brightness
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl s 5%- # decrease screen brightness
@@ -223,6 +227,7 @@ bar {
             inactive_workspace #888888 #222222
             urgent_workspace   #ffffff #900000
         }
+        #mode hide
         position bottom
         status_command i3status
         separator_symbol " // "
