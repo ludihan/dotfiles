@@ -50,7 +50,6 @@ man-pages
 mesa-utils
 micro
 minetest
-mono
 mpv
 nano
 ncdu
@@ -97,6 +96,7 @@ thunar-media-tags-plugin
 thunar-volman
 tlp
 ttf-hack-nerd
+ttf-terminus-nerd
 tumbler
 ufw
 unrar
@@ -113,6 +113,7 @@ xcolor
 xdg-utils
 xorg-xev
 xorg-xinput
+xorg-xsetroot
 xss-lock
 yt-dlp
 zip
