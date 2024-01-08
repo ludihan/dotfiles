@@ -6,6 +6,7 @@ base-devel
 bash-completion
 brightnessctl
 calc
+catfish
 dex
 discord
 dunst
@@ -18,12 +19,12 @@ ffmpegthumbnailer
 firefox
 gamemode
 gdb
-genact
 gimp
 git
 gnome-themes-extra
 go
 gst-plugin-pipewire
+gvfs
 htop
 i3-wm
 i3lock
@@ -41,7 +42,6 @@ lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 linux
 linux-firmware
-lsb-release
 lsof
 lxappearance
 maim
@@ -49,7 +49,6 @@ man-db
 man-pages
 mesa-utils
 micro
-minetest
 mpv
 nano
 ncdu
@@ -83,7 +82,6 @@ qbittorrent
 raylib
 ripgrep
 rofi
-rustup
 sdl12-compat
 smartmontools
 sof-firmware
@@ -102,18 +100,14 @@ ufw
 unrar
 unzip
 valgrind
-virtualbox
 vulkan-intel
-wireless_tools
 wireplumber
 wqy-zenhei
 xarchiver
 xclip
 xcolor
+xdg-user-dirs
 xdg-utils
-xorg-xev
-xorg-xinput
-xorg-xsetroot
 xss-lock
 yt-dlp
 zip
