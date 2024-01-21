@@ -24,4 +24,6 @@ export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$(go env GOPATH)/bin"
 export PATH="$PATH:$HOME/.cargo/bin"
 
+export ANDROID_SDK_ROOT="/home/lucca/Android/Sdk"
+
 export GAMEMODERUNEXEC="prime-run"
