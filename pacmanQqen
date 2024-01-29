@@ -1,11 +1,15 @@
 alacritty
 arandr
+audacity
 base
 base-devel
 bash-completion
+bc
 brightnessctl
 calc
 catfish
+chromium
+dbus-broker-units
 dex
 dunst
 efibootmgr
@@ -17,6 +21,7 @@ ffmpegthumbnailer
 firefox
 gamemode
 gdb
+ghidra
 gimp
 git
 gnome-themes-extra
@@ -45,6 +50,11 @@ man-db
 man-pages
 mesa-utils
 micro
+mingw-w64-binutils
+mingw-w64-crt
+mingw-w64-gcc
+mingw-w64-headers
+mingw-w64-winpthreads
 mpv
 nano
 ncdu
@@ -85,7 +95,6 @@ sof-firmware
 splint
 spotify-launcher
 terminus-font
-thermald
 thunar
 thunar-archive-plugin
 thunar-media-tags-plugin
@@ -101,6 +110,7 @@ upower
 valgrind
 virtualbox
 vulkan-intel
+wget
 wireplumber
 wqy-zenhei
 xarchiver

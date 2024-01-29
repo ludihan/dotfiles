@@ -219,7 +219,7 @@ for_window [class="Evince"] border pixel
 # finds out, if available)
 bar {
     colors {
-        background #101010
+        background #090a03
     }
     position top
     status_command i3status

@@ -44,4 +44,4 @@ size = 7
 family = "FiraCodeNerdFont"
 
 [window]
-opacity = 1
+opacity = 0.9
