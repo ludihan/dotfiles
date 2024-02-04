@@ -11,6 +11,7 @@ catfish
 chromium
 dbus-broker-units
 dex
+discord
 dunst
 efibootmgr
 elementary-icon-theme
@@ -35,6 +36,7 @@ i3status
 imagemagick
 intel-ucode
 iwd
+krita
 lib32-nvidia-utils
 lib32-vulkan-intel
 libpulse
@@ -94,6 +96,7 @@ smartmontools
 sof-firmware
 splint
 spotify-launcher
+steam-native-runtime
 terminus-font
 thunar
 thunar-archive-plugin
@@ -101,7 +104,7 @@ thunar-media-tags-plugin
 thunar-volman
 tlp
 tree
-ttf-firacode-nerd
+ttf-hack-nerd
 tumbler
 ufw
 unrar

@@ -41,7 +41,7 @@ color = '#ff5d62'
 size = 7
 
 [font.normal]
-family = "FiraCodeNerdFont"
+family = "Hack Nerd Font"
 
 [window]
-opacity = 0.9
+opacity = 1
