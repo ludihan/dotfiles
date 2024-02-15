@@ -36,7 +36,7 @@ if vim.g.neovide then
     vim.o.guifont = "Hack Nerd Font:h8"
 end
 
-local colorscheme = "kanagawa-dragon"
+local colorscheme = "gruvbox-material"
 local ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 if not ok then
     vim.notify("colorscheme " .. colorscheme .. " not found!")

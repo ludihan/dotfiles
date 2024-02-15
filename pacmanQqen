@@ -3,6 +3,7 @@ arandr
 base
 base-devel
 bash-completion
+bc
 brightnessctl
 catfish
 clojure
@@ -85,6 +86,7 @@ raylib
 ripgrep
 rlwrap
 rofi
+sbcl
 sdl12-compat
 smartmontools
 sof-firmware

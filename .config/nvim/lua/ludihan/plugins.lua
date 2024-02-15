@@ -25,12 +25,8 @@ require("lazy").setup({
     { 'williamboman/mason-lspconfig.nvim' },
 
     -- Themes
-    { "ellisonleao/gruvbox.nvim",         priority = 1000 },
-    { "rebelot/kanagawa.nvim",
-        opts = {
-            transparent = true,
-        }
-    },
+    { "sainnhe/gruvbox-material" },
+    { "HiPhish/rainbow-delimiters.nvim" },
 
     --Telescope
     {
