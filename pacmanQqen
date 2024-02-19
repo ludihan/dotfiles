@@ -20,8 +20,9 @@ ffmpegthumbnailer
 firefox
 gamemode
 gdb
+ghc
+ghc-static
 ghidra
-gimp
 git
 gnome-themes-extra
 go
@@ -86,7 +87,6 @@ raylib
 ripgrep
 rlwrap
 rofi
-sbcl
 sdl12-compat
 smartmontools
 sof-firmware

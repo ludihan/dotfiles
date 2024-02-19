@@ -40,7 +40,6 @@ local colorscheme = "gruvbox-material"
 local ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 if not ok then
     vim.notify("colorscheme " .. colorscheme .. " not found!")
-    return
 end
 
 require('nvim-treesitter.configs').setup {
@@ -91,9 +90,6 @@ require("nvim-tree").setup({
         }
     }
 })
-
--- html
-require('nvim-ts-autotag').setup()
 
 -- remaps
 vim.g.mapleader = " "

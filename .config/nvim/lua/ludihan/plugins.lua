@@ -31,7 +31,7 @@ require("lazy").setup({
     --Telescope
     {
         "nvim-telescope/telescope.nvim",
-        tag = "0.1.2",
+        tag = "0.1.5",
         dependencies = { "nvim-lua/plenary.nvim" }
     },
 
@@ -39,7 +39,7 @@ require("lazy").setup({
     { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
 
     -- Auto tag HTML
-    { "windwp/nvim-ts-autotag" },
+    { "windwp/nvim-ts-autotag", opts = {} },
 
     -- too noob for netrw
     { "nvim-tree/nvim-tree.lua" },
