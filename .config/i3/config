@@ -245,5 +245,5 @@ bindsym Print exec --no-startup-id maim | xclip -selection clipboard -t image/pn
 
 #autostart
 exec --no-startup-id picom -b
-exec --no-startup-id i3-battery-popup -n -L 30 -t 10s
+exec --no-startup-id batsignal -b
 exec --no-startup-id dunst &

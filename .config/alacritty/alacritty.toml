@@ -31,7 +31,7 @@ white   = '#d4be98'
 size = 7
 
 [font.normal]
-family = "Hack Nerd Font"
+family = "Hack"
 
 [window]
 opacity = 1
