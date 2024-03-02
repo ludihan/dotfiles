@@ -28,4 +28,4 @@ cp ~/.gitconfig ~/dotfiles/
 echo "copying bashrc"
 cp ~/.bashrc ~/dotfiles/
 echo "copying explicitly installed packages"
-xbps-query -m > ~/dotfiles/xbps-packages
+xpkg -m > ~/dotfiles/xbps-packages
