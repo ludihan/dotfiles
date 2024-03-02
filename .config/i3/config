@@ -212,8 +212,8 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-default_border pixel
-default_floating_border pixel
+default_border pixel 4px
+default_floating_border pixel 4px
 for_window [class="Evince"] border pixel
 
 # Start i3bar to display a workspace bar (plus the system information i3status
@@ -229,8 +229,8 @@ bar {
 }
 
 #them gaps aye
-#gaps inner 10
-#gaps outer -5
+gaps inner 15
+gaps outer -5
 
 #common apps
 bindsym $mod+y exec --no-startup-id firefox

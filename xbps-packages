@@ -80,6 +80,8 @@ tumbler
 udisks2
 ufw
 upower
+virtualbox-ose
+virtualbox-ose-guest
 void-docs-browse
 void-repo-multilib
 void-repo-multilib-nonfree
