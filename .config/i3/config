@@ -74,7 +74,7 @@ bindsym $mod+Shift+q kill
 # start dmenu (a program launcher)
 # bindsym $mod+d exec --no-startup-id dmenu_run
 # A more modern dmenu replacement is rofi:
-bindsym $mod+p exec --no-startup-id "rofi -modi drun,run -font 'Terminus 14' -show drun -show-icons"
+bindsym $mod+p exec --no-startup-id "rofi -modi drun,run -font 'Hack 12' -show drun -show-icons"
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
@@ -229,7 +229,7 @@ bar {
 }
 
 #them gaps aye
-#gaps inner 20
+#gaps inner 10
 #gaps outer -5
 
 #common apps
@@ -237,7 +237,6 @@ bindsym $mod+y exec --no-startup-id firefox
 bindsym $mod+u exec --no-startup-id pavucontrol
 bindsym $mod+n exec --no-startup-id alacritty -e nnn
 bindsym $mod+m exec --no-startup-id thunar
-bindsym $mod+z exec --no-startup-id ~/.local/bin/boomer
 
 #print functionality
 bindsym Control+Print exec --no-startup-id maim -s -u | xclip -selection clipboard -t image/png
@@ -247,3 +246,5 @@ bindsym Print exec --no-startup-id maim | xclip -selection clipboard -t image/pn
 exec --no-startup-id picom -b
 exec --no-startup-id batsignal -b
 exec --no-startup-id dunst &
+exec --no-startup-id brightnessctl s 30% &
+exec --no-startup-id xsetroot -cursor_name left_ptr &

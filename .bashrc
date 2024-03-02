@@ -17,11 +17,13 @@ export VISUAL='nvim'
 alias l='ls -alh'
 alias ll='ls -lh'
 alias vim='nvim --clean'
+alias poweroff="loginctl poweroff"
+alias reboot="loginctl reboot"
 
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$(go env GOPATH)/bin"
-export PATH="$PATH:$HOME/.cargo/bin"
 
 export ANDROID_SDK_ROOT="/home/lucca/Android/Sdk"
 
 export GAMEMODERUNEXEC="prime-run"
+. "$HOME/.cargo/env"
