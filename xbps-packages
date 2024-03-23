@@ -31,7 +31,6 @@ gnome-themes-extra
 gnome-themes-extra-gtk
 go
 grub-x86_64-efi
-gtkgreet
 gvfs
 gvfs-mtp
 htop
@@ -92,8 +91,7 @@ upower
 valgrind
 void-docs-browse
 void-repo-nonfree
-wayfire
-weston
+wf-shell
 xarchiver
 xauth
 xbacklight
