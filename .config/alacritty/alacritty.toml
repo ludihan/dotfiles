@@ -28,10 +28,10 @@ cyan    = '#89b482'
 white   = '#d4be98'
 
 [font]
-size = 7
+size = 8
 
 [font.normal]
-family = "Hack"
+family = "Terminus"
 
 [window]
 opacity = 1

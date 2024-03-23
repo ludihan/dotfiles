@@ -3,7 +3,7 @@ Thunar
 alacritty
 alsa-pipewire
 arandr
-arduino
+arduino-cli
 base-devel
 base-system
 bash-completion
@@ -23,7 +23,7 @@ firefox
 font-hack-ttf
 font-misc-misc
 gamemode
-ghidra
+glfw-devel
 glxinfo
 gnome-icon-theme
 gnome-keyring
@@ -31,6 +31,7 @@ gnome-themes-extra
 gnome-themes-extra-gtk
 go
 grub-x86_64-efi
+gtkgreet
 gvfs
 gvfs-mtp
 htop
@@ -42,6 +43,7 @@ intel-video-accel
 jq
 leiningen
 libedit-devel
+libreoffice
 lightdm
 lightdm-gtk-greeter-settings
 lightdm-gtk3-greeter
@@ -49,8 +51,9 @@ lxappearance
 maim
 man-pages-devel
 man-pages-posix
+mdocml
 mesa-vulkan-intel
-micro
+mono
 mpv
 nano
 ncdu
@@ -66,7 +69,6 @@ noto-fonts-ttf
 noto-fonts-ttf-extra
 ntp
 nvidia
-openjdk17
 p7zip
 pavucontrol
 picom
@@ -76,8 +78,6 @@ postgresql
 postgresql-client
 ripgrep
 rofi
-rustup
-taisei
 terminus-font
 thunar-archive-plugin
 thunar-media-tags-plugin
@@ -90,9 +90,10 @@ ufw
 unrar
 upower
 valgrind
-virtualbox-ose
 void-docs-browse
 void-repo-nonfree
+wayfire
+weston
 xarchiver
 xauth
 xbacklight
@@ -104,8 +105,10 @@ xmirror
 xorg-input-drivers
 xorg-minimal
 xorg-video-drivers
+xprop
 xsetroot
 xss-lock
 xtools
 xtools-minimal
+zig
 zip
