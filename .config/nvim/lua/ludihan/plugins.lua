@@ -49,5 +49,4 @@ require("lazy").setup({
         event = "InsertEnter",
         opts = {}
     },
-    { "eandrju/cellular-automaton.nvim" },
 })

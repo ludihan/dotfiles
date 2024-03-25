@@ -1,14 +1,10 @@
 #!/bin/bash
 programs=(
-    alacritty
+    foot
     dunst
-    feh
-    i3
     i3status
     mpv
     nvim
-    picom
-    rofi
     xfce4
 )
 
