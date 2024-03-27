@@ -1,11 +1,12 @@
 #!/bin/bash
 programs=(
     foot
-    dunst
+    mako
+    sway
+    lf
     i3status
     mpv
     nvim
-    xfce4
 )
 
 mkdir -p ~/dotfiles/
