@@ -7,6 +7,7 @@ programs=(
     i3status
     mpv
     nvim
+    mimeapps.list
 )
 
 mkdir -p ~/dotfiles/
@@ -15,14 +16,18 @@ mkdir -p ~/dotfiles/.config/
 
 echo "copying all .config directories"
 for program in ${programs[@]}; do
-    cp -r ~/.config/$program/ ~/dotfiles/.config/
+    cp -r ~/.config/$program ~/dotfiles/.config/
 done
 
 echo "copying bin directory in ~/.local/"
 cp -r ~/.local/bin/ ~/dotfiles/.local/
+
 echo "copying git config"
 cp ~/.gitconfig ~/dotfiles/
-echo "copying bashrc"
+
+echo "copying bashrc and bash_profile"
 cp ~/.bashrc ~/dotfiles/
+cp ~/.bash_profile ~/dotfiles/
+
 echo "copying explicitly installed packages"
 xpkg -m > ~/dotfiles/xbps-packages
