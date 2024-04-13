@@ -36,6 +36,7 @@ xpkg -m > ~/dotfiles/xbps-packages
 echo "copying etc files"
 cp -r /etc/elogind ~/dotfiles/etc
 cp -r /etc/greetd ~/dotfiles/etc
+cp /etc/environment ~/dotfiles/etc
 
 echo "listing services"
 ls /var/service | col > ~/dotfiles/services
