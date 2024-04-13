@@ -49,4 +49,5 @@ require("lazy").setup({
         event = "InsertEnter",
         opts = {}
     },
+    { "ThePrimeagen/vim-be-good" }
 })

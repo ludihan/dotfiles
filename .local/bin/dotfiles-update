@@ -13,6 +13,7 @@ programs=(
 mkdir -p ~/dotfiles/
 mkdir -p ~/dotfiles/.local/bin/
 mkdir -p ~/dotfiles/.config/
+mkdir -p ~/dotfiles/etc
 
 echo "copying all .config directories"
 for program in ${programs[@]}; do
@@ -31,3 +32,7 @@ cp ~/.bash_profile ~/dotfiles/
 
 echo "copying explicitly installed packages"
 xpkg -m > ~/dotfiles/xbps-packages
+
+echo "copying etc files"
+cp -r /etc/elogind ~/dotfiles/etc
+cp -r /etc/greetd ~/dotfiles/etc
