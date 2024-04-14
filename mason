@@ -1,0 +1,13 @@
+  Installed
+    ◍ clojure-lsp clojure_lsp
+    ◍ css-lsp cssls
+    ◍ emmet-language-server emmet_language_server
+    ◍ gopls
+    ◍ html-lsp html
+    ◍ lua-language-server lua_ls
+    ◍ python-lsp-server pylsp
+    ◍ rust-analyzer rust_analyzer
+    ◍ templ
+    ◍ typescript-language-server tsserver
+
+
