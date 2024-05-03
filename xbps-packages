@@ -60,9 +60,7 @@ mesa-vulkan-intel
 mpv
 ncdu
 ncurses-devel
-neofetch
 neovim
-nerd-fonts
 nftables
 nnn
 nodejs
@@ -93,6 +91,7 @@ tlp
 transmission-gtk
 tree
 udisks2
+ufetch
 unrar
 valgrind
 void-docs-browse

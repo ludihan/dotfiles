@@ -32,25 +32,24 @@ require("lazy").setup({
     --Telescope
     {
         "nvim-telescope/telescope.nvim",
-        tag = "0.1.5",
+        tag = "0.1.6",
         dependencies = { "nvim-lua/plenary.nvim" }
     },
 
     -- Treesitter
     { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
 
-    -- Auto tag HTML
+    -- Auto
+    {
+        'windwp/nvim-autopairs',
+        event = "InsertEnter",
+        opts = {}
+    },
     { "windwp/nvim-ts-autotag", opts = {} },
 
     -- too noob for netrw
     {
         'stevearc/oil.nvim',
         opts = {},
-        --dependencies = { "nvim-tree/nvim-web-devicons" },
-    },
-    {
-        'windwp/nvim-autopairs',
-        event = "InsertEnter",
-        opts = {}
     },
 })

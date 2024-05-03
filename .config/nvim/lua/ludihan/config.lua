@@ -9,7 +9,7 @@ vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.shiftround = true
 vim.opt.expandtab = true
-vim.opt.smartindent = true
+vim.opt.cindent = true
 
 vim.opt.scrolloff = 10
 vim.opt.sidescrolloff = 10
@@ -36,8 +36,6 @@ if not ok then
 end
 
 require('nvim-treesitter.configs').setup {
-    sync_install = false,
-
     auto_install = true,
 
     highlight = {
@@ -72,44 +70,52 @@ require('mason-lspconfig').setup({
     },
 })
 
--- remaps
+-- Leaders
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
+-- Open file explorer
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
+-- Stop highlight
 vim.keymap.set("n", "<leader>h", "<CMD>nohlsearch<CR>")
 
+-- Moving whole lines
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
+-- Recenter
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
+-- Exiting :terminal
 vim.keymap.set('t', '<Esc>', '<C-\\><C-n><CR>')
 
+-- Telescope
 local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
-vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
-vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
-vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
+vim.keymap.set('n', '<leader>f', builtin.find_files, {})
+vim.keymap.set('n', '<leader>g', builtin.live_grep, {})
+vim.keymap.set('n', '<leader>b', builtin.buffers, {})
+vim.keymap.set('n', '<leader>h', builtin.help_tags, {})
 
---clipboard
+-- Clipboard
 vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
 vim.keymap.set({"n", "v"}, "<leader>p", [["+p]])
 vim.keymap.set({"n", "v"}, "<leader>Y", [["+Y]])
 vim.keymap.set({"n", "v"}, "<leader>P", [["+P]])
 
---delete without yank
+-- Delete without yank
 vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
 vim.keymap.set({"n", "v"}, "<leader>x", [["_d]])
 
---select everything quickly
+-- Select everything quickly
 vim.keymap.set("n", "<leader>a", "<Esc>ggVG")
 
+-- Whatevere
 vim.keymap.set("n", "<leader>o", "o<Esc>")
 vim.keymap.set("n", "<leader>O", "O<Esc>")
 
+-- Esc is too far
 vim.keymap.set("n", "<C-c>", "<Esc>")
