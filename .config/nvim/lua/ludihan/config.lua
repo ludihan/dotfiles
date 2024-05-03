@@ -1,6 +1,3 @@
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
-
 vim.opt.mouse = ""
 
 vim.opt.number = true
@@ -32,10 +29,6 @@ vim.api.nvim_create_autocmd({ "BufWritePre" }, {
     command = ":%s/\\s\\+$//e",
 })
 
-if vim.g.neovide then
-    vim.o.guifont = "Hack Nerd Font:h8"
-end
-
 local colorscheme = "gruvbox-material"
 local ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 if not ok then
@@ -43,8 +36,6 @@ if not ok then
 end
 
 require('nvim-treesitter.configs').setup {
-    ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "go" },
-
     sync_install = false,
 
     auto_install = true,
@@ -57,44 +48,22 @@ require('nvim-treesitter.configs').setup {
 local lsp_zero = require('lsp-zero')
 
 lsp_zero.on_attach(function(client, bufnr)
-    -- see :help lsp-zero-keybindings
-    -- to learn the available actions
     lsp_zero.default_keymaps({ buffer = bufnr })
 end)
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-    ensure_installed = {},
     handlers = {
-        lsp_zero.default_setup,
+        function(server_name)
+            require('lspconfig')[server_name].setup({})
+        end,
     },
-})
-
--- nvimtree
-require("nvim-tree").setup({
-    view = {
-        width = {},
-        float = {
-            enable = false,
-            open_win_config = {
-                border = "solid",
-            },
-        },
-    },
-    actions = {
-        open_file = {
-            quit_on_open = true,
-            window_picker = {
-                enable = false
-            }
-        }
-    }
 })
 
 -- remaps
 vim.g.mapleader = " "
-local api = require("nvim-tree.api")
-vim.keymap.set("n", "<leader>e", api.tree.toggle)
+
+vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
 vim.keymap.set("n", "<leader>h", "<CMD>nohlsearch<CR>")
 

@@ -15,9 +15,7 @@ output * bg #1A1A1A solid_color
 
 ### Idle configuration
 exec swayidle -w \
-         timeout 300 'swaylock -e -l -f -c 222222' \
-         timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-         before-sleep 'swaylock -e -l -f -c 222222'
+         timeout 300 'swaylock -e -l -f -c 222222'
 
 ### Input configuration
 input "type:pointer" {
@@ -61,8 +59,8 @@ floating_modifier $mod normal
     bindsym $mod+semicolon exec  pactl set-sink-mute @DEFAULT_SINK@ toggle
 
     # Sreen brightness
-    bindsym XF86MonBrightnessUp exec  brightnessctl s +5%
-    bindsym XF86MonBrightnessDown exec  brightnessctl s 5%-
+    bindsym XF86MonBrightnessUp exec  brightnessctl s +2%
+    bindsym XF86MonBrightnessDown exec  brightnessctl s 2%-
 
     # Media player controls
     bindsym XF86AudioPlay exec playerctl play-pause
@@ -149,6 +147,7 @@ floating_modifier $mod normal
     bindsym $mod+n exec firefox
     bindsym $mod+u exec pavucontrol
     bindsym $mod+m exec VISUAL=nvim EDITOR=nvim foot lf
+    bindsym $mod+Shift+w exec ~/.local/bin/lock
 
     # Print
     bindsym Control+Print exec grim -g "$(slurp -d)" - | wl-copy
@@ -202,6 +201,7 @@ for_window [app_id="floating"] floating enable
 exec dbus-update-activation-environment DISPLAY I3SOCK SWAYSOCK WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway &
 exec pipewire &
 exec pipewire-pulse &
+exec wireplumber &
 exec batsignal -b -w 30 -c 15 -d 5 -m 1 -I aefjlaksjd &
 exec mako &
 exec sway-audio-idle-inhibit &

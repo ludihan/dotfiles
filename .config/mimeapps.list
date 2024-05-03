@@ -18,6 +18,8 @@ application/x-extension-xht=userapp-Firefox-M2URL2.desktop
 image/png=imv.desktop
 image/jpeg=imv.desktop
 image/jpg=imv.desktop
+x-scheme-handler/discord-1216669957799018608=discord-1216669957799018608.desktop
+hoppscotch=hoppscotch-handler.desktop
 
 [Added Associations]
 x-scheme-handler/http=userapp-Firefox-I54QL2.desktop;userapp-Firefox-M2URL2.desktop;
