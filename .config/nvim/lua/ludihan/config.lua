@@ -46,7 +46,7 @@ require('nvim-treesitter.configs').setup {
 local lsp_zero = require('lsp-zero')
 
 lsp_zero.on_attach(function(client, bufnr)
-    lsp_zero.default_keymaps({ buffer = bufnr })
+  lsp_zero.default_keymaps({buffer = bufnr})
 end)
 
 require('mason').setup({})
@@ -113,7 +113,7 @@ vim.keymap.set({"n", "v"}, "<leader>x", [["_d]])
 -- Select everything quickly
 vim.keymap.set("n", "<leader>a", "<Esc>ggVG")
 
--- Whatevere
+-- Whatever
 vim.keymap.set("n", "<leader>o", "o<Esc>")
 vim.keymap.set("n", "<leader>O", "O<Esc>")
 
