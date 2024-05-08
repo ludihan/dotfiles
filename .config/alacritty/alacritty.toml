@@ -28,7 +28,7 @@ cyan    = '#89b482'
 white   = '#d4be98'
 
 [font]
-size = 8
+size = 10
 
 [font.normal]
 family = "Terminus"

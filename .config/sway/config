@@ -8,7 +8,7 @@ set $down  j
 set $up    k
 set $right l
 set $term alacritty
-set $menu fuzzel -f Terminus-10 -b 222222ff -r 0 -C 222222ff -s 444444ff -S ffffffff -t 888888ff -w 60 -l 30 -T alacritty
+set $menu fuzzel -f Terminus-10 -b 222222ff -r 0 -C 222222ff -s 444444ff -S ffffffff -t 888888ff -w 60 -l 30 -T "alacritty -e"
 
 ### Output configuration
 output * bg #1A1A1A solid_color
@@ -41,7 +41,7 @@ floating_modifier $mod normal
 ### Key bindings
     # Basic
     bindsym $mod+Return exec $term
-    bindsym $mod+Return+Shift exec $term -a floating
+    bindsym $mod+Return+Shift exec $term --class floating
 
     bindsym $mod+Shift+q kill
     bindsym $mod+p exec $menu
@@ -146,7 +146,7 @@ floating_modifier $mod normal
     # Quick access
     bindsym $mod+n exec firefox
     bindsym $mod+u exec pavucontrol
-    bindsym $mod+m exec VISUAL=nvim EDITOR=nvim alacritty lf
+    bindsym $mod+m exec VISUAL=nvim EDITOR=nvim $term -e lf
     bindsym $mod+Shift+w exec ~/.local/bin/lock
 
     # Print
@@ -191,7 +191,7 @@ client.focused            #333333 #756D59 #FFFFFF #EBDBB2 #756D59
 # Borders
 default_border pixel 4px
 default_floating_border pixel 4px
-for_window [class="[.]*"] border pixel 4px
+#for_window [class="[.]*"] border pixel 4px
 for_window [app_id="floating"] floating enable
 
 # Misc

@@ -1,13 +1,12 @@
 #!/bin/bash
 programs=(
-    foot
+    alacritty
     mako
     sway
     lf
     i3status
     mpv
     nvim
-    mimeapps.list
 )
 
 mkdir -p ~/dotfiles/
