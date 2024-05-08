@@ -7,8 +7,8 @@ set $left  h
 set $down  j
 set $up    k
 set $right l
-set $term foot
-set $menu fuzzel -f Terminus-10 -b 222222ff -r 0 -C 222222ff -s 444444ff -S ffffffff -t 888888ff -w 60 -l 30 -T foot
+set $term alacritty
+set $menu fuzzel -f Terminus-10 -b 222222ff -r 0 -C 222222ff -s 444444ff -S ffffffff -t 888888ff -w 60 -l 30 -T alacritty
 
 ### Output configuration
 output * bg #1A1A1A solid_color
@@ -146,7 +146,7 @@ floating_modifier $mod normal
     # Quick access
     bindsym $mod+n exec firefox
     bindsym $mod+u exec pavucontrol
-    bindsym $mod+m exec VISUAL=nvim EDITOR=nvim foot lf
+    bindsym $mod+m exec VISUAL=nvim EDITOR=nvim alacritty lf
     bindsym $mod+Shift+w exec ~/.local/bin/lock
 
     # Print

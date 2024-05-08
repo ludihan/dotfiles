@@ -1,6 +1,7 @@
 NetworkManager
 SDL2-devel
 acpi
+alacritty
 alsa-lib-devel
 base-devel
 base-system
@@ -14,7 +15,6 @@ cronie
 dbus-elogind
 dmidecode
 dunst
-easyrpg-player
 elogind
 evince
 fd
@@ -42,6 +42,7 @@ intel-media-driver
 intel-ucode
 intel-video-accel
 jq
+kanshi
 lf
 libX11-devel
 libXcursor-devel
@@ -60,6 +61,7 @@ mesa-vulkan-intel
 mpv
 ncdu
 ncurses-devel
+neofetch
 neovim
 nftables
 nnn
@@ -76,6 +78,7 @@ playerctl
 polkit
 psmisc
 python3
+qemu
 ripgrep
 rlwrap
 ruby
@@ -101,6 +104,8 @@ wdisplays
 wev
 wireplumber
 wl-clipboard
+wlgreet
+wlr-randr
 xdg-desktop-portal-gtk
 xdg-desktop-portal-wlr
 xdg-user-dirs
