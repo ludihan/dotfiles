@@ -8,7 +8,7 @@ alias grep='grep --color=auto'
 
 PS1='\[\e[92m\][\u@\h \W]\$\[\e[0m\] '
 
-export TERM='foot'
+export TERM='alacritty'
 export BROWSER='firefox'
 export EDITOR='nvim'
 export VISUAL='nvim'
