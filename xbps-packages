@@ -8,6 +8,7 @@ base-system
 bash-completion
 batsignal
 brightnessctl
+busybox
 cage
 chrony
 clojure
@@ -16,7 +17,7 @@ dbus-elogind
 dmidecode
 dunst
 elogind
-evince
+fceux
 fd
 firefox
 flatpak
@@ -29,6 +30,7 @@ glxinfo
 gnome-icon-theme
 gnome-themes-extra
 go
+graphviz
 grim
 grub-i386-efi
 grub-x86_64-efi
@@ -42,6 +44,7 @@ intel-ucode
 intel-video-accel
 jq
 kanshi
+ksh
 lf
 libX11-devel
 libXcursor-devel
@@ -62,6 +65,7 @@ ncdu
 ncurses-devel
 neofetch
 neovim
+nerd-fonts-symbols-ttf
 nftables
 nnn
 nodejs
@@ -112,4 +116,6 @@ xdg-utils
 xlsclients
 xmirror
 xtools
+zathura
+zathura-pdf-mupdf
 zip
