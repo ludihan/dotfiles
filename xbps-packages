@@ -42,6 +42,10 @@ intel-video-accel
 jq
 leiningen
 lf
+libdrm-32bit
+libgcc-32bit
+libglvnd-32bit
+libstdc++-32bit
 linux-firmware
 mako
 man-pages-devel
@@ -61,6 +65,7 @@ noto-fonts-emoji
 noto-fonts-ttf
 noto-fonts-ttf-extra
 nvidia
+nvidia-libs-32bit
 p7zip
 pavucontrol
 pipewire
@@ -74,6 +79,7 @@ rlwrap
 ruby
 runit-nftables
 slurp
+steam
 sway
 sway-audio-idle-inhibit
 swayidle
@@ -87,6 +93,8 @@ ufetch
 unrar
 valgrind
 void-docs-browse
+void-repo-multilib
+void-repo-multilib-nonfree
 void-repo-nonfree
 wdisplays
 wev
