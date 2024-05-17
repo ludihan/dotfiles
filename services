@@ -10,7 +10,6 @@ backlight
 crond
 dbus
 greetd
-mysqld
 nftables
 ntpd
 nvidia-powerd
