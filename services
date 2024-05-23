@@ -1,4 +1,3 @@
-NetworkManager
 acpid
 agetty-tty1
 agetty-tty2
@@ -9,7 +8,8 @@ agetty-tty6
 backlight
 crond
 dbus
-greetd
+emptty
+NetworkManager
 nftables
 ntpd
 nvidia-powerd

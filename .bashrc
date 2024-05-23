@@ -16,10 +16,8 @@ export VISUAL='nvim'
 alias l='ls -alh'
 alias ll='ls -lh'
 
-alias comc="gcc -Wall -Wextra -Wpedantic -std=c99 -lm -o main"
+alias comc="gcc -Wall -Wextra -Wpedantic -std=c17 -lm -o main"
 alias comcpp="g++ -Wall -Wextra -Wpedantic -std=c++20 -lm -o main"
-alias comjava="javac -d ."
-alias comcs="mcs -out:Main.exe"
 
 alias poweroff="loginctl poweroff"
 alias reboot="loginctl reboot"

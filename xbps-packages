@@ -13,8 +13,8 @@ cronie
 dash
 dbus-elogind
 dmidecode
-dunst
 elogind
+emptty
 fceux
 fd
 firefox
@@ -23,6 +23,7 @@ fuzzel
 fzf
 gamemode
 git
+glew
 glxinfo
 gnome-icon-theme
 gnome-themes-extra
@@ -31,9 +32,8 @@ graphviz
 grim
 grub-i386-efi
 grub-x86_64-efi
-gtkgreet
-gvfs
 htop
+hyprpicker
 i3status
 imv
 intel-media-driver
@@ -50,7 +50,6 @@ mesa-dri
 mesa-vulkan-intel
 mpv
 ncdu
-ncurses-devel
 neovim
 nerd-fonts-symbols-ttf
 nftables
@@ -74,6 +73,7 @@ rlwrap
 ruby
 runit-nftables
 slurp
+sqlitebrowser
 sway
 sway-audio-idle-inhibit
 swayidle
@@ -92,6 +92,7 @@ wdisplays
 wev
 wireplumber
 wl-clipboard
+wl-mirror
 wlr-randr
 xdg-desktop-portal-gtk
 xdg-desktop-portal-wlr

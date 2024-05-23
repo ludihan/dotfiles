@@ -1,1 +1,3 @@
 set font "Terminus 12"
+map <C--> zoom out
+map <C-=> zoom in
