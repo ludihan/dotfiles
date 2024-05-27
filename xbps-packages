@@ -28,7 +28,6 @@ glxinfo
 gnome-icon-theme
 gnome-themes-extra
 go
-graphviz
 grim
 grub-i386-efi
 grub-x86_64-efi
@@ -78,6 +77,7 @@ sway
 sway-audio-idle-inhibit
 swayidle
 swaylock
+taisei
 terminus-font
 tlp
 transmission-gtk
