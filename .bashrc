@@ -25,6 +25,3 @@ export PATH="$PATH:$(go env GOPATH)/bin"
 export ANDROID_SDK_ROOT="/home/lucca/Android/Sdk"
 
 export GAMEMODERUNEXEC="prime-run"
-# >>> xmake >>>
-test -f "/home/lucca/.xmake/profile" && source "/home/lucca/.xmake/profile"
-# <<< xmake <<<

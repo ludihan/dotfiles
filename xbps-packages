@@ -5,6 +5,7 @@ base-devel
 base-system
 bash-completion
 batsignal
+black
 brightnessctl
 cage
 chrony

@@ -1,2 +1,5 @@
-Exec=/usr/bin/sway --unsupported-gpu
+#!/bin/sh
+
 Environment=wayland
+. /etc/profile
+exec dbus-launch sway --unsupported-gpu
