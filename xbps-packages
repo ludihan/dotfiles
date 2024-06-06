@@ -7,9 +7,13 @@ bash-completion
 batsignal
 black
 brightnessctl
+caddy
 cage
+cargo
 chrony
 clojure
+cmake
+colobot
 cronie
 dash
 dbus-elogind
@@ -19,12 +23,15 @@ emptty
 fceux
 fd
 firefox
+flatpak
 font-hack-ttf
 fuzzel
 fzf
 gamemode
 git
 glew
+glfw-devel
+glfw-wayland
 glxinfo
 gnome-icon-theme
 gnome-themes-extra
@@ -39,6 +46,7 @@ imv
 intel-media-driver
 intel-ucode
 intel-video-accel
+jo
 jq
 leiningen
 lf
@@ -53,7 +61,6 @@ ncdu
 neovim
 nerd-fonts-symbols-ttf
 nftables
-nnn
 nodejs
 noto-fonts-cjk
 noto-fonts-emoji
@@ -72,6 +79,7 @@ ripgrep
 rlwrap
 ruby
 runit-nftables
+rust
 slurp
 sqlitebrowser
 sway
@@ -91,6 +99,8 @@ void-docs-browse
 void-repo-nonfree
 wdisplays
 wev
+wf-recorder
+wget
 wireplumber
 wl-clipboard
 wl-mirror
