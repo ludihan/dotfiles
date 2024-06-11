@@ -1,3 +1,6 @@
+# Necessary
+exec dbus-update-activation-environment DISPLAY I3SOCK SWAYSOCK WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway &
+
 ### Font
 font pango: Terminus 10
 
@@ -147,7 +150,7 @@ floating_modifier $mod normal
     bindsym $mod+n exec firefox
     bindsym $mod+u exec pavucontrol
     bindsym $mod+m exec VISUAL=nvim EDITOR=nvim $term -e lf
-    bindsym $mod+Shift+w exec ~/.local/bin/lock
+    bindsym $mod+Shift+Equal exec swaylock -e -l -f -c 222222
 
     # Print
     bindsym Control+Print exec grim -g "$(slurp -d)" - | wl-copy
@@ -198,7 +201,6 @@ for_window [app_id="floating"] floating enable
 #mouse_warping container
 
 # Autostart
-exec dbus-update-activation-environment DISPLAY I3SOCK SWAYSOCK WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway &
 exec pipewire &
 exec pipewire-pulse &
 exec wireplumber &

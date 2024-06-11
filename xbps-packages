@@ -20,7 +20,9 @@ dash
 dbus-elogind
 dmidecode
 elogind
+emacs-pgtk
 emptty
+fastfetch
 fceux
 fd
 firefox
@@ -93,7 +95,6 @@ tlp
 transmission-gtk
 tree
 udisks2
-ufetch
 unrar
 valgrind
 void-docs-browse
