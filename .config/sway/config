@@ -2,7 +2,7 @@
 exec dbus-update-activation-environment DISPLAY I3SOCK SWAYSOCK WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway &
 
 ### Font
-font pango: Terminus 10
+font pango: Terminus 12
 
 ### Variables
 set $mod   Mod4

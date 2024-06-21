@@ -3,3 +3,4 @@
 Environment=wayland
 . /etc/profile
 exec dbus-launch sway --unsupported-gpu
+#exec sway --unsupported-gpu

@@ -1,2 +1,3 @@
 .local/bin/xmake
 .local/bin/xrepo
+.local/bin/osu.AppImage

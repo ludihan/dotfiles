@@ -52,16 +52,15 @@ end)
 require('mason').setup({})
 require('mason-lspconfig').setup({
     ensure_installed = {
-        'clangd',
-        'clojure_lsp',
-        'cssls',
-        'emmet_language_server',
-        'gopls',
         'html',
-        'lua_ls',
-        'rust_analyzer',
-        'templ',
+        'cssls',
         'tsserver',
+        'emmet_language_server',
+        'lua_ls',
+        'clangd',
+        'rust_analyzer',
+        'gopls',
+        'templ',
     },
     handlers = {
         function(server_name)

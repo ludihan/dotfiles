@@ -16,9 +16,6 @@ export VISUAL='nvim'
 alias l='ls -alh'
 alias ll='ls -lh'
 
-alias poweroff="loginctl poweroff"
-alias reboot="loginctl reboot"
-
 export GOPATH="$HOME/.go"
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$(go env GOPATH)/bin"
