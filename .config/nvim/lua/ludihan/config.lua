@@ -57,8 +57,6 @@ require('mason-lspconfig').setup({
         'tsserver',
         'emmet_language_server',
         'lua_ls',
-        'clangd',
-        'rust_analyzer',
         'gopls',
         'templ',
     },

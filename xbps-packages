@@ -10,7 +10,6 @@ batsignal
 bluez
 brightnessctl
 cage
-cargo
 chrony
 cronie
 dash
@@ -25,7 +24,6 @@ font-hack-ttf
 fuzzel
 fzf
 gamemode
-gimp
 git
 glew
 glfw-devel
@@ -57,7 +55,6 @@ man-pages-posix
 mesa-dri
 mesa-vulkan-intel
 micro
-mise
 mpv
 ncdu
 neovim
@@ -83,7 +80,6 @@ ripgrep
 rlwrap
 ruby
 runit-nftables
-rust
 seatd
 slurp
 sqlitebrowser
