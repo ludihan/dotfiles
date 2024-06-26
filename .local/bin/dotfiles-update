@@ -35,3 +35,6 @@ xpkg -m > ~/dotfiles/xbps-packages
 
 echo "listing services"
 ls /var/service | col > ~/dotfiles/services
+
+echo "listing groups"
+groups | tr ' ' '\n' > ~/dotfiles/groups
