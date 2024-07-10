@@ -1,7 +1,8 @@
 #!/bin/bash
-programs=(
+config=(
     alacritty
-    mako
+    background.png
+    dunst
     sway
     lf
     i3status
@@ -11,17 +12,24 @@ programs=(
     emptty
 )
 
+local_bin=(
+    dotfiles-update
+    dotfiles-push
+)
+
 mkdir -p ~/dotfiles/
 mkdir -p ~/dotfiles/.local/bin/
 mkdir -p ~/dotfiles/.config/
 
 echo "copying all .config directories"
-for program in ${programs[@]}; do
+for program in ${config[@]}; do
     cp -r ~/.config/$program ~/dotfiles/.config/
 done
 
-echo "copying bin directory in ~/.local/"
-cp -r ~/.local/bin/ ~/dotfiles/.local/
+echo "copying programs in ~/.local/"
+for program in ${local_bin[@]}; do
+    cp ~/.local/bin/$program ~/dotfiles/.local/bin
+done
 
 echo "copying git config"
 cp ~/.gitconfig ~/dotfiles/

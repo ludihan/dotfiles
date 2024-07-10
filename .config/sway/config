@@ -2,7 +2,7 @@
 exec dbus-update-activation-environment DISPLAY I3SOCK SWAYSOCK WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway &
 
 ### Font
-font pango: Terminus 12
+font pango: Terminus 10
 
 ### Variables
 set $mod   Mod4
@@ -11,10 +11,10 @@ set $down  j
 set $up    k
 set $right l
 set $term alacritty
-set $menu fuzzel -f Terminus-10 -b 222222ff -r 0 -C 222222ff -s 444444ff -S ffffffff -t 888888ff -w 60 -l 30 -T "alacritty -e"
+set $menu fuzzel -f Terminus-10 -b 222222ff -r 0 -C 222222ff -s 444444ff -S ffffffff -t 888888ff -w 30 -l 30 -T "alacritty -e"
 
 ### Output configuration
-output * bg #1A1A1A solid_color
+output * bg ~/.config/background.png fit #1A1A1A
 
 ### Idle configuration
 exec swayidle -w \
@@ -205,7 +205,6 @@ exec pipewire &
 exec pipewire-pulse &
 exec wireplumber &
 exec batsignal -b -w 30 -c 15 -d 5 -m 1 -I aefjlaksjd &
-exec mako &
 exec sway-audio-idle-inhibit &
 
 # Autostart always

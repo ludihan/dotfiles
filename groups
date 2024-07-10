@@ -8,3 +8,4 @@ network
 kvm
 xbuilder
 _seatd
+_flatpak
