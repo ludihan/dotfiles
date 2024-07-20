@@ -1,7 +1,6 @@
 #!/bin/bash
 config=(
     alacritty
-    background.png
     dunst
     sway
     lf

@@ -17,6 +17,7 @@ cronie
 curl
 dmidecode
 dunst
+eclipse
 emptty
 fastfetch
 fceux
@@ -45,6 +46,7 @@ intel-ucode
 intel-video-accel
 jo
 jq
+krita
 lf
 libreoffice
 libspa-bluetooth
@@ -74,6 +76,7 @@ pipewire
 playerctl
 polkit
 psmisc
+pv
 qemu
 ripgrep
 runit-nftables

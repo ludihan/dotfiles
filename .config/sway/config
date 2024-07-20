@@ -14,7 +14,7 @@ set $term alacritty
 set $menu fuzzel -f Terminus-10 -b 222222ff -r 0 -C 222222ff -s 444444ff -S ffffffff -t 888888ff -w 30 -l 30 -T "alacritty -e"
 
 ### Output configuration
-output * bg ~/.config/background.png fit #1A1A1A
+output * bg #000000 solid_color
 
 ### Idle configuration
 exec swayidle -w \
