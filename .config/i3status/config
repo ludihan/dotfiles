@@ -14,10 +14,8 @@ general {
 #order += "ipv6"
 order += "wireless _first_"
 order += "ethernet _first_"
-#order += "volume master"
-#order += "battery all"
 order += "disk /"
-#order += "cpu_usage"
+order += "cpu_usage"
 order += "load"
 order += "memory"
 order += "battery all"
@@ -35,7 +33,7 @@ ethernet _first_ {
 }
 
 cpu_usage {
-    format = "CPU %usage"
+    format = "CPU: %usage"
 }
 
 volume master {
@@ -47,24 +45,24 @@ volume master {
 }
 
 battery all {
-        format = "%status %percentage %remaining"
+        format = "%status: %percentage %remaining"
         last_full_capacity = true
 }
 
 disk "/" {
-        format = "ROOT %avail"
+        format = "ROOT: %avail"
 }
 
 load {
-        format = "LOAD %1min"
+        format = "LOAD: %1min"
 }
 
 memory {
-        format = "MEM %used / %total"
+        format = "MEM: %used / %total"
         threshold_degraded = "1G"
         format_degraded = "MEMORY < %available"
 }
 
 tztime local {
-        format = "DATE %Y-%m-%d %a - %b %H:%M:%S"
+        format = "DATE: %Y-%m-%d %a - %b %H:%M:%S"
 }

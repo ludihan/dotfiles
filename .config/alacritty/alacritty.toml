@@ -5,7 +5,7 @@ size = 12
 family = "Hack"
 
 [window]
-opacity = 0.9
+opacity = 1
 
 # Colors (Gruvbox Material Dark Medium)
 

@@ -2,7 +2,7 @@
 exec dbus-update-activation-environment DISPLAY I3SOCK SWAYSOCK WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway &
 
 ### Font
-font pango: Terminus 10
+font pango: Terminus 12
 
 ### Variables
 set $mod   Mod4
@@ -11,10 +11,10 @@ set $down  j
 set $up    k
 set $right l
 set $term alacritty
-set $menu fuzzel -f Terminus-10 -b 222222ff -r 0 -C 222222ff -s 444444ff -S ffffffff -t 888888ff -w 30 -l 30 -T "alacritty -e"
+set $menu fuzzel -f Terminus-11 -b 222222ff -r 0 -C 000000ff -s 444444ff -S ffffffff -t 888888ff -w 30 -l 30 -T "alacritty -e"
 
 ### Output configuration
-output * bg #000000 solid_color
+output * bg #111111 solid_color
 
 ### Idle configuration
 exec swayidle -w \
@@ -53,12 +53,12 @@ floating_modifier $mod normal
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit' -f Terminus
 
     # Volume
-    bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
-    bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+    bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +2%
+    bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -2%
     bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
     bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
-    bindsym $mod+period exec  pactl set-sink-volume @DEFAULT_SINK@ +5%
-    bindsym $mod+comma exec  pactl set-sink-volume @DEFAULT_SINK@ -5%
+    bindsym $mod+period exec  pactl set-sink-volume @DEFAULT_SINK@ +2%
+    bindsym $mod+comma exec  pactl set-sink-volume @DEFAULT_SINK@ -2%
     bindsym $mod+semicolon exec  pactl set-sink-mute @DEFAULT_SINK@ toggle
 
     # Sreen brightness
@@ -153,8 +153,8 @@ floating_modifier $mod normal
     bindsym $mod+Shift+Equal exec swaylock -e -l -f -c 222222
 
     # Print
-    bindsym Control+Print exec grim -g "$(slurp -d)" - | wl-copy
-    bindsym Print exec grim - | wl-copy
+    bindsym Control+Print exec slurp | grim -g - - | wl-copy
+    bindsym Print         exec grim - | wl-copy
 
 
     # Resizing containers:
@@ -177,6 +177,7 @@ floating_modifier $mod normal
 
 # Status Bar (and colors):
 bar {
+    swaybar_command waybar
     position top
 
     status_command i3status
@@ -194,7 +195,7 @@ client.focused            #333333 #756D59 #FFFFFF #EBDBB2 #756D59
 # Borders
 default_border pixel 4px
 default_floating_border pixel 4px
-#for_window [class="[.]*"] border pixel 4px
+for_window [class="[.]*"] border pixel 4px
 for_window [app_id="floating"] floating enable
 
 # Misc
@@ -203,7 +204,7 @@ for_window [app_id="floating"] floating enable
 # Autostart
 exec pipewire &
 exec pipewire-pulse &
-exec wireplumber &
+#exec wireplumber &
 exec batsignal -b -w 30 -c 15 -d 5 -m 1 -I aefjlaksjd &
 exec sway-audio-idle-inhibit &
 

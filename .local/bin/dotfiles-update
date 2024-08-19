@@ -9,6 +9,7 @@ config=(
     nvim
     zathura
     emptty
+    waybar
 )
 
 local_bin=(

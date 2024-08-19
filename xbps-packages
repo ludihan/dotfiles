@@ -1,6 +1,5 @@
-ImageMagick
 NetworkManager
-PrismLauncher
+Waybar
 acpi
 alacritty
 base-devel
@@ -10,8 +9,9 @@ batsignal
 blueman
 bluez
 brightnessctl
-bsd-games
+bvi
 cage
+cava
 chrony
 cronie
 curl
@@ -25,9 +25,12 @@ fd
 figlet
 firefox
 flatpak
+font-awesome6
 font-hack-ttf
 fuzzel
+gdb
 git
+git-all
 glxinfo
 gnome-icon-theme
 gnome-themes-extra
@@ -48,7 +51,8 @@ jo
 jq
 krita
 lf
-libreoffice
+libedit-devel
+libsanitizer-devel
 libspa-bluetooth
 linux-firmware
 man-pages-devel
@@ -60,8 +64,7 @@ mpv
 ncdu
 neovim
 nerd-fonts-symbols-ttf
-nethack
-netris
+netcat
 nftables
 nodejs
 noto-fonts-cjk
@@ -70,7 +73,9 @@ noto-fonts-ttf
 noto-fonts-ttf-extra
 nvidia
 nwg-look
-openjdk21
+obs
+onefetch
+pandoc
 pavucontrol
 pipewire
 playerctl
@@ -78,8 +83,11 @@ polkit
 psmisc
 pv
 qemu
+readline
+readline-devel
 ripgrep
 runit-nftables
+rustup
 seatd
 slurp
 sqlitebrowser
@@ -104,6 +112,7 @@ wev
 wf-recorder
 wget
 wireplumber
+wireshark-qt
 wl-clipboard
 wl-mirror
 wlr-randr
@@ -114,6 +123,7 @@ xdg-utils
 xlsclients
 xmirror
 xtools
+xxd
 zathura
 zathura-pdf-mupdf
 zip
