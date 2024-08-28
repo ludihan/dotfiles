@@ -1,7 +1,9 @@
 NetworkManager
+Vulkan-Tools
 Waybar
 acpi
 alacritty
+alsa-lib-devel
 base-devel
 base-system
 bash-completion
@@ -11,7 +13,6 @@ bluez
 brightnessctl
 bvi
 cage
-cava
 chrony
 cronie
 curl
@@ -19,6 +20,7 @@ dmidecode
 dunst
 eclipse
 emptty
+eudev-libudev-devel
 fastfetch
 fceux
 fd
@@ -35,6 +37,7 @@ glxinfo
 gnome-icon-theme
 gnome-themes-extra
 go
+godot
 graphviz
 grim
 grub-i386-efi
@@ -49,11 +52,14 @@ intel-ucode
 intel-video-accel
 jo
 jq
+kdenlive
 krita
 lf
+libX11-devel
 libedit-devel
 libsanitizer-devel
 libspa-bluetooth
+libxkbcommon-devel
 linux-firmware
 man-pages-devel
 man-pages-posix
@@ -65,6 +71,7 @@ ncdu
 neovim
 nerd-fonts-symbols-ttf
 netcat
+netris
 nftables
 nodejs
 noto-fonts-cjk
@@ -75,9 +82,11 @@ nvidia
 nwg-look
 obs
 onefetch
+openssl-devel
 pandoc
 pavucontrol
 pipewire
+pkgconf
 playerctl
 polkit
 psmisc
@@ -106,6 +115,7 @@ unrar
 valgrind
 void-docs-browse
 void-repo-nonfree
+wayland-devel
 wdisplays
 weechat
 wev
@@ -120,7 +130,7 @@ xdg-desktop-portal-gtk
 xdg-desktop-portal-wlr
 xdg-user-dirs
 xdg-utils
-xlsclients
+xeyes
 xmirror
 xtools
 xxd
