@@ -36,7 +36,7 @@ echo "copying bashrc"
 cp ~/.bashrc ~/dotfiles/
 
 echo "copying explicitly installed packages"
-pacman -Qne  > ~/dotfiles/packages
+pacman -Qqne  > ~/dotfiles/packages
 
 echo "copying explicitly installed packages (from AUR)"
-pacman -Qme  > ~/dotfiles/aur-packages
+pacman -Qqme  > ~/dotfiles/aur-packages

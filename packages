@@ -1,93 +1,93 @@
-acpi 1.7-4
-alacritty 0.13.2-2
-base 3-2
-base-devel 1-1
-bash-completion 2.14.0-2
-brightnessctl 0.5.1-3
-dmenu 5.3-3
-dunst 1.11.0-1
-efibootmgr 18-3
-fceux 2.6.6-2
-fd 10.2.0-1
-firefox 129.0.2-1
-fuzzel 1.10.2-1
-git 2.46.0-2
-gnome-themes-extra 3.28+r6+g45b1d457-2
-go 2:1.23.0-1
-godot 4.3-3
-grim 1.4.1-2
-gst-plugin-pipewire 1:1.2.3-1
-htop 3.3.0-3
-intel-media-driver 24.2.5-1
-intel-ucode 20240813-2
-iwd 2.19-1
-jo 1.9-3
-jq 1.7.1-2
-krita 5.2.3-1
-less 1:661-1
-lf 32-1
-libpulse 17.0-3
-libva-intel-driver 2.4.1-3
-libva-mesa-driver 1:24.2.1-1
-linux 6.10.6.arch1-1
-linux-firmware 20240809.59460076-1
-ly 1.0.2-1
-mesa-utils 9.0.0-4
-nano 8.1-1
-ncdu 2.5-1
-neovim 0.10.1-3
-network-manager-applet 1.36.0-1
-networkmanager 1.48.10-1
-nodejs 22.7.0-1
-noto-fonts-cjk 20230817-2
-noto-fonts-emoji 1:2.042-1
-noto-fonts-extra 1:24.8.1-1
-npm 10.8.3-1
-obsidian 1.6.7-1
-pavucontrol 1:6.1-1
-pipewire 1:1.2.3-1
-pipewire-alsa 1:1.2.3-1
-pipewire-jack 1:1.2.3-1
-pipewire-pulse 1:1.2.3-1
-prismlauncher 8.4-5
-pv 1.8.13-1
-ripgrep 14.1.0-1
-rustup 1.27.1-1
-slurp 1.5.0-1
-smartmontools 7.4-2
-sof-firmware 2024.06-1
-spotify-launcher 0.5.4-1
-steam-native-runtime 1.0.0.75-4
-sway 1:1.9-5
-swaybg 1.2.1-1
-swayidle 1.8.0-2
-swaylock 1.8.0-1
-terminus-font 4.49.1-7
-thunar 4.18.11-1
-transmission-gtk 4.0.6-2
-tree 2.1.3-1
-ttf-font-awesome 6.6.0-1
-ttf-hack 3.003-7
-ttf-nerd-fonts-symbols 3.2.1-1
-ttf-nerd-fonts-symbols-common 3.2.1-1
-ttf-nerd-fonts-symbols-mono 3.2.1-1
-unzip 6.0-21
-vim 9.1.0697-1
-vulkan-intel 1:24.2.1-1
-vulkan-radeon 1:24.2.1-1
-vulkan-tools 1.3.269-1
-waybar 0.10.4-2
-wget 1.24.5-3
-wireless_tools 30.pre9-4
-wireplumber 0.5.5-1
-wl-clipboard 1:2.2.1-2
-xdg-desktop-portal-gtk 1.15.1-2
-xdg-desktop-portal-wlr 0.7.1-1
-xdg-user-dirs 0.18-2
-xdg-utils 1.2.1-1
-xorg-xeyes 1.3.0-2
-xorg-xwayland 24.1.2-1
-zathura 0.5.8-1
-zathura-pdf-mupdf 0.4.4-1
-zip 3.0-11
-zram-generator 1.1.2-1
+acpi
+alacritty
+base
+base-devel
+bash-completion
+brightnessctl
+dmenu
+dunst
+efibootmgr
+fceux
+fd
+firefox
+fuzzel
+git
+gnome-themes-extra
+go
+godot
+grim
+gst-plugin-pipewire
+htop
+intel-media-driver
+intel-ucode
+iwd
+jo
+jq
+krita
+less
+lf
+libpulse
+libva-intel-driver
+libva-mesa-driver
+linux
+linux-firmware
+ly
+mesa-utils
+nano
+ncdu
+neovim
+network-manager-applet
+networkmanager
+nodejs
+noto-fonts-cjk
+noto-fonts-emoji
+noto-fonts-extra
+npm
+obsidian
+pavucontrol
+pipewire
+pipewire-alsa
+pipewire-jack
+pipewire-pulse
+prismlauncher
+pv
+ripgrep
+rustup
+slurp
+smartmontools
+sof-firmware
+spotify-launcher
+steam-native-runtime
+sway
+swaybg
+swayidle
+swaylock
+terminus-font
+thunar
+transmission-gtk
+tree
+ttf-font-awesome
+ttf-hack
+ttf-nerd-fonts-symbols
+ttf-nerd-fonts-symbols-common
+ttf-nerd-fonts-symbols-mono
+unzip
+vim
+vulkan-intel
+vulkan-radeon
+vulkan-tools
+waybar
+wget
+wireless_tools
+wireplumber
+wl-clipboard
+xdg-desktop-portal-gtk
+xdg-desktop-portal-wlr
+xdg-user-dirs
+xdg-utils
+xorg-xeyes
+xorg-xwayland
+zathura
+zathura-pdf-mupdf
+zip
+zram-generator
