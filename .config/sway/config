@@ -1,6 +1,3 @@
-# Necessary
-exec dbus-update-activation-environment DISPLAY I3SOCK SWAYSOCK WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway &
-
 ### Font
 font pango: Terminus 12
 
@@ -11,7 +8,7 @@ set $down  j
 set $up    k
 set $right l
 set $term alacritty
-set $menu fuzzel -f Terminus-11 -b 222222ff -r 0 -C 000000ff -s 444444ff -S ffffffff -t 888888ff -w 30 -l 30 -T "alacritty -e"
+set $menu fuzzel -f Terminus-10 -b 222222ff -r 0 -C 000000ff -s 444444ff -S ffffffff -t 888888ff -w 30 -l 30 -T "alacritty -e"
 
 ### Output configuration
 output * bg #111111 solid_color
@@ -201,18 +198,13 @@ for_window [app_id="floating"] floating enable
 # Misc
 #mouse_warping container
 
-# Autostart
-exec pipewire &
-exec pipewire-pulse &
-#exec wireplumber &
 exec batsignal -b -w 30 -c 15 -d 5 -m 1 -I aefjlaksjd &
-exec sway-audio-idle-inhibit &
 
-# Autostart always
 set $gnome-schema org.gnome.desktop.interface
 exec_always {
     gsettings set $gnome-schema gtk-theme 'Adwaita-dark'
     gsettings set $gnome-schema icon-theme 'gnome'
     gsettings set $gnome-schema cursor-theme 'Adwaita'
 }
-seat seat0 xcursor_theme Adwaita 24
+
+include /etc/sway/config.d/*
