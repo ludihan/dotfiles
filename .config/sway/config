@@ -203,8 +203,8 @@ exec batsignal -b -w 30 -c 15 -d 5 -m 1 -I aefjlaksjd &
 set $gnome-schema org.gnome.desktop.interface
 exec_always {
     gsettings set $gnome-schema gtk-theme 'Adwaita-dark'
-    gsettings set $gnome-schema icon-theme 'gnome'
-    gsettings set $gnome-schema cursor-theme 'Adwaita'
+    gsettings set $gnome-schema icon-theme 'Obsidian-Sand'
+# gsettings set $gnome-schema cursor-theme 'Adwaita'
 }
 
 include /etc/sway/config.d/*
