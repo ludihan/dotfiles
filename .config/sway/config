@@ -8,7 +8,6 @@ set $down  j
 set $up    k
 set $right l
 set $term alacritty
-set $menu fuzzel -f Terminus-10 -b 222222ff -r 0 -C 000000ff -s 444444ff -S ffffffff -t 888888ff -w 30 -l 30 -T "alacritty -e"
 
 ### Output configuration
 output * bg #111111 solid_color
@@ -44,7 +43,9 @@ floating_modifier $mod normal
     bindsym $mod+Return+Shift exec $term --class floating
 
     bindsym $mod+Shift+q kill
-    bindsym $mod+p exec $menu
+
+    bindsym $mod+p exec --no-startup-id "rofi -font 'Terminus 14' -show drun -show-icons"
+    bindsym $mod+Shift+p exec --no-startup-id "rofi -font 'Terminus 14' -show window -show-icons"
 
     bindsym $mod+Shift+r reload
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit' -f Terminus

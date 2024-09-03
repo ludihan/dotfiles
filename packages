@@ -49,6 +49,7 @@ noto-fonts-cjk
 noto-fonts-emoji
 noto-fonts-extra
 npm
+obs-studio
 obsidian
 obsidian-icon-theme
 openssh
@@ -59,6 +60,7 @@ pipewire-jack
 pipewire-pulse
 pv
 ripgrep
+rofi-wayland
 rustup
 slurp
 smartmontools
@@ -78,6 +80,7 @@ ttf-nerd-fonts-symbols-common
 ttf-nerd-fonts-symbols-mono
 unzip
 vulkan-intel
+vulkan-nouveau
 vulkan-radeon
 vulkan-tools
 waybar
