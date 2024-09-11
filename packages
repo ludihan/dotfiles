@@ -3,6 +3,7 @@ alacritty
 base
 base-devel
 bash-completion
+blender
 brightnessctl
 cmake
 dmenu
@@ -27,7 +28,9 @@ intel-ucode
 iwd
 jo
 jq
+kdenlive
 krita
+lazygit
 less
 lf
 libpulse
@@ -53,6 +56,7 @@ obs-studio
 obsidian
 obsidian-icon-theme
 openssh
+p7zip
 pavucontrol
 pipewire
 pipewire-alsa
@@ -62,6 +66,7 @@ pv
 ripgrep
 rofi-wayland
 rustup
+senpai
 slurp
 smartmontools
 sof-firmware
@@ -78,10 +83,11 @@ ttf-hack
 ttf-nerd-fonts-symbols
 ttf-nerd-fonts-symbols-common
 ttf-nerd-fonts-symbols-mono
+unrar
 unzip
 vulkan-intel
 vulkan-nouveau
-vulkan-radeon
+vulkan-swrast
 vulkan-tools
 waybar
 wf-recorder
@@ -93,8 +99,8 @@ xdg-desktop-portal-gtk
 xdg-desktop-portal-wlr
 xdg-user-dirs
 xdg-utils
-xorg-xeyes
 xorg-xwayland
+xorg-xwininfo
 zathura
 zathura-pdf-mupdf
 zip
