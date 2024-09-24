@@ -1,5 +1,5 @@
 ### Font
-font pango: Terminus 12
+font pango: Terminus 10
 
 ### Variables
 set $mod   Mod4
@@ -8,9 +8,10 @@ set $down  j
 set $up    k
 set $right l
 set $term alacritty
+set $launcher rofi -font 'Terminus 14' -show-icons
 
 ### Output configuration
-output * bg #111111 solid_color
+output * bg #000000 solid_color
 
 ### Idle configuration
 exec swayidle -w \
@@ -44,8 +45,8 @@ floating_modifier $mod normal
 
     bindsym $mod+Shift+q kill
 
-    bindsym $mod+p exec --no-startup-id "rofi -font 'Terminus 14' -show drun -show-icons"
-    bindsym $mod+Shift+p exec --no-startup-id "rofi -font 'Terminus 14' -show window -show-icons"
+    bindsym $mod+p exec $launcher -show drun
+    bindsym $mod+Shift+p exec $launcher -show window
 
     bindsym $mod+Shift+r reload
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit' -f Terminus

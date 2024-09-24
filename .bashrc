@@ -15,6 +15,8 @@ export VISUAL='nvim'
 
 alias l='ls -alh'
 alias ll='ls -lh'
+alias p='pacman'
+alias diff='diff --color=auto'
 
 export GOPATH="$HOME/.go"
 export PATH="$PATH:$HOME/.cargo/bin"
@@ -24,4 +26,4 @@ export PATH="$PATH:$HOME/.local/bin"
 
 export ANDROID_SDK_ROOT="$HOME/Android/Sdk"
 
-export GAMEMODERUNEXEC="prime-run"
+#export GAMEMODERUNEXEC="prime-run"

@@ -60,7 +60,7 @@ require('mason-lspconfig').setup({
         'lua_ls',
         'gopls',
         'templ',
-        'rust_analyzer'
+        -- 'rust_analyzer'
     },
     handlers = {
         function(server_name)
