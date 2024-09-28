@@ -17,6 +17,10 @@ alias l='ls -alh'
 alias ll='ls -lh'
 alias p='pacman'
 alias diff='diff --color=auto'
+alias lg='lazygit'
+alias v='nvim'
+alias g='git'
+alias sp='sudo pacman'
 
 export GOPATH="$HOME/.go"
 export PATH="$PATH:$HOME/.cargo/bin"

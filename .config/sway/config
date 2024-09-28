@@ -74,7 +74,7 @@ floating_modifier $mod normal
     bindsym $mod+less exec playerctl previous
 
 
-    # Moving around:
+    # Focusing on things:
     bindsym $mod+$left focus left
     bindsym $mod+$down focus down
     bindsym $mod+$up focus up
@@ -89,6 +89,7 @@ floating_modifier $mod normal
     bindsym Mod1+Tab focus right
     bindsym Mod1+Shift+Tab focus left
 
+    # Moving things
     bindsym $mod+Shift+$left move left
     bindsym $mod+Shift+$down move down
     bindsym $mod+Shift+$up move up
@@ -189,7 +190,8 @@ bar {
     }
 }
 
-client.focused            #333333 #756D59 #FFFFFF #EBDBB2 #756D59
+client.focused                    #333333 #756D59 #FFFFFF #EBDBB2 #756D59
+client.focused_inactive           #111111 #554D39 #FFFFFF #CBBB92 #554D39
 
 # Borders
 default_border pixel 4px
