@@ -1,5 +1,3 @@
 #!/bin/bash
 
-cd /home/$USER/dotfiles &&
-    git commit -a -m "$(date -I)" &&
-    git push
+cd /home/ludihan/dotfiles && git add . && git commit -m "$(date -I)" && git push
