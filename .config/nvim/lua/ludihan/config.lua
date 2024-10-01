@@ -24,6 +24,8 @@ vim.opt.termguicolors = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
+vim.opt.guicursor = ""
+
 vim.api.nvim_create_autocmd({ "BufWritePre" }, {
     pattern = { "*" },
     command = ":%s/\\s\\+$//e",
