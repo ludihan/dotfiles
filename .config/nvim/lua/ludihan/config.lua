@@ -28,12 +28,8 @@ vim.opt.guicursor = ""
 
 vim.g.omni_sql_no_default_maps = 1
 
-vim.api.nvim_create_autocmd({ "BufWritePre" }, {
-    pattern = { "*" },
-    command = ":%s/\\s\\+$//e",
-})
-
 vim.g.gruvbox_material_transparent_background = 1
+
 local colorscheme = "gruvbox-material"
 local ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 if not ok then
@@ -64,7 +60,7 @@ require('mason-lspconfig').setup({
         'lua_ls',
         'gopls',
         'templ',
-        -- 'rust_analyzer'
+        'pylsp'
     },
     handlers = {
         function(server_name)
@@ -73,9 +69,8 @@ require('mason-lspconfig').setup({
     },
 })
 
--- Leaders
+-- Leader
 vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
 
 -- Open file explorer
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
@@ -88,6 +83,7 @@ vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 -- Recenter
+vim.keymap.set("n", "J", "mzJ`z")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
@@ -104,14 +100,14 @@ vim.keymap.set('n', '<leader>b', builtin.buffers, {})
 vim.keymap.set('n', '<leader>z', builtin.help_tags, {})
 
 -- Clipboard
-vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
-vim.keymap.set({"n", "v"}, "<leader>p", [["+p]])
-vim.keymap.set({"n", "v"}, "<leader>Y", [["+Y]])
-vim.keymap.set({"n", "v"}, "<leader>P", [["+P]])
+vim.keymap.set({"n", "x"}, "<leader>y", [["+y]])
+vim.keymap.set({"n", "x"}, "<leader>p", [["+p]])
+vim.keymap.set({"n", "x"}, "<leader>Y", [["+Y]])
+vim.keymap.set({"n", "x"}, "<leader>P", [["+P]])
 
 -- Delete without yank
-vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
-vim.keymap.set({"n", "v"}, "<leader>x", [["_d]])
+vim.keymap.set({"n", "x"}, "<leader>d", [["_d]])
+vim.keymap.set({"n", "x"}, "<leader>x", [["_d]])
 
 -- Select everything quickly
 vim.keymap.set("n", "<leader>a", "<Esc>ggVG")
@@ -122,3 +118,18 @@ vim.keymap.set("n", "<leader>O", "O<Esc>")
 
 -- Esc is too far
 vim.keymap.set("n", "<C-c>", "<Esc>")
+
+-- quickfix
+vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
+vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
+vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
+vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
+
+-- dunno
+vim.keymap.set("n", "Q", "<nop>")
+
+-- substitute everything
+vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+
+-- format this
+vim.keymap.set("n", "<leader>F", ":%s/\\s\\+$//e<CR>")

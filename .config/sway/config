@@ -11,7 +11,7 @@ set $term alacritty
 set $launcher rofi -font 'Terminus 14' -show-icons
 
 ### Output configuration
-output * bg #000000 solid_color
+output * bg #111111 solid_color
 
 ### Idle configuration
 exec swayidle -w \
