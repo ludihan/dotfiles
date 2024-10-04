@@ -26,6 +26,8 @@ vim.opt.smartcase = true
 
 vim.opt.guicursor = ""
 
+vim.g.omni_sql_no_default_maps = 1
+
 vim.api.nvim_create_autocmd({ "BufWritePre" }, {
     pattern = { "*" },
     command = ":%s/\\s\\+$//e",

@@ -5,6 +5,9 @@ base-devel
 bash-completion
 batsignal
 blender
+blueman
+bluez
+bluez-utils
 brightnessctl
 dmenu
 docker
