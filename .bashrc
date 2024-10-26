@@ -21,11 +21,13 @@ alias ll='ls -lh'
 alias lt='du -sh * | sort -h'
 alias s='du -sh'
 alias p='pacman'
+alias mirror='wl-mirror eDP-1'
 alias diff='diff --color=auto'
 alias lg='lazygit'
 alias v=$EDITOR
 alias g='git'
 alias sp='sudo pacman'
+alias dotenv='export $(grep -v "^#" .env | xargs)'
 
 export GOPATH="$HOME/.go"
 
@@ -37,3 +39,5 @@ export PATH="$PATH:$HOME/.local/bin"
 export ANDROID_SDK_ROOT="$HOME/Android/Sdk"
 
 #export GAMEMODERUNEXEC="prime-run"
+
+[ -f "/home/ludihan/.ghcup/env" ] && . "/home/ludihan/.ghcup/env" # ghcup-env

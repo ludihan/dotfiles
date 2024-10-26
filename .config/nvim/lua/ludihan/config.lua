@@ -17,7 +17,7 @@ vim.opt.sidescrolloff = 5
 vim.opt.hlsearch = true
 vim.opt.incsearch = true
 
-vim.opt.wrap = false
+-- vim.opt.wrap = false
 
 vim.opt.termguicolors = true
 
@@ -58,6 +58,8 @@ require('mason-lspconfig').setup({
         'tsserver',
         'emmet_language_server',
         'lua_ls',
+        'hls',
+        'rust_analyzer',
         'gopls',
         'templ',
         'pylsp'
@@ -132,4 +134,4 @@ vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
 -- format this
-vim.keymap.set("n", "<leader>F", ":%s/\\s\\+$//e<CR>")
+vim.keymap.set("n", "<leader>w", ":sil %s/\\s\\+$//e<CR>:nohlsearch<CR>")
