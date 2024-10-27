@@ -9,6 +9,7 @@ set $up    k
 set $right l
 set $term alacritty
 set $launcher rofi -font 'Terminus 14' -show-icons
+set $playerctl playerctl -p spotify
 
 ### Output configuration
 output * bg #111111 solid_color
@@ -65,13 +66,13 @@ floating_modifier $mod normal
     bindsym XF86MonBrightnessDown exec  brightnessctl s 2%-
 
     # Media player controls
-    bindsym XF86AudioPlay exec playerctl play-pause
-    bindsym XF86AudioNext exec playerctl next
-    bindsym XF86AudioPrev exec playerctl previous
-    bindsym XF86AudioStop exec playerctl stop
-    bindsym $mod+colon exec playerctl play-pause
-    bindsym $mod+greater exec playerctl next
-    bindsym $mod+less exec playerctl previous
+    bindsym XF86AudioPlay exec $playerctl play-pause
+    bindsym XF86AudioNext exec $playerctl next
+    bindsym XF86AudioPrev exec $playerctl previous
+    bindsym XF86AudioStop exec $playerctl stop
+    bindsym $mod+colon exec $playerctl play-pause
+    bindsym $mod+greater exec $playerctl next
+    bindsym $mod+less exec $playerctl previous
 
 
     # Focusing on things:
