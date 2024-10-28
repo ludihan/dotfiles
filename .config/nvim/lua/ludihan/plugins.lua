@@ -37,7 +37,10 @@ require("lazy").setup({
     },
 
     -- Treesitter
-    { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
+    {
+        "nvim-treesitter/nvim-treesitter",
+        build = ":TSUpdate"
+    },
 
     -- Auto
     {
@@ -45,7 +48,10 @@ require("lazy").setup({
         event = "InsertEnter",
         opts = {}
     },
-    { "windwp/nvim-ts-autotag", opts = {} },
+    {
+        "windwp/nvim-ts-autotag",
+        opts = {}
+    },
 
     -- too noob for netrw
     {

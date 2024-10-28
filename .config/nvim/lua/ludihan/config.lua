@@ -47,7 +47,7 @@ require('nvim-treesitter.configs').setup {
 local lsp_zero = require('lsp-zero')
 
 lsp_zero.on_attach(function(client, bufnr)
-  lsp_zero.default_keymaps({buffer = bufnr})
+    lsp_zero.default_keymaps({ buffer = bufnr })
 end)
 
 require('mason').setup({})
@@ -72,6 +72,7 @@ require('mason-lspconfig').setup({
 
 -- Leader
 vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
 
 -- Open file explorer
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
@@ -101,14 +102,14 @@ vim.keymap.set('n', '<leader>b', builtin.buffers, {})
 vim.keymap.set('n', '<leader>z', builtin.help_tags, {})
 
 -- Clipboard
-vim.keymap.set({"n", "x"}, "<leader>y", [["+y]])
-vim.keymap.set({"n", "x"}, "<leader>p", [["+p]])
-vim.keymap.set({"n", "x"}, "<leader>Y", [["+Y]])
-vim.keymap.set({"n", "x"}, "<leader>P", [["+P]])
+vim.keymap.set({ "n", "x" }, "<leader>y", [["+y]])
+vim.keymap.set({ "n", "x" }, "<leader>p", [["+p]])
+vim.keymap.set({ "n", "x" }, "<leader>Y", [["+Y]])
+vim.keymap.set({ "n", "x" }, "<leader>P", [["+P]])
 
 -- Delete without yank
-vim.keymap.set({"n", "x"}, "<leader>d", [["_d]])
-vim.keymap.set({"n", "x"}, "<leader>x", [["_d]])
+vim.keymap.set({ "n", "x" }, "<leader>d", [["_d]])
+vim.keymap.set({ "n", "x" }, "<leader>x", [["_d]])
 
 -- Select everything quickly
 vim.keymap.set("n", "<leader>a", "<Esc>ggVG")
@@ -133,4 +134,4 @@ vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
 -- format this
-vim.keymap.set("n", "<leader>w", ":sil %s/\\s\\+$//e<CR>:nohlsearch<CR>")
+vim.keymap.set("n", "<leader>w", "<CMD>%s/\\s\\+$//e<CR><CMD>:nohlsearch<CR>")
