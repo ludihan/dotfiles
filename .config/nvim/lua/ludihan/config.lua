@@ -61,7 +61,8 @@ require('mason-lspconfig').setup({
         'rust_analyzer',
         'gopls',
         'templ',
-        'pylsp'
+        'pylsp',
+        'tinymist'
     },
     handlers = {
         function(server_name)

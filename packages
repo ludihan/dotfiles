@@ -17,12 +17,14 @@ dunst
 efibootmgr
 fastfetch
 fcitx5-configtool
+fcitx5-gtk
 fcitx5-mozc
 fd
 ffmpeg4.4
 firefox
 gamemode
 git
+github-cli
 gnome-themes-extra
 go
 godot
@@ -30,6 +32,7 @@ graphviz
 grim
 gst-plugin-pipewire
 htop
+imagemagick
 imv
 intel-media-driver
 intel-ucode
@@ -37,6 +40,7 @@ inxi
 iwd
 jo
 jq
+julia
 kdenlive
 krita
 lazygit
@@ -47,7 +51,6 @@ lib32-vulkan-nouveau
 lib32-vulkan-swrast
 libpulse
 libva-intel-driver
-libva-mesa-driver
 linux
 linux-firmware
 love
@@ -106,6 +109,7 @@ ttf-hack
 ttf-nerd-fonts-symbols
 ttf-nerd-fonts-symbols-common
 ttf-nerd-fonts-symbols-mono
+typst
 unrar
 unzip
 vim

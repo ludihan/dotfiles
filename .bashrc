@@ -28,6 +28,8 @@ alias v=$EDITOR
 alias g='git'
 alias sp='sudo pacman'
 alias dotenv='export $(grep -v "^#" .env | xargs)'
+alias pyenv-start='python -m venv .venv'
+alias pyenv='source .venv/bin/activate'
 
 export GOPATH="$HOME/.go"
 

@@ -56,6 +56,12 @@ require("lazy").setup({
     -- too noob for netrw
     {
         'stevearc/oil.nvim',
+        ---@module 'oil'
+        ---@type oil.SetupOpts
         opts = {},
     },
+    {
+        'LunarVim/bigfile.nvim',
+        opts = {}
+    }
 })

@@ -33,8 +33,8 @@ input "type:touchpad" {
 
 input "type:keyboard" {
     xkb_layout br
-    repeat_delay 250
-    repeat_rate 100
+    repeat_delay 300
+    repeat_rate 30
 }
 
 floating_modifier $mod normal
@@ -152,6 +152,7 @@ floating_modifier $mod normal
     bindsym $mod+u exec pavucontrol
     bindsym $mod+m exec VISUAL=nvim EDITOR=nvim $term -e lf
     bindsym $mod+Shift+Equal exec swaylock -e -l -f -c 222222
+#bindsym $mod+q exec woomer
 
     # Print
     bindsym Control+Print exec slurp | grim -g - - | wl-copy
@@ -204,6 +205,7 @@ for_window [app_id="floating"] floating enable
 #mouse_warping container
 
 exec batsignal -b -w 30 -c 15 -d 5 -m 1 -I aefjlaksjd &
+exec fcitx5 &
 
 set $gnome-schema org.gnome.desktop.interface
 exec_always {
