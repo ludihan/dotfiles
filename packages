@@ -22,6 +22,7 @@ fcitx5-mozc
 fd
 ffmpeg4.4
 firefox
+fzf
 gamemode
 git
 github-cli
@@ -32,12 +33,14 @@ graphviz
 grim
 gst-plugin-pipewire
 htop
+hyprpicker
 imagemagick
 imv
 intel-media-driver
 intel-ucode
 inxi
 iwd
+jdk21-openjdk
 jo
 jq
 julia
@@ -81,6 +84,7 @@ pipewire
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
+prismlauncher
 pv
 python-matplotlib
 python-pandas
@@ -99,8 +103,9 @@ sway
 swaybg
 swayidle
 swaylock
+tealdeer
 terminus-font
-tldr
+tmux
 transmission-gtk
 trash-cli
 tree
