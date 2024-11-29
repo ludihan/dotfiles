@@ -10,6 +10,8 @@ bluez
 bluez-obex
 bluez-utils
 brightnessctl
+cmus
+cowsay
 croc
 deno
 docker
@@ -21,6 +23,7 @@ fcitx5-gtk
 fcitx5-mozc
 fd
 ffmpeg4.4
+figlet
 firefox
 fzf
 gamemode
@@ -45,7 +48,6 @@ jo
 jq
 julia
 kdenlive
-krita
 lazygit
 less
 lf
@@ -99,6 +101,7 @@ smartmontools
 sof-firmware
 splint
 spotify-launcher
+steam
 sway
 swaybg
 swayidle
