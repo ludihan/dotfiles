@@ -1,18 +1,16 @@
 acpi
-alacritty
 base
 base-devel
 bash-completion
 batsignal
 blender
-blueman
 bluez
-bluez-obex
 bluez-utils
 brightnessctl
 cmus
 cowsay
 croc
+dash
 deno
 docker
 dunst
@@ -25,6 +23,8 @@ fd
 ffmpeg4.4
 figlet
 firefox
+foot
+foot-terminfo
 fzf
 gamemode
 git
@@ -35,6 +35,7 @@ godot
 graphviz
 grim
 gst-plugin-pipewire
+helix
 htop
 hyprpicker
 imagemagick
@@ -92,9 +93,9 @@ python-matplotlib
 python-pandas
 python-scipy
 python-tabulate
+qemu-full
 ripgrep
 rofi-wayland
-rustup
 senpai
 slurp
 smartmontools

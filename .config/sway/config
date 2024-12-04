@@ -7,7 +7,7 @@ set $left  h
 set $down  j
 set $up    k
 set $right l
-set $term alacritty
+set $term foot
 set $launcher rofi -font 'Terminus 14' -show-icons
 set $playerctl playerctl -p spotify
 
