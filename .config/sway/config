@@ -42,7 +42,7 @@ floating_modifier $mod normal
 ### Key bindings
     # Basic
     bindsym $mod+Return exec $term
-    bindsym $mod+Return+Shift exec $term --class floating
+    bindsym $mod+Return+Shift exec $term -a floating
 
     bindsym $mod+Shift+q kill
 
@@ -198,7 +198,7 @@ client.focused_inactive           #111111 #554D39 #FFFFFF #CBBB92 #554D39
 # Borders
 default_border pixel 4px
 default_floating_border pixel 4px
-for_window [class="[.]*"] border pixel 4px
+for_window [app_id="[.]*"] border pixel 4px
 for_window [app_id="floating"] floating enable
 
 # Misc
