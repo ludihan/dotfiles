@@ -56,11 +56,9 @@ require('mason-lspconfig').setup({
         'ts_ls',
         'emmet_language_server',
         'lua_ls',
-        'rust_analyzer',
         'gopls',
         'templ',
         'pylsp',
-        'tinymist'
     },
     handlers = {
         function(server_name)
