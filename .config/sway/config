@@ -16,7 +16,9 @@ output * bg #111111 solid_color
 
 ### Idle configuration
 exec swayidle -w \
-         timeout 300 'swaylock -e -l -f -c 222222'
+         timeout 300 'swaylock -e -l -f -c 222222' \
+         timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
+         before-sleep 'swaylock -e -l -f -c 222222'
 
 ### Input configuration
 input "type:pointer" {
