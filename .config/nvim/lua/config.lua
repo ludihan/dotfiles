@@ -28,6 +28,8 @@ vim.opt.guicursor = ""
 
 vim.g.omni_sql_no_default_maps = 1
 
+vim.g.gruvbox_material_transparent_background = 1
+
 local colorscheme = "gruvbox-material"
 local ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 if not ok then
