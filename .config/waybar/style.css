@@ -16,6 +16,7 @@ window#waybar {
     padding: 0 5px;
     background-color: transparent;
     color: #ffffff;
+    border: none;
 }
 
 #workspaces button.focused {
@@ -26,11 +27,17 @@ window#waybar {
     background-color: #eb4d4b;
 }
 
+button:hover {
+    box-shadow: none; /* Remove predefined box-shadow */
+    text-shadow: none; /* Remove predefined text-shadow */
+    background: none; /* Remove predefined background color (white) */
+    transition: none; /* Disable predefined animations */
+}
+
 #mode {
     background-color: #64727D;
 }
 
 #scratchpad {
     padding: 0 10px;
-    color: #ffffff;
 }

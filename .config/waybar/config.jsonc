@@ -1,6 +1,6 @@
 {
-    "spacing": 4,
-    "height":20,
+    "spacing": 10,
+    "height":10,
     "modules-left": [
         "sway/workspaces", 
         "sway/mode", 
@@ -21,9 +21,6 @@
     "sway/scratchpad": {
         "format": "|{count}|",
     },
-    "tray": {
-        "spacing": 10
-    },
     "clock": {
         "format": "[{:%F %H:%M}]",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
@@ -40,6 +37,11 @@
         "format": "[{temperatureC}°C]"
     },
     "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
         "format": "[BAT:{capacity}%]"
     },
     "pulseaudio": {
@@ -48,7 +50,6 @@
         "on-click": "pavucontrol"
     },
     "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "[NET:{signalStrength}%]",
         "format-ethernet": "[NET:{ifname}]",
         "format-linked": "[NET:No IP]",
