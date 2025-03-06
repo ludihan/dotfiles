@@ -109,10 +109,12 @@ pipewire-pulse
 postgresql
 pv
 python-black
+python-flasgger
 python-flask
 python-matplotlib
 python-opencv
 python-pandas
+python-pip
 python-scipy
 python-seaborn
 python-tabulate
@@ -151,6 +153,7 @@ ttf-nerd-fonts-symbols-common
 ttf-nerd-fonts-symbols-mono
 typescript
 typst
+unp
 unrar
 unzip
 valgrind
