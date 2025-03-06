@@ -53,7 +53,6 @@ intel-ucode
 inxi
 ipcalc
 iwd
-jdk21-openjdk
 jo
 jq
 kdenlive
@@ -152,7 +151,6 @@ ttf-nerd-fonts-symbols
 ttf-nerd-fonts-symbols-common
 ttf-nerd-fonts-symbols-mono
 typescript
-typst
 unp
 unrar
 unzip

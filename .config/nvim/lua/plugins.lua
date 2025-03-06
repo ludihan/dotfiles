@@ -44,7 +44,6 @@ require('lazy').setup({
                 'gopls',
                 'templ',
                 'pylsp',
-                'black',
                 'ruby_lsp',
                 'rubocop',
                 'yamlls'
