@@ -39,6 +39,13 @@ input "type:keyboard" {
     repeat_rate 30
 }
 
+input "1:1:AT_Translated_Set_2_keyboard" {
+    xkb_options compose:caps
+    xkb_layout "br"
+    repeat_delay 300
+    repeat_rate 30
+}
+
 output "HDMI-A-2" {
     mode 1920x1080@100.000Hz
 }
