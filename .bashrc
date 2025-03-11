@@ -37,3 +37,5 @@ eval "$(rbenv init -)"
 export ANDROID_SDK_ROOT="$HOME/Android/Sdk"
 
 #export GAMEMODERUNEXEC="prime-run"
+
+[ -f "/home/ludihan/.ghcup/env" ] && . "/home/ludihan/.ghcup/env" # ghcup-env
