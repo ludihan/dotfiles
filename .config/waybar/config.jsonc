@@ -46,15 +46,15 @@
     },
     "pulseaudio": {
         "format": "[VOL:{volume}%]",
-        "format-muted": "[VOL:{volume} (MUTE)]",
-        "on-click": "pavucontrol"
+        "format-muted": "[VOL:{volume} (MUTE)]"
+        // "on-click": "pavucontrol"
     },
     "network": {
         "format-wifi": "[NET:{signalStrength}%]",
         "format-ethernet": "[NET:{ifname}]",
         "format-linked": "[NET:No IP]",
-        "format-disconnected": "[NET:Disconnected]",
-        "tooltip": false
+        "format-disconnected": "[NET:Disconnected]"
+        // "tooltip": false
     },
     "backlight": {
         "format": "[BKL: {percent}%]"
