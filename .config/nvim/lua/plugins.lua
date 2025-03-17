@@ -35,22 +35,37 @@ require("lazy").setup({
         'williamboman/mason-lspconfig.nvim',
         opts = {
             ensure_installed = {
-                'html',
                 'cssls',
-                'ts_ls',
                 'emmet_language_server',
-                'lua_ls',
-                'rust_analyzer',
                 'gopls',
-                'templ',
+                'hls',
+                'html',
+                'lua_ls',
                 'pylsp',
-                'ruby_lsp',
                 'rubocop',
+                'ruby_lsp',
+                'rust_analyzer',
+                'templ',
+                'ts_ls',
                 'yamlls'
             },
             handlers = {
                 function(server_name)
                     require('lspconfig')[server_name].setup({})
+                end,
+                hls = function()
+                    require('lspconfig').hls.setup({
+                        cmd = { 'haskell-language-server-wrapper', '--lsp' },
+                        filetypes = { 'haskell', 'lhaskell' },
+                        root_dir = require('lspconfig.util').root_pattern('hie.yaml', 'stack.yaml', 'cabal.project', '*.cabal', 'package.yaml'),
+                        single_file_support = true,
+                        settings = {
+                            haskell = {
+                                formattingProvider = 'fourmolu',
+                                cabalFormattingProvider = 'cabalfmt',
+                            },
+                        },
+                    })
                 end,
             },
         },

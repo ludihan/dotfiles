@@ -169,6 +169,7 @@ xdg-desktop-portal-gtk
 xdg-desktop-portal-wlr
 xdg-user-dirs
 xdg-utils
+xmake
 xorg-xwayland
 xorg-xwininfo
 yarn
