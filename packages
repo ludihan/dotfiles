@@ -18,6 +18,7 @@ discord
 distrobox
 dmenu
 docker
+doomretro
 dotnet-sdk
 dotnet-sdk-8.0
 dunst
@@ -102,6 +103,7 @@ obsidian-icon-theme
 otf-font-awesome
 pacman-contrib
 pavucontrol
+pd
 pipewire
 pipewire-alsa
 pipewire-jack
@@ -143,6 +145,7 @@ swaylock
 tealdeer
 tenacity
 terminus-font
+timidity++
 tmux
 transmission-gtk
 trash-cli

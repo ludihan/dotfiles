@@ -149,6 +149,8 @@ floating_modifier $mod normal
     bindsym $mod+f fullscreen
 
     bindsym $mod+Shift+Space floating toggle
+    bindsym $mod+Shift+f [workspace=__focused__] floating toggle
+    bindsym $mod+Shift+s sticky toggle
 
     bindsym $mod+Space focus mode_toggle
 
