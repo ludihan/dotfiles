@@ -52,6 +52,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
         vim.keymap.set('n', '<F2>', '<cmd>lua vim.lsp.buf.rename()<cr>', opts)
         vim.keymap.set({ 'n', 'x' }, '<F3>', '<cmd>lua vim.lsp.buf.format({async = true})<cr>', opts)
         vim.keymap.set('n', '<F4>', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
+        vim.keymap.set('n', 'gh', '<cmd>lua vim.diagnostic.open_float()<cr>', opts)
     end,
 })
 
@@ -94,6 +95,7 @@ vim.keymap.set('n', '<leader>f', builtin.find_files)
 vim.keymap.set('n', '<leader>g', builtin.live_grep)
 vim.keymap.set('n', '<leader>b', builtin.buffers)
 vim.keymap.set('n', '<leader>z', builtin.help_tags)
+vim.keymap.set('n', '<leader>h', builtin.diagnostics)
 
 -- Clipboard
 vim.keymap.set({ 'n', 'x' }, '<leader>y', [["+y]])
@@ -114,9 +116,6 @@ vim.keymap.set('n', '<leader>O', 'O<Esc>')
 
 -- Esc is too far
 vim.keymap.set({ 'n', 'v', 'i' }, '<C-c>', '<Esc>', { desc = 'same as pressing esc' })
-
--- redraw screen
-vim.keymap.set('n', '<leader>h', '<CMD>:nohlsearch<CR>')
 
 -- quickfix
 vim.keymap.set('n', '<C-k>', '<cmd>cnext<CR>zz')

@@ -1,5 +1,3 @@
 #!/bin/bash
 
-set -euf
-
 cd ~/dotfiles && git add . && git commit -m "$(date -I)" && git push
