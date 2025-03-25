@@ -73,7 +73,6 @@ require('cmp').setup({
 
 -- Open file explorer
 vim.keymap.set('n', '-', '<CMD>Oil<CR>', { desc = 'Open directory (oil)' })
-vim.keymap.set('n', '<leader>-', '<CMD>Neotree<CR>', { desc = 'Open directory (neotree)' })
 
 -- Moving whole lines
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
