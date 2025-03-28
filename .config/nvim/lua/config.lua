@@ -26,7 +26,7 @@ vim.g.omni_sql_no_default_maps = 1
 
 vim.cmd.colorscheme('gruvbox-material')
 
-vim.g.gruvbox_material_transparent_background = 1
+--vim.g.gruvbox_material_transparent_background = 1
 
 local lspconfig_defaults = require('lspconfig').util.default_config
 lspconfig_defaults.capabilities = vim.tbl_deep_extend(
