@@ -13,6 +13,7 @@ cmake
 cmus
 cowsay
 croc
+csvlens
 dash
 discord
 distrobox
@@ -57,6 +58,7 @@ ipcalc
 iwd
 jo
 jq
+jupyterlab
 kdenlive
 krita
 lazygit
@@ -64,6 +66,7 @@ less
 lf
 lib32-nvidia-utils
 libpulse
+libreoffice-still
 libvips
 linux
 linux-firmware
@@ -111,6 +114,7 @@ pipewire-pulse
 postgresql
 pv
 python-black
+python-dask
 python-django
 python-flasgger
 python-flask
@@ -118,6 +122,7 @@ python-matplotlib
 python-opencv
 python-pandas
 python-pip
+python-pyarrow
 python-scipy
 python-seaborn
 python-tabulate
