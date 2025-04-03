@@ -17,6 +17,7 @@ csvlens
 dash
 discord
 distrobox
+dmenu
 docker
 docker-compose
 doomretro
@@ -38,11 +39,11 @@ foot-terminfo
 fortune-mod
 fzf
 gamemode
+gdb
 gimp
 git
 github-cli
 gnome-themes-extra
-go
 godot
 graphviz
 grim
@@ -52,6 +53,7 @@ hyprpicker
 i3status
 imagemagick
 imv
+intel-media-driver
 intel-ucode
 inxi
 ipcalc
@@ -67,6 +69,7 @@ lf
 lib32-nvidia-utils
 libpulse
 libreoffice-still
+libva-intel-driver
 libvips
 linux
 linux-firmware
@@ -111,6 +114,7 @@ pipewire
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
+plantuml
 postgresql
 pv
 python-black
@@ -135,7 +139,6 @@ ruby-build
 rust
 sane
 senpai
-sipcalc
 slurp
 smartmontools
 sof-firmware
@@ -157,6 +160,9 @@ transmission-gtk
 trash-cli
 tree
 ttf-hack
+ttf-nerd-fonts-symbols
+ttf-nerd-fonts-symbols-common
+ttf-nerd-fonts-symbols-mono
 typescript
 umu-launcher
 unp
@@ -165,6 +171,7 @@ unzip
 uv
 valgrind
 vim
+vulkan-intel
 vulkan-tools
 waybar
 wev
@@ -180,6 +187,9 @@ xdg-desktop-portal-wlr
 xdg-user-dirs
 xdg-utils
 xmake
+xorg-server
+xorg-xinit
+xorg-xlsclients
 xorg-xwayland
 xorg-xwininfo
 yarn
