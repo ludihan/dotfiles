@@ -138,6 +138,7 @@ rustup
 sane
 scanmem
 senpai
+shellcheck
 slurp
 smartmontools
 sof-firmware

@@ -42,12 +42,17 @@ require("lazy").setup({
                 'html',
                 'lua_ls',
                 'pylsp',
-                --'rubocop',
-                --'ruby_lsp',
                 'rust_analyzer',
                 'templ',
                 'ts_ls',
-                'yamlls'
+                'bashls',
+                'jsonls',
+                'dockerls',
+                'docker_compose_language_service',
+                'clangd',
+                'ruff',
+                'pyright',
+                'yamlls',
             },
             handlers = {
                 function(server_name)
