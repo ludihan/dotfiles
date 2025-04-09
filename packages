@@ -183,7 +183,6 @@ xdg-desktop-portal-gtk
 xdg-desktop-portal-wlr
 xdg-user-dirs
 xdg-utils
-xmake
 xorg-xlsclients
 xorg-xwayland
 xorg-xwininfo
