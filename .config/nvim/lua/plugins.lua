@@ -42,8 +42,8 @@ require("lazy").setup({
                 'html',
                 'lua_ls',
                 'pylsp',
-                'rubocop',
-                'ruby_lsp',
+                --'rubocop',
+                --'ruby_lsp',
                 'rust_analyzer',
                 'templ',
                 'ts_ls',
@@ -54,10 +54,11 @@ require("lazy").setup({
                     require('lspconfig')[server_name].setup({})
                 end,
                 hls = function()
+                    local util = require 'lspconfig.util'
                     require('lspconfig').hls.setup({
                         cmd = { 'haskell-language-server-wrapper', '--lsp' },
-                        filetypes = { 'haskell', 'lhaskell' },
-                        root_dir = require('lspconfig.util').root_pattern('hie.yaml', 'stack.yaml', 'cabal.project', '*.cabal', 'package.yaml'),
+                        filetypes = { 'haskell', 'lhaskell', 'cabal' },
+                        root_dir = util.root_pattern('hie.yaml', 'stack.yaml', 'cabal.project', '*.cabal', 'package.yaml'),
                         single_file_support = true,
                         settings = {
                             haskell = {
@@ -113,22 +114,5 @@ require("lazy").setup({
     {
         'LunarVim/bigfile.nvim',
         config = true,
-    },
-    ui = {
-        icons = {
-            cmd = "⌘",
-            config = "🛠",
-            event = "📅",
-            ft = "📂",
-            init = "⚙",
-            keys = "🗝",
-            plugin = "🔌",
-            runtime = "💻",
-            require = "🌙",
-            source = "📄",
-            start = "🚀",
-            task = "📌",
-            lazy = "💤 ",
-        },
     },
 })

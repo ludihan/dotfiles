@@ -17,7 +17,6 @@ csvlens
 dash
 discord
 distrobox
-dmenu
 docker
 docker-compose
 doomretro
@@ -44,6 +43,7 @@ gimp
 git
 github-cli
 gnome-themes-extra
+go
 godot
 graphviz
 grim
@@ -114,8 +114,8 @@ pipewire
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
-plantuml
 postgresql
+prismlauncher
 pv
 python-black
 python-dask
@@ -131,13 +131,12 @@ python-scipy
 python-seaborn
 python-tabulate
 raylib
-rbenv
 redis
 ripgrep
 rofi-wayland
-ruby-build
-rust
+rustup
 sane
+scanmem
 senpai
 slurp
 smartmontools
@@ -170,7 +169,6 @@ unzip
 uv
 valgrind
 vim
-vulkan-intel
 vulkan-tools
 waybar
 wev
@@ -186,12 +184,11 @@ xdg-desktop-portal-wlr
 xdg-user-dirs
 xdg-utils
 xmake
-xorg-server
-xorg-xinit
 xorg-xlsclients
 xorg-xwayland
 xorg-xwininfo
 yarn
+ydotool
 zathura
 zathura-pdf-mupdf
 zip

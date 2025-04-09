@@ -220,6 +220,7 @@ for_window [app_id="floating"] floating enable
 
 exec batsignal -b -w 30 -c 15 -d 5 -m 1 -I aefjlaksjd &
 exec nm-applet &
+exec fcitx5 &
 
 set $gnome-schema org.gnome.desktop.interface
 exec_always {

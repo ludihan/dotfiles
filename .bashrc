@@ -32,8 +32,6 @@ export GOPATH="$HOME/.go"
 export PATH="$PATH:$(go env GOPATH)/bin"
 export PATH="$PATH:$HOME/.cargo/bin"
 
-eval "$(rbenv init -)"
-
 export ANDROID_SDK_ROOT="$HOME/Android/Sdk"
 
 #export GAMEMODERUNEXEC="prime-run"
