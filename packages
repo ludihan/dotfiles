@@ -43,7 +43,6 @@ gimp
 git
 github-cli
 gnome-themes-extra
-go
 godot
 graphviz
 grim
@@ -170,6 +169,7 @@ unzip
 uv
 valgrind
 vim
+vulkan-intel
 vulkan-tools
 waybar
 wev
