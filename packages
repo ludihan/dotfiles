@@ -136,7 +136,6 @@ rofi-wayland
 rustup
 sane
 scanmem
-senpai
 shellcheck
 slurp
 smartmontools
@@ -154,6 +153,7 @@ tealdeer
 tenacity
 terminus-font
 timidity++
+tiny
 tmux
 transmission-gtk
 trash-cli
