@@ -43,6 +43,7 @@ gimp
 git
 github-cli
 gnome-themes-extra
+go
 godot
 graphviz
 grim
@@ -57,6 +58,7 @@ intel-ucode
 inxi
 ipcalc
 iwd
+j4-dmenu-desktop
 jo
 jq
 jupyterlab
@@ -132,7 +134,6 @@ python-tabulate
 raylib
 redis
 ripgrep
-rofi-wayland
 rustup
 sane
 scanmem
@@ -169,7 +170,6 @@ unzip
 uv
 valgrind
 vim
-vulkan-intel
 vulkan-tools
 waybar
 wev

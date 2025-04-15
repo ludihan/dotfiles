@@ -8,7 +8,9 @@ set $down  j
 set $up    k
 set $right l
 set $term foot
-set $launcher rofi -font 'Terminus 14' -show-icons
+# set $launcher rofi -font 'Terminus 14' -show-icons
+set $launcher j4-dmenu-desktop --no-generic -f -t foot -x \
+    -d 'wmenu -f "Terminus 12" -l 20 -i -N 282828 -S 756D59' 
 set $playerctl playerctl -p spotify
 
 ### Output configuration
@@ -59,8 +61,8 @@ floating_modifier $mod normal
 
     bindsym $mod+Shift+q kill
 
-    bindsym $mod+p exec $launcher -show drun
-    bindsym $mod+Shift+p exec $launcher -show window
+    bindsym $mod+p exec $launcher
+    # bindsym $mod+Shift+p exec $launcher
 
     bindsym $mod+Shift+r reload
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit' -f Terminus
