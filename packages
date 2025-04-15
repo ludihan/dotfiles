@@ -39,7 +39,6 @@ fortune-mod
 fzf
 gamemode
 gdb
-gimp
 git
 github-cli
 gnome-themes-extra
@@ -62,8 +61,6 @@ j4-dmenu-desktop
 jo
 jq
 jupyterlab
-kdenlive
-krita
 lazygit
 less
 lf
@@ -74,7 +71,6 @@ libva-intel-driver
 libvips
 linux
 linux-firmware
-lmms
 love
 lsix
 lsof
