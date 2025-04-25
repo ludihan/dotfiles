@@ -9,7 +9,7 @@ set $up    k
 set $right l
 set $term foot
 # set $launcher rofi -font 'Terminus 14' -show-icons
-set $launcher j4-dmenu-desktop --no-generic -f -t foot -x \
+set $launcher j4-dmenu-desktop --no-generic -I -f -t $term -x \
     -d 'wmenu -f "Terminus 12" -l 20 -i -N 282828 -S 756D59' 
 set $playerctl playerctl -p spotify
 
@@ -170,7 +170,7 @@ floating_modifier $mod normal
     bindsym $mod+Shift+Equal exec swaylock -e -l -f -c 222222
 
     # Print
-    bindsym Control+Print exec slurp | grim -g - - | wl-copy
+    bindsym Control+Print exec swaymsg -t get_tree | jq -r '.. | select(.pid? and .visible?) | "\(.rect.x+.window_rect.x),\(.rect.y+.window_rect.y) \(.window_rect.width)x\(.window_rect.height)"' | slurp | grim -g - - | wl-copy
     bindsym Print         exec grim - | wl-copy
 
 
