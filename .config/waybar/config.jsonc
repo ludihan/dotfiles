@@ -19,14 +19,14 @@
         "clock"
     ],
     "sway/scratchpad": {
-        "format": "|{count}|",
+        "format": "|{count}|"
     },
     "clock": {
         "format": "[{:%F %H:%M}]",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
     "cpu": {
-        "format": "[CPU:{usage}%]",
+        "format": "[CPU:{usage}%]"
     },
     "memory": {
         "format": "[MEM:{percentage}%]"
@@ -45,8 +45,10 @@
         "format": "[BAT:{capacity}%]"
     },
     "pulseaudio": {
-        "format": "[VOL:{volume}%]",
-        "format-muted": "[VOL:{volume} (MUTE)]"
+        "format": "[VOL:{volume}% MIC:{format_source}]",
+        "format-muted": "[VOL:{volume}%(MUTE) MIC:{format_source}]",
+        "format-source": "{volume}%",
+        "format-source-muted": "{volume}%(MIC MUTE)"
         // "on-click": "pavucontrol"
     },
     "network": {

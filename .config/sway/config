@@ -69,12 +69,16 @@ floating_modifier $mod normal
 
     # Volume
     bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +2%
+    bindsym $mod+period          exec pactl set-sink-volume @DEFAULT_SINK@ +2%
+
     bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -2%
-    bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
-    bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
-    bindsym $mod+period exec  pactl set-sink-volume @DEFAULT_SINK@ +2%
-    bindsym $mod+comma exec  pactl set-sink-volume @DEFAULT_SINK@ -2%
-    bindsym $mod+semicolon exec  pactl set-sink-mute @DEFAULT_SINK@ toggle
+    bindsym $mod+comma           exec pactl set-sink-volume @DEFAULT_SINK@ -2%
+
+    bindsym XF86AudioMute        exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+    bindsym $mod+Prior           exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+    bindsym XF86AudioMicMute     exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+    bindsym $mod+Next            exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
     # Sreen brightness
     bindsym XF86MonBrightnessUp exec  brightnessctl s +2%

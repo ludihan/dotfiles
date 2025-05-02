@@ -46,6 +46,7 @@ github-cli
 gnome-themes-extra
 go
 godot
+goxel
 graphviz
 grim
 gst-plugin-pipewire
@@ -54,6 +55,7 @@ hyprpicker
 i3status
 imagemagick
 imv
+indent
 intel-media-driver
 intel-ucode
 inxi
@@ -76,6 +78,7 @@ linux-firmware
 love
 lsix
 lsof
+luanti
 ly
 man-db
 man-pages
@@ -187,6 +190,7 @@ xorg-xwayland
 xorg-xwininfo
 yarn
 ydotool
+yt-dlp
 zathura
 zathura-pdf-mupdf
 zip
