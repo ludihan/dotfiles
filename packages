@@ -117,6 +117,7 @@ pipewire-alsa
 pipewire-jack
 pipewire-pulse
 postgresql
+prettier
 prismlauncher
 pv
 python-black

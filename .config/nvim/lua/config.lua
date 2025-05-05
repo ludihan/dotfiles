@@ -71,6 +71,8 @@ require('cmp').setup({
     mapping = cmp.mapping.preset.insert({}),
 })
 
+vim.lsp.enable('hls')
+
 -- Open file explorer
 vim.keymap.set('n', '-', '<CMD>Oil<CR>', { desc = 'Open directory (oil)' })
 

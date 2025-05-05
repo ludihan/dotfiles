@@ -38,7 +38,7 @@ require("lazy").setup({
                 'cssls',
                 'emmet_language_server',
                 'gopls',
-                'hls',
+                -- 'hls',
                 'html',
                 'lua_ls',
                 'pylsp',
@@ -58,21 +58,21 @@ require("lazy").setup({
                 function(server_name)
                     require('lspconfig')[server_name].setup({})
                 end,
-                hls = function()
-                    local util = require 'lspconfig.util'
-                    require('lspconfig').hls.setup({
-                        cmd = { 'haskell-language-server-wrapper', '--lsp' },
-                        filetypes = { 'haskell', 'lhaskell', 'cabal' },
-                        root_dir = util.root_pattern('hie.yaml', 'stack.yaml', 'cabal.project', '*.cabal', 'package.yaml'),
-                        single_file_support = true,
-                        settings = {
-                            haskell = {
-                                formattingProvider = 'fourmolu',
-                                cabalFormattingProvider = 'cabalfmt',
-                            },
-                        },
-                    })
-                end,
+                --hls = function()
+                    --local util = require 'lspconfig.util'
+                    --require('lspconfig').hls.setup({
+                        --cmd = { 'haskell-language-server-wrapper', '--lsp' },
+                        --filetypes = { 'haskell', 'lhaskell', 'cabal' },
+                        --root_dir = util.root_pattern('hie.yaml', 'stack.yaml', 'cabal.project', '*.cabal', 'package.yaml'),
+                        --single_file_support = true,
+                        --settings = {
+                            --haskell = {
+                                --formattingProvider = 'fourmolu',
+                                --cabalFormattingProvider = 'cabalfmt',
+                            --},
+                        --},
+                    --})
+                --end,
             },
         },
     },
