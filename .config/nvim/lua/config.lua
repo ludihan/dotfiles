@@ -53,6 +53,8 @@ vim.api.nvim_create_autocmd('LspAttach', {
         vim.keymap.set({ 'n', 'x' }, '<F3>', '<cmd>lua vim.lsp.buf.format({async = true})<cr>', opts)
         vim.keymap.set('n', '<F4>', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
         vim.keymap.set('n', 'gh', '<cmd>lua vim.diagnostic.open_float()<cr>', opts)
+        vim.keymap.set('n', 'g.', '<cmd>lua vim.diagnostic.setloclist()<cr><cmd>lopen<cr>', opts)
+        vim.keymap.set('n', 'g,', '<cmd>lua vim.diagnostic.setqflist()<cr><cmd>copen<cr>', opts)
     end,
 })
 

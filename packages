@@ -16,7 +16,6 @@ croc
 csvlens
 dash
 discord
-distrobox
 docker
 docker-compose
 doomretro
@@ -134,6 +133,7 @@ python-scipy
 python-seaborn
 python-tabulate
 raylib
+reaper
 redis
 ripgrep
 rustup
