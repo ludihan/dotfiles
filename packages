@@ -116,6 +116,7 @@ pipewire-alsa
 pipewire-jack
 pipewire-pulse
 postgresql
+powertop
 prettier
 prismlauncher
 pv
