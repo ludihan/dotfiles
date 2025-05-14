@@ -6,7 +6,6 @@ base-devel
 bash-completion
 batsignal
 blender
-bluez
 brightnessctl
 bsd-games
 cmake
@@ -64,6 +63,7 @@ j4-dmenu-desktop
 jo
 jq
 jupyterlab
+krita
 lazygit
 less
 lf
