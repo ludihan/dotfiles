@@ -1,10 +1,12 @@
 7zip
+acpi
 asciiquarium
 base
 base-devel
 bash-completion
 batsignal
 blender
+bluez
 brightnessctl
 bsd-games
 cmake
@@ -62,7 +64,6 @@ j4-dmenu-desktop
 jo
 jq
 jupyterlab
-krita
 lazygit
 less
 lf
@@ -171,7 +172,6 @@ unzip
 uv
 valgrind
 vim
-vulkan-intel
 vulkan-tools
 waybar
 wev
@@ -181,6 +181,7 @@ wireless_tools
 wireplumber
 wl-clipboard
 wl-mirror
+wlr-randr
 wmenu
 xdg-desktop-portal-gtk
 xdg-desktop-portal-wlr
