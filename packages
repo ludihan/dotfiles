@@ -110,6 +110,7 @@ nvidia-utils
 obsidian-icon-theme
 otf-font-awesome
 pacman-contrib
+pandoc-cli
 pavucontrol
 pipewire
 pipewire-alsa
@@ -134,7 +135,6 @@ python-seaborn
 python-tabulate
 raylib
 reaper
-redis
 ripgrep
 rustup
 sane
