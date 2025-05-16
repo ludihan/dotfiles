@@ -11,6 +11,13 @@ return {
         haskell = {
             formattingProvider = 'fourmolu',
             cabalFormattingProvider = 'cabalfmt',
+            plugin = {
+                rename = {
+                    config = {
+                        crossModule = true
+                    }
+                }
+            }
         },
     },
 }

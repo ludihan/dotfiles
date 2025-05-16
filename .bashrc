@@ -38,4 +38,5 @@ export ANDROID_SDK_ROOT="$HOME/Android/Sdk"
 
 
 
+
 [ -f "/home/ludihan/.ghcup/env" ] && . "/home/ludihan/.ghcup/env" # ghcup-env
