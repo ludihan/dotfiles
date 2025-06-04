@@ -15,6 +15,7 @@ cmus
 cowsay
 croc
 csvlens
+cuda
 discord
 docker
 docker-compose
@@ -33,6 +34,7 @@ firefox
 foot
 foot-terminfo
 fortune-mod
+fx
 fzf
 gamemode
 gdb
@@ -41,6 +43,7 @@ gifski
 git
 github-cli
 gnome-themes-extra
+gnu-netcat
 go
 godot
 goxel
@@ -57,11 +60,11 @@ intel-media-driver
 intel-ucode
 inxi
 ipcalc
+irssi
 iwd
 j4-dmenu-desktop
 jo
 jq
-jupyterlab
 kdenlive
 krita
 lazygit
@@ -69,7 +72,6 @@ less
 lf
 lib32-nvidia-utils
 libpulse
-libreoffice-still
 libva-intel-driver
 libvips
 linux
@@ -108,6 +110,8 @@ nvidia
 nvidia-utils
 obs-studio
 obsidian-icon-theme
+opencl-headers
+opencl-nvidia
 otf-font-awesome
 pacman-contrib
 pandoc-cli
@@ -129,7 +133,6 @@ python-matplotlib
 python-opencv
 python-pandas
 python-pip
-python-pyarrow
 python-scipy
 python-seaborn
 python-tabulate
@@ -219,6 +222,7 @@ wf-recorder
 wget
 wireless_tools
 wireplumber
+wireshark-qt
 wl-clipboard
 wl-mirror
 wlr-randr
