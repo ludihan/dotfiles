@@ -10,7 +10,7 @@ return {
     settings = {
         haskell = {
             formattingProvider = 'fourmolu',
-            cabalFormattingProvider = 'cabalfmt',
+            cabalFormattingProvider = 'cabal-fmt',
             plugin = {
                 rename = {
                     config = {
