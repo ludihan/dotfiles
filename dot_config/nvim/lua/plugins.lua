@@ -59,19 +59,19 @@ require("lazy").setup({
                     require('lspconfig')[server_name].setup({})
                 end,
                 --hls = function()
-                    --local util = require 'lspconfig.util'
-                    --require('lspconfig').hls.setup({
-                        --cmd = { 'haskell-language-server-wrapper', '--lsp' },
-                        --filetypes = { 'haskell', 'lhaskell', 'cabal' },
-                        --root_dir = util.root_pattern('hie.yaml', 'stack.yaml', 'cabal.project', '*.cabal', 'package.yaml'),
-                        --single_file_support = true,
-                        --settings = {
-                            --haskell = {
-                                --formattingProvider = 'fourmolu',
-                                --cabalFormattingProvider = 'cabalfmt',
-                            --},
-                        --},
-                    --})
+                --local util = require 'lspconfig.util'
+                --require('lspconfig').hls.setup({
+                --cmd = { 'haskell-language-server-wrapper', '--lsp' },
+                --filetypes = { 'haskell', 'lhaskell', 'cabal' },
+                --root_dir = util.root_pattern('hie.yaml', 'stack.yaml', 'cabal.project', '*.cabal', 'package.yaml'),
+                --single_file_support = true,
+                --settings = {
+                --haskell = {
+                --formattingProvider = 'fourmolu',
+                --cabalFormattingProvider = 'cabalfmt',
+                --},
+                --},
+                --})
                 --end,
             },
         },
@@ -86,6 +86,20 @@ require("lazy").setup({
         'nvim-telescope/telescope.nvim',
         tag = '0.1.8',
         dependencies = { 'nvim-lua/plenary.nvim' },
+        opts = {
+            defaults = {
+                border = false,
+                layout_config = {
+                    width = { padding = 0 },
+                    height = { padding = 0 }
+                },
+                results_title = false,
+                prompt_title = false,
+                prompt_prefix = '>>> ',
+                sorting_strategy = 'ascending',
+                layout_strategy = "bottom_pane",
+            },
+        },
     },
     {
         'nvim-treesitter/nvim-treesitter',

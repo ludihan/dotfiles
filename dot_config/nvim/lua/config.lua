@@ -94,11 +94,11 @@ vim.keymap.set('t', '<Esc>', '<C-\\><C-n><CR>')
 
 -- Telescope
 local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>f', builtin.find_files)
-vim.keymap.set('n', '<leader>g', builtin.live_grep)
-vim.keymap.set('n', '<leader>b', builtin.buffers)
-vim.keymap.set('n', '<leader>z', builtin.help_tags)
-vim.keymap.set('n', '<leader>h', builtin.diagnostics)
+vim.keymap.set('n', '<leader>f', builtin.find_files, { desc = 'Telescope find files' })
+vim.keymap.set('n', '<leader>g', builtin.live_grep, { desc = 'Telescope live grep' })
+vim.keymap.set('n', '<leader>b', builtin.buffers, { desc = 'Telescope buffers' })
+vim.keymap.set('n', '<leader>z', builtin.help_tags, { desc = 'Telescope help tags' })
+vim.keymap.set('n', '<leader>h', builtin.diagnostics, { desc = 'Telescope diagnostics' })
 
 -- Clipboard
 vim.keymap.set({ 'n', 'x' }, '<leader>y', [["+y]])
