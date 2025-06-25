@@ -1,0 +1,5 @@
+#!/bin/sh
+
+tmux kill-session -t "dev"
+
+tmux kill-session -t "daemon"
