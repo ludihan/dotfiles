@@ -16,6 +16,7 @@ discord
 docker
 docker-compose
 dunst
+editorconfig-checker
 efibootmgr
 fasm
 fastfetch
@@ -34,6 +35,7 @@ fzf
 gamemode
 gdb
 git
+git-lfs
 github-cli
 gnome-themes-extra
 gnu-netcat
@@ -74,6 +76,7 @@ luanti
 luanti-server
 man-db
 man-pages
+mednafen
 mesa-utils
 micro
 mpv
@@ -103,6 +106,7 @@ pipewire
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
+plocate
 prettier
 prismlauncher
 pv
@@ -177,3 +181,4 @@ zathura
 zathura-pdf-mupdf
 zip
 zram-generator
+zsnes

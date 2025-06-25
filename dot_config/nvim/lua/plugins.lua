@@ -49,7 +49,7 @@ require("lazy").setup({
                 'jsonls',
                 'dockerls',
                 'docker_compose_language_service',
-                'clangd',
+                --'clangd',
                 'ruff',
                 'pyright',
                 'yamlls',
