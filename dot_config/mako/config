@@ -1,1 +1,11 @@
 font=Terminus 10
+default-timeout=10000
+background-color=#222222
+border-color=#888888
+text-color=#888888
+
+[urgency=low]
+default-timeout=5000
+
+[urgency=critical]
+ignore-timeout=1
