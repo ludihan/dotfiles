@@ -15,7 +15,6 @@ cowsay
 discord
 docker
 docker-compose
-dunst
 editorconfig-checker
 efibootmgr
 fasm
@@ -46,6 +45,7 @@ graphviz
 grim
 gst-plugin-pipewire
 htop
+hyprpicker
 i3status
 imagemagick
 imv
@@ -73,6 +73,7 @@ lsix
 lsof
 luanti
 luanti-server
+mako
 man-db
 man-pages
 mednafen

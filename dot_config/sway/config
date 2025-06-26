@@ -175,9 +175,11 @@ bindsym $mod+m exec VISUAL=nvim EDITOR=nvim $term -e lf
 bindsym $mod+Shift+Equal exec swaylock -e -l -f -c 222222
 
 # Print
-bindsym Control+Print exec grimshot copy anything
-bindsym Print         exec grimshot copy active
+bindsym $mod+x        exec grimshot copy active
+bindsym $mod+Shift+x  exec grimshot copy anything
 
+# Color picker
+bindsym $mod+c exec hyprpicker -a
 
 # Resizing containers:
 mode "resize" {
