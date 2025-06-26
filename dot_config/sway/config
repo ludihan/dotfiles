@@ -175,8 +175,8 @@ bindsym $mod+m exec VISUAL=nvim EDITOR=nvim $term -e lf
 bindsym $mod+Shift+Equal exec swaylock -e -l -f -c 222222
 
 # Print
-bindsym Control+Print exec swaymsg -t get_tree | jq -r '.. | select(.pid? and .visible?) | "\(.rect.x+.window_rect.x),\(.rect.y+.window_rect.y) \(.window_rect.width)x\(.window_rect.height)"' | slurp | grim -g - - | wl-copy
-bindsym Print         exec grim - | wl-copy
+bindsym Control+Print exec grimshot copy anything
+bindsym Print         exec grimshot copy active
 
 
 # Resizing containers:

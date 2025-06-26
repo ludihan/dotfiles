@@ -3,4 +3,5 @@
 #
 
 # If running from tty1 start sway
+export PATH="$PATH:/usr/share/sway-contrib"
 [ "$(tty)" = "/dev/tty1" ] && exec sway --unsupported-gpu
