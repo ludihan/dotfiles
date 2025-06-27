@@ -1,0 +1,15 @@
+[user]
+	name = ludihan
+	email = 65617704+ludihan@users.noreply.github.com
+[init]
+	defaultBranch = master
+[pull]
+	rebase = true
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[core]
+	autocrlf = input
