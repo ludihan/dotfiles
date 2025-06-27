@@ -24,6 +24,7 @@ fcitx5-gtk
 fcitx5-mozc
 fd
 ffmpeg4.4
+ffmpegthumbnailer
 figlet
 firefox
 foot
@@ -44,6 +45,8 @@ goxel
 graphviz
 grim
 gst-plugin-pipewire
+gvfs
+gvfs-mtp
 htop
 hyprpicker
 i3status
@@ -61,8 +64,8 @@ jq
 krita
 lazygit
 less
-lf
 lib32-nvidia-utils
+libgsf
 libpulse
 libva-intel-driver
 libvips
@@ -142,6 +145,10 @@ swayidle
 swaylock
 tealdeer
 terminus-font
+thunar
+thunar-archive-plugin
+thunar-media-tags-plugin
+thunar-volman
 tiny
 tmux
 transmission-gtk
@@ -149,8 +156,8 @@ tree
 ttf-hack
 ttf-nerd-fonts-symbols
 ttf-nerd-fonts-symbols-mono
+tumbler
 umu-launcher
-unp
 unrar
 unzip
 valgrind
@@ -158,6 +165,7 @@ vim
 vulkan-intel
 vulkan-tools
 waybar
+webp-pixbuf-loader
 wev
 wf-recorder
 wget
@@ -169,6 +177,7 @@ wl-mirror
 wlr-randr
 wmenu
 wtype
+xarchiver
 xdg-desktop-portal-gtk
 xdg-desktop-portal-wlr
 xdg-user-dirs
