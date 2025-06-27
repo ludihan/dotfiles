@@ -10,7 +10,7 @@ set $right l
 set $term foot
 # set $launcher rofi -font 'Terminus 14' -show-icons
 set $launcher j4-dmenu-desktop --no-generic -I -f -t $term -x \
-    -d 'wmenu -f "Terminus 12" -l 20 -i -N 222222 -S 64727D'
+    -d 'wmenu -f "Terminus 12" -l 20 -i -N 222222 -S 666666'
 
 set $playerctl playerctl -p spotify
 

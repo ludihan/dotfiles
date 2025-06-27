@@ -20,7 +20,7 @@ window#waybar {
 }
 
 #workspaces button.focused {
-    background-color: #64727D;
+    background-color: #666666;
 }
 
 #workspaces button.urgent {
