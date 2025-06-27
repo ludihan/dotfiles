@@ -171,7 +171,8 @@ bindsym $mod+minus scratchpad show
 # Quick access
 bindsym $mod+n exec firefox
 bindsym $mod+u exec pavucontrol
-bindsym $mod+m exec VISUAL=nvim EDITOR=nvim $term -e lf
+# bindsym $mod+m exec VISUAL=nvim EDITOR=nvim $term -e lf
+bindsym $mod+m exec thunar
 bindsym $mod+Shift+Equal exec swaylock -e -l -f -c 222222
 
 # Print
@@ -227,7 +228,7 @@ for_window [app_id="[.]*"] border pixel 4px
 for_window [app_id="floating"] floating enable
 
 # Windows title
-title_align center
+# title_align center
 
 # Misc
 #mouse_warping container
