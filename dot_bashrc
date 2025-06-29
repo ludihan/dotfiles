@@ -20,7 +20,6 @@ alias s='du -sh'
 alias p='pacman'
 alias mirror='wl-mirror eDP-1'
 alias diff='diff --color=auto'
-alias lg='lazygit'
 alias v=$EDITOR
 alias g='git'
 alias sp='sudo pacman'
