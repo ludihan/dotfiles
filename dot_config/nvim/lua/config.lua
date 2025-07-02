@@ -145,6 +145,9 @@ vim.keymap.set("i", '{<Tab>', '{}<Left>')
 -- vim.keymap.set("i", '<<Tab>', '<<Left>')
 
 -- Auto braces when newline
-vim.keymap.set("i", '{<CR>', '{<CR>}<Esc>O')
+vim.keymap.set("i", '"<CR>', '"<CR>"<Esc>O')
+vim.keymap.set("i", "'<CR>", "'<CR>'<Esc>O")
+vim.keymap.set("i", '(<CR>', '(<CR>)<Esc>O')
 vim.keymap.set("i", '[<CR>', '[<CR>]<Esc>O')
+vim.keymap.set("i", '{<CR>', '{<CR>}<Esc>O')
 -- vim.keymap.set("i", '{;<CR>', '{<CR>};<Esc>O<Tab>')
