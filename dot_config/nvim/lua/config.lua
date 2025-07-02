@@ -133,3 +133,18 @@ vim.keymap.set('n', '<leader>s', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 -- format this
 vim.keymap.set('n', '<leader>w', '<CMD>%s/\\s\\+$//e<CR><CMD>:nohlsearch<CR>',
     { desc = 'remove trailing spaces from file' })
+
+-- local opts = { noremap = true, silent = true, expr = false }
+
+-- Auto pairs when tab
+vim.keymap.set("i", '"<Tab>', '""<Left>')
+vim.keymap.set("i", "'<Tab>", "''<Left>")
+vim.keymap.set("i", '(<Tab>', '()<Left>')
+vim.keymap.set("i", '[<Tab>', '[]<Left>')
+vim.keymap.set("i", '{<Tab>', '{}<Left>')
+-- vim.keymap.set("i", '<<Tab>', '<<Left>')
+
+-- Auto braces when newline
+vim.keymap.set("i", '{<CR>', '{<CR>}<Esc>O')
+vim.keymap.set("i", '[<CR>', '[<CR>]<Esc>O')
+-- vim.keymap.set("i", '{;<CR>', '{<CR>};<Esc>O<Tab>')

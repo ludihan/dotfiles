@@ -42,7 +42,9 @@ require("lazy").setup({
                 'html',
                 'lua_ls',
                 'pylsp',
-                'rust_analyzer',
+                -- 'rust_analyzer',
+                -- 'bacon-ls',
+                'taplo',
                 'templ',
                 'ts_ls',
                 'bashls',
@@ -117,11 +119,11 @@ require("lazy").setup({
             })
         end,
     },
-    {
-        'windwp/nvim-autopairs',
-        event = 'InsertEnter',
-        config = true,
-    },
+    --{
+        --'windwp/nvim-autopairs',
+        --event = 'InsertEnter',
+        --config = true,
+    --},
     {
         'windwp/nvim-ts-autotag',
         config = true,
