@@ -2,7 +2,12 @@
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
     local lazyrepo = "https://github.com/folke/lazy.nvim.git"
-    local out = vim.fn.system({ "git", "clone", "--filter=blob:none", "--branch=stable", lazyrepo, lazypath })
+    local out = vim.fn.system(
+        { "git", "clone", "--filter=blob:none", "--branch=stable",
+            lazyrepo,
+            lazypath
+        }
+    )
     if vim.v.shell_error ~= 0 then
         vim.api.nvim_echo({
             { "Failed to clone lazy.nvim:\n", "ErrorMsg" },
@@ -60,21 +65,6 @@ require("lazy").setup({
                 function(server_name)
                     require('lspconfig')[server_name].setup({})
                 end,
-                --hls = function()
-                --local util = require 'lspconfig.util'
-                --require('lspconfig').hls.setup({
-                --cmd = { 'haskell-language-server-wrapper', '--lsp' },
-                --filetypes = { 'haskell', 'lhaskell', 'cabal' },
-                --root_dir = util.root_pattern('hie.yaml', 'stack.yaml', 'cabal.project', '*.cabal', 'package.yaml'),
-                --single_file_support = true,
-                --settings = {
-                --haskell = {
-                --formattingProvider = 'fourmolu',
-                --cabalFormattingProvider = 'cabalfmt',
-                --},
-                --},
-                --})
-                --end,
             },
         },
     },
@@ -120,9 +110,9 @@ require("lazy").setup({
         end,
     },
     --{
-        --'windwp/nvim-autopairs',
-        --event = 'InsertEnter',
-        --config = true,
+    --'windwp/nvim-autopairs',
+    --event = 'InsertEnter',
+    --config = true,
     --},
     {
         'windwp/nvim-ts-autotag',
