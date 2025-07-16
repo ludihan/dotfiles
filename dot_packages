@@ -1,6 +1,7 @@
 7zip
 acpi
 asciiquarium
+bacon
 base
 base-devel
 bash-completion
@@ -29,6 +30,7 @@ editorconfig-checker
 efibootmgr
 fasm
 fastfetch
+fceux
 fcitx5-configtool
 fcitx5-gtk
 fcitx5-mozc
@@ -76,7 +78,6 @@ jo
 jq
 jupyterlab
 krita
-lazygit
 less
 lf
 lib32-nvidia-utils
@@ -135,7 +136,6 @@ pipewire-jack
 pipewire-pulse
 plocate
 postgresql
-prettier
 prismlauncher
 pv
 python-black
@@ -145,6 +145,7 @@ python-flasgger
 python-flask
 python-matplotlib
 python-opencv
+python-openpyxl
 python-pandas
 python-pip
 python-scipy
@@ -156,7 +157,6 @@ ripgrep
 rustup
 sane
 scanmem
-shellcheck
 slurp
 smartmontools
 sof-firmware
@@ -187,7 +187,6 @@ ttf-hack
 ttf-nerd-fonts-symbols
 ttf-nerd-fonts-symbols-mono
 tumbler
-typescript
 umu-launcher
 unp
 unrar
@@ -195,6 +194,7 @@ unzip
 uv
 valgrind
 vim
+visidata
 vulkan-intel
 vulkan-tools
 waybar
@@ -218,7 +218,6 @@ xdg-utils
 xorg-xlsclients
 xorg-xwayland
 xorg-xwininfo
-yarn
 ydotool
 yt-dlp
 zathura
