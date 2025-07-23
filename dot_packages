@@ -144,9 +144,7 @@ xdg-desktop-portal-gtk
 xdg-desktop-portal-wlr
 xdg-user-dirs
 xdg-utils
-xorg-server
 xorg-xeyes
-xorg-xinit
 xorg-xwayland
 ydotool
 zathura
