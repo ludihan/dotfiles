@@ -4,6 +4,7 @@ bacon
 base
 base-devel
 bash-completion
+bat
 batsignal
 blender
 brightnessctl
