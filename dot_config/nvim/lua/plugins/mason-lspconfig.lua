@@ -9,7 +9,7 @@ return {
             "html",
             "lua_ls",
             "pylsp",
-            -- "rust_analyzer",
+            "rust_analyzer",
             -- "bacon-ls",
             "taplo",
             "templ",
@@ -19,8 +19,6 @@ return {
             "dockerls",
             "docker_compose_language_service",
             --"clangd",
-            "ruff",
-            "pyright",
             "yamlls", },
     },
     dependencies = {
