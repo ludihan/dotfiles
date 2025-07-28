@@ -14,8 +14,8 @@ vim.api.nvim_create_autocmd('LspAttach', {
             vim.lsp.completion.enable(true, client.id, args.buf, { autotrigger = true })
         end
         if client:supports_method('textDocument/formatting') then
-            vim.keymap.set("n", "<F3>", "<cmd>lua vim.lsp.buf.format({async = true})<cr>",
-                { desc = "format buffer using lsp" }
+            vim.keymap.set("n", "<F3>", 
+                "<cmd>lua vim.lsp.buf.format({async = true})<cr>"
             )
         end
     end,
