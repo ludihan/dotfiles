@@ -19,7 +19,8 @@ return {
             "dockerls",
             "docker_compose_language_service",
             --"clangd",
-            "yamlls", },
+            "yamlls",
+        },
     },
     dependencies = {
         { "mason-org/mason.nvim", opts = {} },

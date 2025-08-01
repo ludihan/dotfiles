@@ -3,5 +3,6 @@ return {
     opts = {},
     keys = {
         { "-", "<CMD>Oil<CR>" }
-    }
+    },
+    lazy = false,
 }
