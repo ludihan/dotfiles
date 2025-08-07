@@ -4,4 +4,6 @@ tmux new-session -d -s "dev"
 
 tmux new-session -d -s "daemon"
 
+tmux new-session -d -s "aconitum"
+
 tmux attach-session -t "dev"
