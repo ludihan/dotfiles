@@ -243,7 +243,6 @@ set $gnome-schema org.gnome.desktop.interface
 exec_always {
     gsettings set $gnome-schema gtk-theme 'Adwaita-dark'
     gsettings set $gnome-schema icon-theme 'Obsidian-Sand'
-    gsettings set org.gnome.desktop.interface gtk-enable-primary-paste false
 #gsettings set $gnome-schema cursor-theme 'Adwaita'
 }
 
