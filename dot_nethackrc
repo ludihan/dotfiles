@@ -1,1 +1,9 @@
+OPTIONS=guicolor
+OPTIONS=color
+OPTIONS=menucolors
 OPTIONS=windowtype:curses
+OPTIONS=align_status:left
+OPTIONS=align_message:top
+OPTIONS=popup_dialog
+OPTIONS=hitpointbar
+OPTIONS=perm_invent
