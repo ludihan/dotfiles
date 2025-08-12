@@ -8,9 +8,11 @@ bat
 batsignal
 blender
 brightnessctl
+cataclysm-dda
 chezmoi
 cmus
 cowsay
+crawl-ncurses
 discord
 dkms
 docker
@@ -30,12 +32,12 @@ ffmpegthumbnailer
 firefox
 foot
 foot-terminfo
+fzf
 git
 git-lfs
 github-cli
 gnome-themes-extra
 go
-godot
 goxel
 grim
 gst-plugin-pipewire
@@ -51,6 +53,7 @@ iwd
 j4-dmenu-desktop
 jo
 jq
+julia
 krita
 lf
 libpulse
@@ -63,7 +66,7 @@ love
 lsix
 luanti
 luanti-server
-ly
+luarocks
 mako
 man-db
 man-pages
@@ -94,6 +97,7 @@ pipewire
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
+postgresql
 prismlauncher
 pv
 qaseprite
