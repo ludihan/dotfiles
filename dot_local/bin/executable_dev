@@ -1,9 +1,9 @@
 #!/bin/sh
 
-tmux new-session -d -s "dev"
+tmux new-session -d -s "dev1"
 
 tmux new-session -d -s "daemon"
 
-tmux new-session -d -s "aconitum"
+tmux new-session -d -s "dev2"
 
-tmux attach-session -t "dev"
+tmux attach-session -t "dev1"

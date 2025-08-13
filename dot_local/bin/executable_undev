@@ -1,7 +1,7 @@
 #!/bin/sh
 
-tmux kill-session -t "dev"
+tmux kill-session -t "dev1"
 
 tmux kill-session -t "daemon"
 
-tmux kill-session -t "aconitum"
+tmux kill-session -t "dev2"
