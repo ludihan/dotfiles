@@ -226,6 +226,7 @@ for_window [app_id="[.]*"] border pixel 4px
 
 # Enable floating for specific windows
 for_window [app_id="floating"] floating enable
+for_window [class="REAPER" instance="REAPER"] floating enable
 
 # Windows title
 # title_align center
