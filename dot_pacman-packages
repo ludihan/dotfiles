@@ -29,8 +29,10 @@ fd
 ffmpeg4.4
 ffmpegthumbnailer
 firefox
+fluidsynth
 foot
 foot-terminfo
+freepats-general-midi
 furnace
 fzf
 git
@@ -60,6 +62,7 @@ linux
 linux-firmware
 linux-headers
 lld
+lmms
 love
 lsix
 luanti-server
@@ -93,6 +96,7 @@ pipewire
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
+polyphone
 postgresql
 pv
 qaseprite
@@ -102,6 +106,7 @@ rustup
 scanmem
 slurp
 smartmontools
+soundfont-fluid
 speedtest-cli
 spotify-launcher
 steam
