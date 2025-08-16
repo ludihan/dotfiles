@@ -6,7 +6,6 @@ base-devel
 bash-completion
 bat
 batsignal
-blender
 brightnessctl
 cataclysm-dda
 chezmoi
@@ -32,13 +31,13 @@ ffmpegthumbnailer
 firefox
 foot
 foot-terminfo
+furnace
 fzf
 git
 git-lfs
 github-cli
 gnome-themes-extra
 go
-goxel
 grim
 gst-plugin-pipewire
 gvfs
@@ -53,7 +52,6 @@ iwd
 j4-dmenu-desktop
 jo
 jq
-julia
 krita
 lf
 libpulse
@@ -64,7 +62,6 @@ linux-headers
 lld
 love
 lsix
-luanti
 luanti-server
 luarocks
 mako
@@ -76,7 +73,6 @@ micro
 mpv
 mupdf
 mupdf-tools
-musescore
 nano
 ncdu
 neovim
@@ -98,7 +94,6 @@ pipewire-alsa
 pipewire-jack
 pipewire-pulse
 postgresql
-prismlauncher
 pv
 qaseprite
 reflector
@@ -161,4 +156,3 @@ zathura
 zathura-pdf-mupdf
 zip
 zram-generator
-zsnes
