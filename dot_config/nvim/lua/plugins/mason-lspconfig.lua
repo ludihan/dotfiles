@@ -11,22 +11,17 @@ return {
             "rust_analyzer",
             "taplo",
             "templ",
-            -- "ts_ls",
-            "vtsls",
+            "ts_ls",
+            -- "vtsls",
             "bashls",
             "jsonls",
             "dockerls",
             "docker_compose_language_service",
             "yamlls",
         },
-        automatic_enable = {
-            exclude = {
-                "ts_ls"
-            }
-        }
     },
     dependencies = {
-        { "mason-org/mason.nvim", opts = {} },
-        "neovim/nvim-lspconfig",
+        { "mason-org/mason.nvim",  opts = {} },
+        { "neovim/nvim-lspconfig", commit = "85379d0" },
     },
 }
