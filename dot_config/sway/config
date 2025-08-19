@@ -16,7 +16,7 @@ set $playerctl playerctl -p spotify
 
 # Output configuration
 # output * bg #111111 solid_color
-output * bg  ~/Pictures/wallpaper.jpg fit #111111
+output * bg  ~/Pictures/wallpaper fit #111111
 
 # Idle configuration
 # exec swayidle -w \

@@ -6,12 +6,11 @@ base-devel
 bash-completion
 bat
 batsignal
+blender
 brightnessctl
-cataclysm-dda
 chezmoi
 cmus
 cowsay
-crawl-ncurses
 discord
 dkms
 docker
@@ -33,13 +32,13 @@ fluidsynth
 foot
 foot-terminfo
 freepats-general-midi
-furnace
 fzf
 git
 git-lfs
 github-cli
 gnome-themes-extra
 go
+godot
 grim
 gst-plugin-pipewire
 gvfs
@@ -65,7 +64,6 @@ lld
 lmms
 love
 lsix
-luanti-server
 luarocks
 mako
 man-db
@@ -79,7 +77,6 @@ mupdf-tools
 nano
 ncdu
 neovim
-nethack
 network-manager-applet
 networkmanager
 nmap
@@ -109,7 +106,6 @@ smartmontools
 soundfont-fluid
 speedtest-cli
 spotify-launcher
-steam
 sway
 sway-contrib
 swaybg
@@ -131,7 +127,6 @@ ttf-nerd-fonts-symbols
 ttf-nerd-fonts-symbols-mono
 tumbler
 typst
-umu-launcher
 unrar
 unzip
 valgrind
@@ -158,6 +153,9 @@ xdg-utils
 xorg-xeyes
 xorg-xwayland
 zathura
+zathura-cb
+zathura-djvu
 zathura-pdf-mupdf
+zathura-ps
 zip
 zram-generator
