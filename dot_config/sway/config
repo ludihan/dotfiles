@@ -16,7 +16,7 @@ set $playerctl playerctl -p spotify
 
 # Output configuration
 # output * bg #111111 solid_color
-output * bg  ~/Pictures/wallpaper fit #111111
+output * bg  ~/Pictures/bg fit #222222
 
 # Idle configuration
 # exec swayidle -w \
@@ -229,6 +229,7 @@ for_window [app_id="[.]*"] border pixel 4px
 for_window [app_id="floating"] floating enable
 for_window [class="REAPER" instance="REAPER"] floating enable
 for_window [class="Godot" instance="Godot"] floating enable
+#for_window [app_id="blender"] floating enable
 
 # Windows title
 # title_align center
