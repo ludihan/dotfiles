@@ -56,6 +56,7 @@ jq
 krita
 lf
 libpulse
+libreoffice-fresh
 libva-nvidia-driver
 linux
 linux-firmware
@@ -64,7 +65,6 @@ lld
 lmms
 love
 lsix
-luarocks
 mako
 man-db
 man-pages
@@ -88,6 +88,7 @@ npm
 nvidia-dkms
 obsidian-icon-theme
 pacman-contrib
+parallel
 pavucontrol
 pipewire
 pipewire-alsa
@@ -106,12 +107,14 @@ smartmontools
 soundfont-fluid
 speedtest-cli
 spotify-launcher
+steam
 sway
 sway-contrib
 swaybg
 swayidle
 swaylock
 tealdeer
+tenacity
 terminus-font
 thunar
 thunar-archive-plugin
@@ -122,11 +125,15 @@ tiny
 tmux
 transmission-gtk
 tree
-ttf-hack
+ttc-iosevka
 ttf-nerd-fonts-symbols
+ttf-nerd-fonts-symbols-common
 ttf-nerd-fonts-symbols-mono
 tumbler
+typescript
+typescript-language-server
 typst
+umu-launcher
 unrar
 unzip
 valgrind
