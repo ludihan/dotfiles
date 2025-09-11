@@ -1,5 +1,5 @@
 # Font
-font pango: Terminus 12
+font pango: Terminus 10
 
 # Variables
 set $mod   Mod4
