@@ -7,7 +7,7 @@
 }
 
 window#waybar {
-    background-color: #282828;
+    background-color: #1A1A1A;
     color: #ffffff;
     opacity: 1;
 }
@@ -20,7 +20,8 @@ window#waybar {
 }
 
 #workspaces button.focused {
-    background-color: #666666;
+    background-color: #555555;
+    color: #ffffff;
 }
 
 #workspaces button.urgent {
