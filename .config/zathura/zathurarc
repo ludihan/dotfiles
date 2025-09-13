@@ -1,0 +1,6 @@
+set font "Terminus 12"
+set selection-clipboard clipboard
+map <C--> zoom out
+map = zoom in
+map <Left> navigate previous
+map <Right> navigate next

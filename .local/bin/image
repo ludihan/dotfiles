@@ -1,0 +1,5 @@
+#!/bin/bash
+
+set -euo pipefail
+
+wl-paste > "$1.png"

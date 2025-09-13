@@ -1,0 +1,7 @@
+#!/bin/sh
+
+tmux new-session -d -s "dev1"
+tmux new-session -d -s "dev2"
+tmux new-session -d -s "daemon"
+
+tmux attach-session -t "dev1"

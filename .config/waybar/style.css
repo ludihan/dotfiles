@@ -1,0 +1,43 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: Terminus;
+    font-size: 14px;
+    border-radius: 0px;
+    min-height: 0px;
+}
+
+window#waybar {
+    background-color: #282828;
+    color: #ffffff;
+    opacity: 1;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+}
+
+#workspaces button.focused {
+    background-color: #666666;
+}
+
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+}
+
+button:hover {
+    box-shadow: none;
+    /* Remove predefined box-shadow */
+    text-shadow: none;
+    /* Remove predefined text-shadow */
+    background: none;
+    /* Remove predefined background color (white) */
+    transition: none;
+    /* Disable predefined animations */
+}
+
+#mode {
+    background-color: #64727D;
+}

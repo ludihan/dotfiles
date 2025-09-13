@@ -1,0 +1,63 @@
+{
+    "spacing": 10,
+    "modules-left": [
+        "sway/workspaces",
+        "sway/mode",
+        "sway/scratchpad"
+        // "sway/window"
+    ],
+    "modules-right": [
+        "tray",
+        "pulseaudio",
+        "network",
+        "cpu",
+        "memory",
+        "temperature",
+        "backlight",
+        "battery",
+        "clock"
+    ],
+    "sway/scratchpad": {
+        "format": "|{count}|"
+    },
+    "clock": {
+        "format": "[{:%F %H:%M}]",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    "cpu": {
+        "format": "[CPU:{usage}%]"
+    },
+    "memory": {
+        "format": "[MEM:{percentage}%]"
+    },
+    "temperature": {
+        "critical-threshold": 80,
+        "format-critical": "[!!{temperatureC}°C!!]",
+        "format": "[{temperatureC}°C]"
+    },
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "[BAT:{capacity}%]"
+    },
+    "pulseaudio": {
+        "format": "[VOL:{volume}% MIC:{format_source}]",
+        "format-muted": "[VOL:{volume}%(MUTE) MIC:{format_source}]",
+        "format-source": "{volume}%",
+        "format-source-muted": "{volume}%(MIC MUTE)"
+        // "on-click": "pavucontrol"
+    },
+    "network": {
+        "format-wifi": "[NET:{signalStrength}%]",
+        "format-ethernet": "[NET:{ifname}]",
+        "format-linked": "[NET:No IP]",
+        "format-disconnected": "[NET:Disconnected]"
+        // "tooltip": false
+    },
+    "backlight": {
+        "format": "[BKL: {percent}%]"
+    }
+}

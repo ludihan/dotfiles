@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -euo pipefail
+
+pacman -Qqne > ~/.pacman-packages
+pacman -Qqme > ~/.pacman-packages-aur
