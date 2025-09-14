@@ -56,7 +56,6 @@ kdenlive
 krita
 lf
 libpulse
-libreoffice-fresh
 libva-nvidia-driver
 linux
 linux-firmware
@@ -137,6 +136,7 @@ unrar
 unzip
 valgrind
 vim
+visidata
 vkmark
 vulkan-intel
 vulkan-tools
