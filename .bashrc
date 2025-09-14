@@ -7,7 +7,6 @@
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-
 PS1='\[\e[92m\][\u@\h \W]\$\[\e[0m\] '
 
 # editor
