@@ -7,7 +7,7 @@ set $left  h
 set $down  j
 set $up    k
 set $right l
-set $term foot
+set $term  foot
 # set $launcher rofi -font 'Terminus 14' -show-icons
 set $launcher j4-dmenu-desktop --no-generic -I -f -t $term -x \
     -d 'wmenu -f "Terminus 12" -l 20 -i -N 222222 -S 666666'
@@ -78,13 +78,13 @@ bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -2%
 bindsym $mod+comma           exec pactl set-sink-volume @DEFAULT_SINK@ -2%
 
 bindsym XF86AudioMute        exec pactl set-sink-mute @DEFAULT_SINK@ toggle
-bindsym $mod+bracketleft           exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym $mod+bracketleft     exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 bindsym XF86AudioMicMute     exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
-bindsym $mod+bracketright            exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+bindsym $mod+bracketright    exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
 # Sreen brightness
-bindsym XF86MonBrightnessUp exec  brightnessctl s +2%
+bindsym XF86MonBrightnessUp   exec  brightnessctl s +2%
 bindsym XF86MonBrightnessDown exec  brightnessctl s 2%-
 
 # Media player controls
@@ -92,34 +92,34 @@ bindsym XF86AudioPlay exec $playerctl play-pause
 bindsym XF86AudioNext exec $playerctl next
 bindsym XF86AudioPrev exec $playerctl previous
 bindsym XF86AudioStop exec $playerctl stop
-bindsym $mod+colon exec $playerctl play-pause
-bindsym $mod+greater exec $playerctl next
-bindsym $mod+less exec $playerctl previous
+bindsym $mod+colon    exec $playerctl play-pause
+bindsym $mod+greater  exec $playerctl next
+bindsym $mod+less     exec $playerctl previous
 
 # Focusing on things:
-bindsym $mod+$left focus left
-bindsym $mod+$down focus down
-bindsym $mod+$up focus up
+bindsym $mod+$left  focus left
+bindsym $mod+$down  focus down
+bindsym $mod+$up    focus up
 bindsym $mod+$right focus right
 
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
+bindsym $mod+Left  focus left
+bindsym $mod+Down  focus down
+bindsym $mod+Up    focus up
 bindsym $mod+Right focus right
 
 # Alt tab
-bindsym Mod1+Tab focus right
+bindsym Mod1+Tab       focus right
 bindsym Mod1+Shift+Tab focus left
 
 # Moving things
-bindsym $mod+Shift+$left move left
-bindsym $mod+Shift+$down move down
-bindsym $mod+Shift+$up move up
+bindsym $mod+Shift+$left  move left
+bindsym $mod+Shift+$down  move down
+bindsym $mod+Shift+$up    move up
 bindsym $mod+Shift+$right move right
 
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Left  move left
+bindsym $mod+Shift+Down  move down
+bindsym $mod+Shift+Up    move up
 bindsym $mod+Shift+Right move right
 
 # Workspaces:
@@ -217,8 +217,8 @@ bar {
         }
 }
 
-client.focused                    #333333 #756D59 #FFFFFF #EBDBB2 #756D59
-client.focused_inactive           #111111 #554D39 #FFFFFF #CBBB92 #554D39
+client.focused           #333333 #756D59 #FFFFFF #EBDBB2 #756D59
+client.focused_inactive  #111111 #554D39 #FFFFFF #CBBB92 #554D39
 
 # Borders
 default_border pixel 4px
