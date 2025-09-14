@@ -35,6 +35,7 @@ fzf
 git
 git-lfs
 github-cli
+glow
 gnome-themes-extra
 go
 godot
@@ -52,6 +53,7 @@ iwd
 j4-dmenu-desktop
 jo
 jq
+julia
 kdenlive
 krita
 lf

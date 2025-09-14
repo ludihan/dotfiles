@@ -2,5 +2,5 @@
 
 set -euo pipefail
 
-pacman -Qqne > ~/.pacman-packages
-pacman -Qqme > ~/.pacman-packages-aur
+pacman -Qqne > ~/.local/share/.pacman-packages
+pacman -Qqme > ~/.local/share/.pacman-packages-aur

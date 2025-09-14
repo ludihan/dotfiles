@@ -2,4 +2,4 @@
 
 set -euo pipefail
 
-sudo pacman -Syu - < ~/.pacman-packages
+sudo pacman -Syu - < ~/.local/share/.pacman-packages
