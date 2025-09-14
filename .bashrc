@@ -10,6 +10,7 @@ alias grep='grep --color=auto'
 
 PS1='\[\e[92m\][\u@\h \W]\$\[\e[0m\] '
 
+# editor
 export EDITOR='nvim'
 export VISUAL='nvim'
 
@@ -30,6 +31,7 @@ export NPM_CONFIG_CACHE="$XDG_CACHE_HOME"/npm
 export NPM_CONFIG_TMP="$XDG_RUNTIME_DIR"/npm
 export CARGO_HOME="$XDG_DATA_HOME"/cargo
 export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
+export JULIA_DEPOT_PATH="$XDG_DATA_HOME/julia:$JULIA_DEPOT_PATH"
 
 # path
 export PATH="$PATH:$HOME/.local/bin"
