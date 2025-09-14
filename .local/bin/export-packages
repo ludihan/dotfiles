@@ -2,5 +2,6 @@
 
 set -euo pipefail
 
+mkdir -p ~/.local/share
 pacman -Qqne > ~/.local/share/pacman-packages
 pacman -Qqme > ~/.local/share/pacman-packages-aur
