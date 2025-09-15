@@ -66,6 +66,7 @@ lld
 lmms
 love
 lsix
+lsof
 mako
 man-db
 man-pages
@@ -108,8 +109,8 @@ smartmontools
 soundfont-fluid
 speedtest-cli
 spotify-launcher
-steam
 stow
+strace
 sway
 sway-contrib
 swaybg
@@ -133,7 +134,6 @@ ttf-nerd-fonts-symbols-common
 ttf-nerd-fonts-symbols-mono
 tumbler
 typst
-umu-launcher
 unrar
 unzip
 valgrind
