@@ -36,6 +36,7 @@ export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
 export JULIA_DEPOT_PATH="$XDG_DATA_HOME/julia:$JULIA_DEPOT_PATH"
 export JULIAUP_DEPOT_PATH="$XDG_DATA_HOME/julia"
 export NODE_REPL_HISTORY="$XDG_STATE_HOME"/node_repl_history
+export DOCKER_CONFIG="$XDG_CONFIG_HOME"/docker
 
 # path
 export PATH="$PATH:$HOME/.local/bin"
