@@ -21,7 +21,7 @@ return {
         },
     },
     dependencies = {
-        { "mason-org/mason.nvim",  opts = {} },
-        { "neovim/nvim-lspconfig", commit = "85379d0" },
+        { "mason-org/mason.nvim", opts = {} },
+        { "neovim/nvim-lspconfig" },
     },
 }
