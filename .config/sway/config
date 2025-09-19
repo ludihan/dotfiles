@@ -83,6 +83,10 @@ bindsym $mod+bracketleft     exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 bindsym XF86AudioMicMute     exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 bindsym $mod+bracketright    exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
+bindsym $mod+XF86AudioMute        exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+bindsym $mod+XF86AudioRaiseVolume exec pactl set-source-volume @DEFAULT_SOURCE@ +2%
+bindsym $mod+XF86AudioLowerVolume exec pactl set-source-volume @DEFAULT_SOURCE@ -2%
+
 # Sreen brightness
 bindsym XF86MonBrightnessUp   exec  brightnessctl s +2%
 bindsym XF86MonBrightnessDown exec  brightnessctl s 2%-
