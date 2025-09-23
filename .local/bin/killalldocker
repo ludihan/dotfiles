@@ -1,6 +1,6 @@
 #!/bin/sh
 
-docker stop $(docker ps -aq) && \
-docker rm $(docker ps -aq) && \
-docker rmi $(docker image ls -aq) && \
+docker stop $(docker ps -aq)
+docker rm $(docker ps -aq)
+docker rmi $(docker image ls -aq)
 docker system prune
