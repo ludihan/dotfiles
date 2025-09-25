@@ -13,6 +13,7 @@ cowsay
 discord
 dkms
 docker
+docker-buildx
 docker-compose
 editorconfig-checker
 efibootmgr
@@ -43,6 +44,7 @@ grim
 gst-plugin-pipewire
 gvfs
 gvfs-mtp
+hdparm
 htop
 hyprpicker
 i3status
