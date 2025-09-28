@@ -9,7 +9,7 @@ return {
             "lua_ls",
             "pylsp",
             "rust_analyzer",
-            --"taplo",
+            "taplo",
             "templ",
             -- "ts_ls",
             "vtsls",
