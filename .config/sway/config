@@ -222,7 +222,7 @@ bar {
 }
 
 client.focused           #333333 #756D59 #FFFFFF #EBDBB2 #756D59
-client.focused_inactive  #111111 #554D39 #FFFFFF #CBBB92 #554D39
+client.focused_inactive  #111111 #534B37 #FFFFFF #C9B990 #534B37
 
 # Borders
 default_border pixel 4px
