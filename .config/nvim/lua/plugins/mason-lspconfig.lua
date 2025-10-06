@@ -13,6 +13,7 @@ return {
             "templ",
             -- "ts_ls",
             "vtsls",
+            "vue_ls",
             "bashls",
             "jsonls",
             "dockerls",

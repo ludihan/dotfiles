@@ -5,6 +5,8 @@ return {
         require("nvim-treesitter.configs").setup({
             auto_install = true,
 
+            ignore_install = { "jsonc" },
+
             highlight = {
                 enable = true,
             },
