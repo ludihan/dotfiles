@@ -76,6 +76,7 @@ man-pages
 mednafen
 mesa-utils
 micro
+mingw-w64-gcc
 mpv
 mupdf
 mupdf-tools
@@ -112,6 +113,7 @@ smartmontools
 soundfont-fluid
 speedtest-cli
 spotify-launcher
+steam
 stow
 strace
 sway
@@ -139,6 +141,7 @@ tumbler
 typst
 unrar
 unzip
+uv
 valgrind
 vim
 visidata
