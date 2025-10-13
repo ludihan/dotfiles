@@ -8,8 +8,10 @@ bat
 batsignal
 blender
 brightnessctl
+cardinal-clap
 cmus
 cowsay
+dexed-clap
 discord
 dkms
 docker
@@ -28,11 +30,11 @@ fd
 ffmpeg4.4
 ffmpegthumbnailer
 firefox
-fluidsynth
 foot
 foot-terminfo
 freepats-general-midi
 fzf
+ghc
 git
 git-lfs
 github-cli
@@ -44,6 +46,7 @@ grim
 gst-plugin-pipewire
 gvfs
 gvfs-mtp
+haskell-language-server
 hdparm
 htop
 hyprpicker
@@ -53,6 +56,7 @@ intel-ucode
 inxi
 iwd
 j4-dmenu-desktop
+jc303-clap
 jo
 jq
 julia
@@ -61,12 +65,12 @@ krita
 ldoc
 lf
 libpulse
+libresprite
 libva-nvidia-driver
 linux
 linux-firmware
 linux-headers
 lld
-lmms
 love
 lsix
 lsof
@@ -93,6 +97,7 @@ noto-fonts-extra
 npm
 nvidia-dkms
 obsidian-icon-theme
+ot-cryptid-clap
 pacman-contrib
 parallel
 pavucontrol
@@ -100,12 +105,13 @@ pipewire
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
-polyphone
 postgresql
 pv
 qaseprite
+reaper
 reflector
 ripgrep
+rsync
 rustup
 scanmem
 slurp
@@ -113,7 +119,6 @@ smartmontools
 soundfont-fluid
 speedtest-cli
 spotify-launcher
-steam
 stow
 strace
 sway
@@ -122,7 +127,6 @@ swaybg
 swayidle
 swaylock
 tealdeer
-tenacity
 terminus-font
 thunar
 thunar-archive-plugin
