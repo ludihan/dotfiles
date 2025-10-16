@@ -1,0 +1,18 @@
+#!/usr/bin/python
+
+from sys import argv
+argv = argv[1:]
+
+for (i, arg) in enumerate(argv):
+    print(f"{i}: {arg}")
+    r = int(arg[0:2], 16)
+    g = int(arg[2:4], 16)
+    b = int(arg[4:6], 16)
+
+    print(r, g, b)
+    print(
+        round(r/255, 2),
+        round(g/255, 2),
+        round(b/255, 2),
+        "\n",
+    )
