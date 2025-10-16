@@ -138,6 +138,20 @@ bindsym $mod+8 workspace number 8
 bindsym $mod+9 workspace number 9
 bindsym $mod+0 workspace number 10
 
+# FLoating Workspaces
+bindsym $mod+Ctrl+1 workspace floating:1
+bindsym $mod+Ctrl+2 workspace floating:2
+bindsym $mod+Ctrl+3 workspace floating:3
+bindsym $mod+Ctrl+4 workspace floating:4
+bindsym $mod+Ctrl+5 workspace floating:5
+bindsym $mod+Ctrl+6 workspace floating:6
+bindsym $mod+Ctrl+7 workspace floating:7
+bindsym $mod+Ctrl+8 workspace floating:8
+bindsym $mod+Ctrl+9 workspace floating:9
+bindsym $mod+Ctrl+0 workspace floatin:10
+
+for_window [workspace=".*floating"] floating enable
+
 # Move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number 1
 bindsym $mod+Shift+2 move container to workspace number 2
@@ -150,6 +164,17 @@ bindsym $mod+Shift+8 move container to workspace number 8
 bindsym $mod+Shift+9 move container to workspace number 9
 bindsym $mod+Shift+0 move container to workspace number 10
 
+bindsym $mod+Shift+Ctrl+1 move container to workspace floating:1
+bindsym $mod+Shift+Ctrl+2 move container to workspace floating:2
+bindsym $mod+Shift+Ctrl+3 move container to workspace floating:3
+bindsym $mod+Shift+Ctrl+4 move container to workspace floating:4
+bindsym $mod+Shift+Ctrl+5 move container to workspace floating:5
+bindsym $mod+Shift+Ctrl+6 move container to workspace floating:6
+bindsym $mod+Shift+Ctrl+7 move container to workspace floating:7
+bindsym $mod+Shift+Ctrl+8 move container to workspace floating:8
+bindsym $mod+Shift+Ctrl+9 move container to workspace floating:9
+bindsym $mod+Shift+Ctrl+0 move container to workspace floatin:10
+
 # Layout stuff:
 bindsym $mod+o splith
 bindsym $mod+i splitv
@@ -161,6 +186,11 @@ bindsym $mod+e layout toggle split
 bindsym $mod+f fullscreen
 
 bindsym $mod+Shift+Space floating toggle
+
+# Bindings
+bindsym $mod+Ctrl+Space [workspace=__focused__] floating enable
+bindsym $mod+Alt+Space  [workspace=__focused__] floating disable
+
 bindsym $mod+Shift+s sticky toggle
 
 bindsym $mod+Space focus mode_toggle
@@ -227,13 +257,10 @@ client.focused_inactive  #111111 #534B37 #FFFFFF #C9B990 #534B37
 # Borders
 default_border pixel 4px
 default_floating_border pixel 4px
-for_window [app_id="[.]*"] border pixel 4px
+for_window [app_id=".*"] border pixel 4px
 
 # Enable floating for specific windows
 for_window [app_id="floating"] floating enable
-for_window [class="REAPER" instance="REAPER"] floating enable
-for_window [class="Godot" instance="Godot"] floating enable
-#for_window [app_id="blender"] floating enable
 
 # Windows title
 # title_align center
