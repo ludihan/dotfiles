@@ -2,7 +2,7 @@
 	name = ludihan
 	email = 65617704+ludihan@users.noreply.github.com
 [init]
-	defaultBranch = master
+	defaultBranch = main
 [pull]
 	rebase = true
 [credential "https://github.com"]
