@@ -139,16 +139,16 @@ bindsym $mod+9 workspace number 9
 bindsym $mod+0 workspace number 10
 
 # FLoating Workspaces
-bindsym $mod+Ctrl+1 workspace floating:1
-bindsym $mod+Ctrl+2 workspace floating:2
-bindsym $mod+Ctrl+3 workspace floating:3
-bindsym $mod+Ctrl+4 workspace floating:4
-bindsym $mod+Ctrl+5 workspace floating:5
-bindsym $mod+Ctrl+6 workspace floating:6
-bindsym $mod+Ctrl+7 workspace floating:7
-bindsym $mod+Ctrl+8 workspace floating:8
-bindsym $mod+Ctrl+9 workspace floating:9
-bindsym $mod+Ctrl+0 workspace floatin:10
+bindsym $mod+Ctrl+1 workspace 1f
+bindsym $mod+Ctrl+2 workspace 2f
+bindsym $mod+Ctrl+3 workspace 3f
+bindsym $mod+Ctrl+4 workspace 4f
+bindsym $mod+Ctrl+5 workspace 5f
+bindsym $mod+Ctrl+6 workspace 6f
+bindsym $mod+Ctrl+7 workspace 7f
+bindsym $mod+Ctrl+8 workspace 8f
+bindsym $mod+Ctrl+9 workspace 9f
+bindsym $mod+Ctrl+0 workspace 10f
 
 for_window [workspace=".*floating"] floating enable
 
@@ -164,16 +164,16 @@ bindsym $mod+Shift+8 move container to workspace number 8
 bindsym $mod+Shift+9 move container to workspace number 9
 bindsym $mod+Shift+0 move container to workspace number 10
 
-bindsym $mod+Shift+Ctrl+1 move container to workspace floating:1
-bindsym $mod+Shift+Ctrl+2 move container to workspace floating:2
-bindsym $mod+Shift+Ctrl+3 move container to workspace floating:3
-bindsym $mod+Shift+Ctrl+4 move container to workspace floating:4
-bindsym $mod+Shift+Ctrl+5 move container to workspace floating:5
-bindsym $mod+Shift+Ctrl+6 move container to workspace floating:6
-bindsym $mod+Shift+Ctrl+7 move container to workspace floating:7
-bindsym $mod+Shift+Ctrl+8 move container to workspace floating:8
-bindsym $mod+Shift+Ctrl+9 move container to workspace floating:9
-bindsym $mod+Shift+Ctrl+0 move container to workspace floatin:10
+bindsym $mod+Shift+Ctrl+1 move container to workspace 1f
+bindsym $mod+Shift+Ctrl+2 move container to workspace 2f
+bindsym $mod+Shift+Ctrl+3 move container to workspace 3f
+bindsym $mod+Shift+Ctrl+4 move container to workspace 4f
+bindsym $mod+Shift+Ctrl+5 move container to workspace 5f
+bindsym $mod+Shift+Ctrl+6 move container to workspace 6f
+bindsym $mod+Shift+Ctrl+7 move container to workspace 7f
+bindsym $mod+Shift+Ctrl+8 move container to workspace 8f
+bindsym $mod+Shift+Ctrl+9 move container to workspace 9f
+bindsym $mod+Shift+Ctrl+0 move container to workspace 10f
 
 # Layout stuff:
 bindsym $mod+o splith
