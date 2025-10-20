@@ -115,8 +115,6 @@ bindsym $mod+Right focus right
 bindsym Mod1+Tab  focus next
 bindsym Shift+Tab focus prev
 
-focus_wrapping smart
-
 # Moving things
 bindsym $mod+Shift+$left  move left
 bindsym $mod+Shift+$down  move down
