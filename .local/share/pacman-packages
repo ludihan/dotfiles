@@ -98,6 +98,13 @@ npm
 nvidia-dkms
 obsidian-icon-theme
 ot-cryptid-clap
+ot-cryptid-vst3
+ot-keys-clap
+ot-keys-vst3
+ot-simian-clap
+ot-simian-vst3
+ot-urchin-clap
+ot-urchin-vst3
 pacman-contrib
 parallel
 pavucontrol
