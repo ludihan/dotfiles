@@ -1,0 +1,5 @@
+#!/usr/bin/sh
+
+dir=$HOME/.lv2
+
+mkdir -p $dir && mv $1 $dir
