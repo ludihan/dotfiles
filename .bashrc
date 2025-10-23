@@ -19,6 +19,12 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_STATE_HOME="$HOME/.local/state"
 export XDG_CACHE_HOME="$HOME/.cache"
 
+# create if not create already
+mkdir -p $XDG_DATA_HOME
+mkdir -p $XDG_CONFIG_HOME
+mkdir -p $XDG_STATE_HOME
+mkdir -p $XDG_CACHE_HOME
+
 # unclutter
 mkdir -p "$XDG_STATE_HOME"/bash
 export HISTFILE="$XDG_STATE_HOME"/bash/history
