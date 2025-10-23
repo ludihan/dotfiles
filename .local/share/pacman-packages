@@ -124,6 +124,7 @@ rustup
 scanmem
 slurp
 smartmontools
+sof-firmware
 soundfont-fluid
 speedtest-cli
 spotify-launcher
