@@ -8,10 +8,8 @@ bat
 batsignal
 blender
 brightnessctl
-cardinal-clap
 cmus
 cowsay
-dexed-clap
 discord
 dkms
 docker
@@ -57,7 +55,6 @@ intel-ucode
 inxi
 iwd
 j4-dmenu-desktop
-jc303-clap
 jo
 jq
 julia
@@ -98,14 +95,6 @@ noto-fonts-extra
 npm
 nvidia-dkms
 obsidian-icon-theme
-ot-cryptid-clap
-ot-cryptid-vst3
-ot-keys-clap
-ot-keys-vst3
-ot-simian-clap
-ot-simian-vst3
-ot-urchin-clap
-ot-urchin-vst3
 pacman-contrib
 parallel
 pavucontrol
@@ -113,10 +102,11 @@ pipewire
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
+polyphone
 postgresql
 pv
 qaseprite
-reaper
+qpwgraph
 reflector
 ripgrep
 rsync
@@ -152,6 +142,7 @@ ttf-nerd-fonts-symbols-common
 ttf-nerd-fonts-symbols-mono
 tumbler
 typst
+umu-launcher
 unrar
 unzip
 uv
