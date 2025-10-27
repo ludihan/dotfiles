@@ -1,6 +1,6 @@
 local util = require 'lspconfig.util'
 -- Julia
-vim.lsp.enable('julials')
+-- vim.lsp.enable('julials')
 
 -- Haskell
 vim.lsp.config('hls', {
