@@ -32,6 +32,7 @@ foot
 foot-terminfo
 freepats-general-midi
 fuse2
+fuzzel
 fzf
 ghc
 git
@@ -54,7 +55,6 @@ imv
 intel-ucode
 inxi
 iwd
-j4-dmenu-desktop
 jo
 jq
 kdenlive
@@ -71,6 +71,7 @@ lld
 love
 lsix
 lsof
+ly
 mako
 man-db
 man-pages
@@ -86,6 +87,7 @@ ncdu
 neovim
 network-manager-applet
 networkmanager
+niri
 nmap
 nodejs
 noto-fonts-cjk
@@ -119,8 +121,6 @@ speedtest-cli
 spotify-launcher
 stow
 strace
-sway
-sway-contrib
 swaybg
 swayidle
 swaylock
@@ -141,6 +141,7 @@ ttf-nerd-fonts-symbols-common
 ttf-nerd-fonts-symbols-mono
 tumbler
 typst
+udiskie
 unrar
 unzip
 uv
@@ -160,14 +161,14 @@ wireshark-qt
 wl-clipboard
 wl-mirror
 wlr-randr
-wmenu
 xarchiver
+xdg-desktop-portal-gnome
 xdg-desktop-portal-gtk
-xdg-desktop-portal-wlr
 xdg-user-dirs
 xdg-utils
 xorg-xeyes
 xorg-xwayland
+xwayland-satellite
 zathura
 zathura-cb
 zathura-djvu

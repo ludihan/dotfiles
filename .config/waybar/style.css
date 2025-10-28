@@ -3,7 +3,7 @@
     font-family: Terminus;
     font-size: 14px;
     border-radius: 0px;
-    min-height: 0px;
+    /* min-height: 0px; */
 }
 
 window#waybar {

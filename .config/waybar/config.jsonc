@@ -1,10 +1,10 @@
 {
     "spacing": 10,
     "modules-left": [
-        "sway/workspaces",
-        "sway/mode",
-        "sway/scratchpad"
-        // "sway/window"
+        "niri/workspaces",
+        "niri/mode",
+        "niri/scratchpad",
+        "niri/window"
     ],
     "modules-right": [
         "tray",
