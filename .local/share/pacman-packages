@@ -8,6 +8,7 @@ bat
 batsignal
 blender
 brightnessctl
+cmake
 cmus
 cowsay
 discord
@@ -77,6 +78,7 @@ man-db
 man-pages
 mednafen
 mesa-utils
+meson
 micro
 mingw-w64-gcc
 mpv
@@ -166,6 +168,7 @@ xdg-desktop-portal-gnome
 xdg-desktop-portal-gtk
 xdg-user-dirs
 xdg-utils
+xmake
 xorg-xeyes
 xorg-xwayland
 xwayland-satellite
