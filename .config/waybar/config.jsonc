@@ -2,8 +2,6 @@
     "spacing": 10,
     "modules-left": [
         "niri/workspaces",
-        "niri/mode",
-        "niri/scratchpad",
         "niri/window"
     ],
     "modules-right": [
