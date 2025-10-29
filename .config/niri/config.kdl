@@ -97,6 +97,28 @@ window-rule {
 }
 
 window-rule {
+    match is-window-cast-target=true
+
+    focus-ring {
+        active-color "#f38ba8"
+        inactive-color "#7d0d2d"
+    }
+
+    border {
+        inactive-color "#7d0d2d"
+    }
+
+    shadow {
+        color "#7d0d2d70"
+    }
+
+    tab-indicator {
+        active-color "#f38ba8"
+        inactive-color "#7d0d2d"
+    }
+}
+
+window-rule {
     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
     open-floating true
 }
@@ -137,10 +159,10 @@ binds {
     Mod+Shift+Return hotkey-overlay-title="Open a Floating Terminal: foot" {
         spawn "foot" "-a" "floating";
     }
-    Mod+P hotkey-overlay-title="Run launcher: fuzzel" {
+    Mod+D hotkey-overlay-title="Run launcher: fuzzel" {
         spawn "fuzzel";
     }
-    Mod+R hotkey-overlay-title="Open Web Browser: firefox" {
+    Mod+Shift+D hotkey-overlay-title="Open Web Browser: firefox" {
         spawn "firefox";
     }
     Mod+E hotkey-overlay-title="Open File Manager: thunar" {
@@ -149,13 +171,13 @@ binds {
     Mod+S hotkey-overlay-title="Run an Application: pavucontrol" {
         spawn "pavucontrol";
     }
-    Mod+D hotkey-overlay-title="Color Picker: hyprpicker" {
+    Mod+A hotkey-overlay-title="Color Picker: hyprpicker" {
         spawn "hyprpicker" "-a";
     }
-    Mod+A hotkey-overlay-title="Draw Box: slurp" {
+    Mod+Shift+A hotkey-overlay-title="Draw Box: slurp" {
         spawn "slurp" "-b" "#00000000" "-c" "#C9B990";
     }
-    Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" {
+    Mod+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" {
         spawn "swaylock";
     }
 
@@ -306,6 +328,7 @@ binds {
 
     Mod+F { maximize-column; }
     Mod+Shift+F { fullscreen-window; }
+    Mod+Ctrl+Shift+F { toggle-windowed-fullscreen; }
 
     Mod+Z { switch-preset-window-height; }
     Mod+X { switch-preset-column-width; }
@@ -329,8 +352,13 @@ binds {
     Ctrl+Print { screenshot-screen; }
     Alt+Print { screenshot-window; }
 
+    Mod+F1 { set-dynamic-cast-window; }
+    Mod+F2 { set-dynamic-cast-monitor; }
+    Mod+F3 { clear-dynamic-cast-target; }
+
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
     Mod+Shift+E { quit; }
     Ctrl+Alt+Delete { quit; }
     Mod+Shift+P { power-off-monitors; }
+    Mod+P repeat=false { spawn-sh "wl-mirror $(niri msg --json focused-output | jq -r .name)"; }
 }
