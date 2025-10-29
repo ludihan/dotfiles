@@ -320,11 +320,11 @@ binds {
 
     Mod+Tab { focus-workspace-previous; }
 
-    Mod+Comma  { consume-or-expel-window-left; }
-    Mod+Period { consume-or-expel-window-right; }
+    Mod+Comma  { consume-window-into-column; }
+    Mod+Period { expel-window-from-column; }
 
-    Mod+Shift+Comma  { consume-window-into-column; }
-    Mod+Shift+Period { expel-window-from-column; }
+    Mod+Shift+Comma  { consume-or-expel-window-left; }
+    Mod+Shift+Period { consume-or-expel-window-right; }
 
     Mod+F { maximize-column; }
     Mod+Shift+F { fullscreen-window; }
