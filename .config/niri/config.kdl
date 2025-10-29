@@ -10,6 +10,7 @@ spawn-at-startup \
 spawn-at-startup \
     "gsettings" "set" "org.gnome.desktop.interface" "gtk-theme" "Obsidian-Sand"
 spawn-sh-at-startup "swaybg -i ~/Pictures/bg"
+spawn-sh-at-startup "batsignal -b -w 30 -c 15 -d 5 -m 1 -I aefjlaksjd"
 
 output "HDMI-A-2" {
     mode "1920x1080@100.000"
