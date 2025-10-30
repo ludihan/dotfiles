@@ -168,10 +168,10 @@ binds {
     Mod+E hotkey-overlay-title="Open File Manager: thunar" {
         spawn "thunar";
     }
-    Mod+S hotkey-overlay-title="Run an Application: pavucontrol" {
+    Mod+Shift+S hotkey-overlay-title="Run an Application: pavucontrol" {
         spawn "pavucontrol";
     }
-    Mod+A hotkey-overlay-title="Color Picker: hyprpicker" {
+    Mod+Ctrl+A hotkey-overlay-title="Color Picker: hyprpicker" {
         spawn "hyprpicker" "-a";
     }
     Mod+Shift+A hotkey-overlay-title="Draw Box: slurp" {
@@ -223,8 +223,8 @@ binds {
     Mod+K     { focus-window-up; }
     Mod+L     { focus-column-right; }
 
-    Alt+Tab { focus-column-right; }
-    Alt+Grave { focus-column-left; }
+    Mod+A { focus-column-left; }
+    Mod+S { focus-column-right; }
 
     Mod+Shift+Left  { move-column-left; }
     Mod+Shift+Down  { move-window-down; }
