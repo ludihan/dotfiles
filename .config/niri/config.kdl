@@ -175,7 +175,7 @@ binds {
         spawn "hyprpicker" "-a";
     }
     Mod+Shift+A hotkey-overlay-title="Draw Box: slurp" {
-        spawn "slurp" "-b" "#00000000" "-c" "#C9B990";
+        spawn-sh "slurp -b#00000000 -c#C9B990 | grim -g - - | wl-copy";
     }
     Mod+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" {
         spawn "swaylock";
