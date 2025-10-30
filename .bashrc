@@ -45,6 +45,7 @@ export NODE_REPL_HISTORY="$XDG_STATE_HOME"/node_repl_history
 export DOCKER_CONFIG="$XDG_CONFIG_HOME"/docker
 export GHCUP_USE_XDG_DIRS=true
 export OPAMROOT="$XDG_DATA_HOME/opam"
+export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
 
 # path
 export PATH="$PATH:$HOME/.local/bin"
