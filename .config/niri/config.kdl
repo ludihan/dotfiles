@@ -8,7 +8,7 @@ spawn-at-startup "nm-applet"
 spawn-at-startup "gsettings" "set" "org.gnome.desktop.interface" "gtk-theme" "Adwaita-dark"
 spawn-at-startup "gsettings" "set" "org.gnome.desktop.interface" "icon-theme" "Obsidian-Sand"
 spawn-at-startup "gsettings" "set" "org.gnome.desktop.interface" "color-scheme" "prefer-dark"
-spawn-sh-at-startup "swaybg -i ~/Pictures/bg"
+spawn-sh-at-startup "swaybg -i ~/Pictures/bg -c 262626"
 spawn-sh-at-startup "batsignal -b -w 30 -c 15 -d 5 -m 1 -I aefjlaksjd"
 
 output "HDMI-A-2" {
