@@ -35,7 +35,6 @@ freepats-general-midi
 fuse2
 fuzzel
 fzf
-ghc
 git
 git-lfs
 github-cli
@@ -47,7 +46,6 @@ grim
 gst-plugin-pipewire
 gvfs
 gvfs-mtp
-haskell-language-server
 hdparm
 htop
 hyprpicker
@@ -97,6 +95,7 @@ noto-fonts-emoji
 noto-fonts-extra
 npm
 nvidia-dkms
+obs-studio
 obsidian-icon-theme
 pacman-contrib
 parallel
@@ -127,6 +126,8 @@ swaybg
 swayidle
 swaylock
 tealdeer
+tectonic
+tenacity
 terminus-font
 thunar
 thunar-archive-plugin
@@ -154,6 +155,7 @@ vkmark
 vulkan-intel
 vulkan-tools
 waybar
+webp-pixbuf-loader
 wev
 wf-recorder
 wget
