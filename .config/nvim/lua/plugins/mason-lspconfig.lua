@@ -18,6 +18,7 @@ return {
             "jsonls",
             "dockerls",
             "docker_compose_language_service",
+            "marksman",
             "yamlls",
         },
     },
