@@ -346,13 +346,13 @@ binds {
     Mod+Shift+Minus { set-window-height "-5%"; }
     Mod+Shift+Equal { set-window-height "+5%"; }
 
-    Mod+V       { toggle-window-floating; }
-    Mod+Space { switch-focus-between-floating-and-tiling; }
+    Mod+Shift+Space { toggle-window-floating; }
+    Mod+Space       { switch-focus-between-floating-and-tiling; }
 
     Mod+W { toggle-column-tabbed-display; }
 
-    Print { screenshot; }
-    Ctrl+Print { screenshot-screen; }
+    Print       { screenshot; }
+    Ctrl+Print  { screenshot-screen; }
     Shift+Print { screenshot-window; }
 
     Mod+F1 { set-dynamic-cast-window; }
@@ -364,4 +364,10 @@ binds {
     // Ctrl+Alt+Delete { quit; }
     Mod+Shift+P { power-off-monitors; }
     Mod+Ctrl+P repeat=false { spawn-sh "wl-mirror $(niri msg --json focused-output | jq -r .name)"; }
+    Mod+G {
+        spawn-sh "foot -a floating micro";
+    }
+    Mod+B {
+        spawn-sh "~/.local/share/cargo/bin/woomer";
+    }
 }
