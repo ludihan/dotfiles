@@ -1,5 +1,6 @@
 7zip
 acpi
+atac
 bacon
 base
 base-devel
@@ -56,6 +57,7 @@ inxi
 iwd
 jo
 jq
+kate
 kdenlive
 krita
 ldoc
@@ -90,6 +92,7 @@ networkmanager
 niri
 nmap
 nodejs
+noise-suppression-for-voice
 noto-fonts-cjk
 noto-fonts-emoji
 noto-fonts-extra
@@ -128,7 +131,6 @@ swaylock
 tealdeer
 tectonic
 tenacity
-terminus-font
 thunar
 thunar-archive-plugin
 thunar-media-tags-plugin
