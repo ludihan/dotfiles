@@ -7,6 +7,7 @@ $env.config.table.mode = 'single'
 $env.config.filesize.unit = 'metric'
 $env.LS_COLORS = (vivid generate gruvbox-dark)
 $env.config.table.show_empty = true
+$env.PROMPT_COMMAND_RIGHT = ""
 
 load-env {
     EDITOR: "nvim"
