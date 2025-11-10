@@ -1,13 +1,19 @@
 # ~/.config/nushell/env.nu
 
-$env.config.buffer_editor = "nvim"
-$env.config.show_banner = false
-$env.config.table.header_on_separator = true
-$env.config.table.mode = 'single'
-$env.config.filesize.unit = 'metric'
 $env.LS_COLORS = (vivid generate gruvbox-dark)
-$env.config.table.show_empty = true
 $env.PROMPT_COMMAND_RIGHT = ""
+$env.config = {
+    buffer_editor: "nvim",
+    show_banner: false,
+    table: {
+        header_on_separator: true,
+        mode: 'single'
+        show_empty: true
+    }
+    filesize: {
+        unit: 'metric'
+    },
+}
 
 load-env {
     EDITOR: "nvim"
