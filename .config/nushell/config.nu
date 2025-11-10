@@ -1,7 +1,7 @@
 # ~/.config/nushell/env.nu
 
 $env.LS_COLORS = (vivid generate gruvbox-dark)
-$env.PROMPT_COMMAND_RIGHT = ""
+$env.config.edit_mode = 'vi'
 $env.config = {
     buffer_editor: "nvim",
     show_banner: false,
