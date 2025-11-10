@@ -17,6 +17,7 @@ dkms
 docker
 docker-buildx
 docker-compose
+dotnet-sdk
 editorconfig-checker
 efibootmgr
 eva
@@ -63,6 +64,7 @@ krita
 ldoc
 lf
 libpulse
+libreoffice-fresh
 libresprite
 libva-nvidia-driver
 linux
