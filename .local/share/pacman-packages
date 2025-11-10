@@ -58,6 +58,7 @@ inxi
 iwd
 jo
 jq
+jujutsu
 kate
 kdenlive
 krita
@@ -99,6 +100,7 @@ noto-fonts-cjk
 noto-fonts-emoji
 noto-fonts-extra
 npm
+nushell
 nvidia-dkms
 obs-studio
 obsidian-icon-theme
@@ -156,6 +158,7 @@ uv
 valgrind
 vim
 visidata
+vivid
 vkmark
 vulkan-intel
 vulkan-tools
