@@ -1,5 +1,38 @@
 # ~/.config/nushell/env.nu
 
+let fish_completer = {|spans|
+    fish --command $"complete '--do-complete=($spans | str replace --all "'" "\\'" | str join ' ')'"
+    | from tsv --flexible --noheaders --no-infer
+    | rename value description
+    | update value {|row|
+        let value = $row.value
+        let need_quote = ['\' ',' '[' ']' '(' ')' ' ' '\t' "'" '"' "`"] | any {$in in $value}
+        if ($need_quote and ($value | path exists)) {
+            let expanded_path = if ($value starts-with ~) {$value | path expand --no-symlink} else {$value}
+            $'"($expanded_path | str replace --all "\"" "\\\"")"'
+        } else {$value}
+    }
+}
+
+# This completer will use carapace by default
+let external_completer = {|spans|
+    let expanded_alias = scope aliases
+    | where name == $spans.0
+    | get -o 0.expansion
+
+    let spans = if $expanded_alias != null {
+        $spans
+        | skip 1
+        | prepend ($expanded_alias | split row ' ' | take 1)
+    } else {
+        $spans
+    }
+
+    match $spans.0 {
+        _ => $fish_completer
+    } | do $in $spans
+}
+
 $env.LS_COLORS = (vivid generate gruvbox-dark)
 $env.config.edit_mode = 'vi'
 $env.config = {
@@ -13,6 +46,12 @@ $env.config = {
     filesize: {
         unit: 'metric'
     },
+    completions: {
+        external: {
+            enable: true
+            completer: $external_completer
+        }
+    }
 }
 
 load-env {
@@ -43,8 +82,8 @@ load-env {
     NPM_CONFIG_USERCONFIG: $"($env.XDG_CONFIG_HOME)/npm/npmrc"
     CARGO_HOME: $"($env.XDG_DATA_HOME)/cargo"
     RUSTUP_HOME: $"($env.XDG_DATA_HOME)/rustup"
-        #JULIA_DEPOT_PATH: $"($env.XDG_DATA_HOME)/julia:($env.JULIA_DEPOT_PATH | default '')"
-        #JULIAUP_DEPOT_PATH: $"($env.XDG_DATA_HOME)/julia"
+    #JULIA_DEPOT_PATH: $"($env.XDG_DATA_HOME)/julia:($env.JULIA_DEPOT_PATH | default '')"
+    #JULIAUP_DEPOT_PATH: $"($env.XDG_DATA_HOME)/julia"
     NODE_REPL_HISTORY: $"($env.XDG_STATE_HOME)/node_repl_history"
     DOCKER_CONFIG: $"($env.XDG_CONFIG_HOME)/docker"
     GHCUP_USE_XDG_DIRS: "true"
