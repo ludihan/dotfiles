@@ -1,6 +1,5 @@
 7zip
 acpi
-atac
 base
 base-devel
 bash-completion
@@ -19,7 +18,6 @@ docker-compose
 dotnet-sdk
 editorconfig-checker
 efibootmgr
-eva
 fastfetch
 fcitx5
 fcitx5-configtool
@@ -37,9 +35,7 @@ fuse2
 fuzzel
 fzf
 git
-git-lfs
 github-cli
-glow
 gnome-themes-extra
 go
 godot
@@ -60,7 +56,6 @@ jq
 kate
 kdenlive
 krita
-ldoc
 lf
 libpulse
 libreoffice-fresh
