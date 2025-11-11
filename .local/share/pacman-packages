@@ -68,6 +68,7 @@ lld
 love
 lsix
 lsof
+luanti
 ly
 mako
 man-db
@@ -105,7 +106,6 @@ pipewire-alsa
 pipewire-jack
 pipewire-pulse
 polyphone
-postgresql
 pv
 qaseprite
 qpwgraph
