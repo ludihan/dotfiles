@@ -1,7 +1,6 @@
 7zip
 acpi
 atac
-bacon
 base
 base-devel
 bash-completion
@@ -58,7 +57,6 @@ inxi
 iwd
 jo
 jq
-jujutsu
 kate
 kdenlive
 krita
@@ -133,7 +131,6 @@ swaybg
 swayidle
 swaylock
 tealdeer
-tectonic
 tenacity
 thunar
 thunar-archive-plugin
