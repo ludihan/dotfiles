@@ -1,0 +1,24 @@
+IndentWidth: 4
+ColumnLimit: 80
+PointerAlignment: Right
+
+AllowShortBlocksOnASingleLine: false
+AllowShortCaseExpressionOnASingleLine: false
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortCompoundRequirementOnASingleLine: false
+AllowShortEnumsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: false
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLambdasOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+AllowShortNamespacesOnASingleLine: false
+
+# Disable packing multiple arguments/parameters on a single line
+BinPackArguments: false
+BinPackParameters: false
+
+# Control what happens right after the open parenthesis '('
+AlignAfterOpenBracket: BlockIndent # Or 'AlwaysBreak'
+
+# Prevent clang-format from ignoring the rule for short definitions
+AllowAllParametersOfDeclarationOnNextLine: false
