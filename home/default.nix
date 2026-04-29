@@ -311,8 +311,13 @@
     # julials
     # hls
     nil
+    nixd
     gopls
-    # rust_analyzer
+    rust-analyzer
+    rustc
+    cargo
+    rustfmt
+    clippy
     kdePackages.qtlanguageserver
     tinymist
     vscode-langservers-extracted
