@@ -2,7 +2,6 @@
   config,
   pkgs,
   flakeLocation,
-  extraSoftware,
   ...
 }:
 {
@@ -307,6 +306,7 @@
     aseprite
     krita
 
+    neovim
     tree-sitter
 
     # lsp servers
@@ -397,19 +397,6 @@
   };
 
   programs.zed-editor.enable = true;
-  programs.neovim = {
-    enable = true;
-    defaultEditor = true;
-    viAlias = true;
-    vimAlias = true;
-    vimdiffAlias = true;
-    plugins = [
-      pkgs.vimPlugins.nvim-treesitter.withAllGrammars
-    ];
-    initLua = ''
-      require("config")
-    '';
-  };
   programs.gh = {
     enable = true;
     gitCredentialHelper = {
@@ -478,10 +465,7 @@
         link = name: config.lib.file.mkOutOfStoreSymlink "${flakeLocation}/config/${name}";
       in
       {
-        "nvim/ftplugin".source = link "nvim/ftplugin";
-        "nvim/lua".source = link "nvim/lua";
-        "nvim/.luarc.json".source = link "nvim/.luarc.json";
-        "nvim/nvim-pack-lock.json".source = link "nvim/nvim-pack-lock.json";
+        nvim.source = link "nvim";
         npm.source = link "npm";
         quickshell.source = link "quickshell";
         tmux.source = link "tmux";

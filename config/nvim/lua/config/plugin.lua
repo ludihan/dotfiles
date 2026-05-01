@@ -7,16 +7,32 @@ vim.pack.add({
     'https://github.com/hiphish/rainbow-delimiters.nvim',
     'https://github.com/folke/snacks.nvim',
     'https://github.com/Saghen/blink.cmp',
-    -- 'https://github.com/nvim-treesitter/nvim-treesitter',
+    'https://github.com/nvim-treesitter/nvim-treesitter',
     'https://github.com/windwp/nvim-ts-autotag',
+    'https://github.com/saghen/blink.lib',
 })
 
+local ts = require('nvim-treesitter')
 vim.api.nvim_create_autocmd("FileType", {
     group = vim.api.nvim_create_augroup("EnableTreesitterHighlighting", { clear = true }),
     desc = "Try to enable tree-sitter syntax highlighting",
-    pattern = "*",
-    callback = function()
-        pcall(function() vim.treesitter.start() end)
+    pattern = ts.get_available(),
+    callback = function(event)
+        local lang = event.match
+
+        if ts.get_installed()[lang] == nil then
+            local ok, task = pcall(ts.install, { lang }, { summary = false })
+            if not ok then return end
+
+            task:wait(300000)
+        end
+
+        ok, _ = pcall(vim.treesitter.start, event.buf, lang)
+        if not ok then return end
+
+        vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+
+        -- vim.wo.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
     end,
 })
 
