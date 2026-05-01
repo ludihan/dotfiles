@@ -205,7 +205,7 @@
   fonts.fontconfig.enable = true;
 
   home.packages = with pkgs; [
-    discord
+    ### command line ###
     wget
     curl
     jq
@@ -215,12 +215,52 @@
     bat
     grim
     slurp
-    gcc
-    # rustup
-    # dotnet-sdk
-    # go
+    vivid
+    wl-clipboard
+    brightnessctl
+    unzip
+    unrar
+    zip
+    tree
+    nvd
+    wl-mirror
+    # cmus
+    ncdu
+    file
+    htop
+    socat
+    # quickemu
+    tmux
+
+    ### graphical ###
+    discord
     godot
     material-maker
+    blender
+    # spotify
+    hyprpicker
+    imv
+    papers
+    # krita
+    # mednafen
+    # osu-lazer-bin
+    pavucontrol
+    networkmanagerapplet
+    tuxpaint
+    woomer
+    fooyin
+    nicotine-plus
+    # mangohud
+    foliate
+    vintagestory
+    nautilus
+    aseprite
+    krita
+
+    ### dev ###
+    neovim
+    tree-sitter
+    gcc
     nodejs
     (python3.withPackages (
       ppkgs: with ppkgs; [
@@ -229,53 +269,50 @@
     ))
     uv
     go
+    typst
+    rustc
+    cargo
+    rustfmt
+    clippy
+    opencode
     hugo
-    blender
-    vivid
-    docker-compose
-    docker-buildx
-    hyprpicker
-    # spotify
-    wl-clipboard
-    brightnessctl
-    imv
-    papers
-    # krita
-    # mednafen
-    # osu-lazer-bin
-    pavucontrol
-    networkmanagerapplet
-    unzip
-    unrar
-    zip
-    tuxpaint
-    woomer
-    xwayland-satellite
     nixfmt
     nixfmt-tree
-    tree
-    nix-output-monitor
-    nvd
-    wl-mirror
-    # cmus
-    fooyin
-    nicotine-plus
-    ncdu
-    # mangohud
-    file
     kdePackages.qtdeclarative
-    socat
-    foliate
-    htop
-    typst
+    nix-output-monitor
     nurl
     nix-init
-    vintagestory
-    # quickemu
-    opencode
-    tmux
+    docker-compose
+    docker-buildx
 
-    ### music ###
+    ### lsp servers ###
+    # julials
+    # hls
+    nil
+    nixd
+    rust-analyzer
+    gopls
+    kdePackages.qtlanguageserver
+    tinymist
+    vscode-langservers-extracted
+    emmet-language-server
+    lua-language-server
+    taplo
+    # templ
+    vtsls
+    # vue_ls
+    # svelte
+    # bashls
+    # dockerls
+    # docker_compose_language_service
+    marksman
+    yaml-language-server
+    # omnisharp
+
+    # misc
+    xwayland-satellite
+
+    # music
     reaper
     # vital
     # dexed
@@ -297,47 +334,8 @@
     # x42-gmsynth
     # x42-avldrums
     # sunvox
-    #############
-
-    # love
-    # luajit
-    # ldtk
-    # tiled
-    aseprite
-    krita
-
-    neovim
-    tree-sitter
-
-    # lsp servers
-    # julials
-    # hls
-    nil
-    nixd
-    gopls
-    rust-analyzer
-    rustc
-    cargo
-    rustfmt
-    clippy
-    kdePackages.qtlanguageserver
-    tinymist
-    vscode-langservers-extracted
-    emmet-language-server
-    lua-language-server
-    taplo
-    # templ
-    vtsls
-    # vue_ls
-    # svelte
-    # bashls
-    # dockerls
-    # docker_compose_language_service
-    marksman
-    yaml-language-server
-    # omnisharp
-    nautilus
   ];
+
   services.udiskie = {
     enable = true;
   };
