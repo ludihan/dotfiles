@@ -307,6 +307,8 @@
     aseprite
     krita
 
+    tree-sitter
+
     # lsp servers
     # julials
     # hls
@@ -451,7 +453,7 @@
   };
 
   programs.mpv = {
-    enable = true;
+    enable = false;
     config = {
       keep-open = true;
     };
