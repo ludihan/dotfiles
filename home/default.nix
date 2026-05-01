@@ -275,7 +275,7 @@
     rustfmt
     clippy
     opencode
-    hugo
+    zola
     nixfmt
     nixfmt-tree
     kdePackages.qtdeclarative
