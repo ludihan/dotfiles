@@ -95,12 +95,12 @@ Row {
                     width: 22
                     height: 22
 
-                    color: false ? "#505050" : "#111111"
+                    color: ws.is_active ? "#404040" : "#111111"
 
                     CustomText {
                         anchors.centerIn: parent
                         text: index + 1
-                        color: ws.is_active ? "white" : "#666666"
+                        color: "white"
                     }
 
                     MouseArea {
@@ -141,7 +141,6 @@ Row {
 
         CustomText {
             text: root.focusedWindow ? root.focusedWindow.title : ""
-            color: "#666666"
             Layout.preferredHeight: 22
             Layout.fillWidth: true
             Layout.maximumWidth: 1000
