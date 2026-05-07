@@ -464,9 +464,14 @@
       in
       {
         nvim.source = link "nvim";
-        npm.source = link "npm";
         quickshell.source = link "quickshell";
         tmux.source = link "tmux";
+        "npm/npmrc".text = ''
+          prefix=''${XDG_DATA_HOME}/npm
+          cache=''${XDG_CACHE_HOME}/npm
+          init-module=''${XDG_CONFIG_HOME}/npm/config/npm-init.js
+          logs-dir=''${XDG_STATE_HOME}/npm/logs
+        '';
       };
     userDirs = {
       enable = true;
