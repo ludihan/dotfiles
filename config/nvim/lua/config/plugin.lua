@@ -6,11 +6,11 @@ vim.pack.add({
     'https://github.com/nvim-lua/plenary.nvim',
     'https://github.com/hiphish/rainbow-delimiters.nvim',
     'https://github.com/folke/snacks.nvim',
-    'https://github.com/Saghen/blink.cmp',
     'https://github.com/nvim-treesitter/nvim-treesitter',
     'https://github.com/windwp/nvim-ts-autotag',
-    'https://github.com/saghen/blink.lib',
 })
+
+local refused_langs = {}
 
 local ts = require('nvim-treesitter')
 vim.api.nvim_create_autocmd("FileType", {
@@ -19,15 +19,37 @@ vim.api.nvim_create_autocmd("FileType", {
     pattern = ts.get_available(),
     callback = function(event)
         local lang = event.match
+        if refused_langs[lang] ~= nil then
+            return
+        end
 
-        if ts.get_installed()[lang] == nil then
+        local installed = false
+        for _, v in ipairs(ts.get_installed()) do
+            if v == lang then
+                installed = true
+            end
+        end
+        if installed then
+            refused_langs[lang] = true
+            return
+        else
+            local choice = vim.fn.confirm("Treesitter parser for " .. lang .. " not found, do you want to install it?",
+                "&Yes\n&No")
+            if choice == 0 then return end
+            if choice == 1 or choice == 2 then
+                refused_langs[lang] = true
+                if choice == 2 then
+                    return
+                end
+            end
+
             local ok, task = pcall(ts.install, { lang }, { summary = false })
             if not ok then return end
 
             task:wait(300000)
         end
 
-        ok, _ = pcall(vim.treesitter.start, event.buf, lang)
+        local ok, _ = pcall(vim.treesitter.start, event.buf, lang)
         if not ok then return end
 
         vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
@@ -66,51 +88,4 @@ require("telescope").setup({
         sorting_strategy = "ascending",
         layout_strategy = "bottom_pane",
     },
-})
-
-
-require('blink.cmp').setup({
-    appearance = {
-        nerd_font_variant = 'mono',
-        kind_icons = {
-            Text = '',
-            Method = '',
-            Function = '',
-            Constructor = '',
-
-            Field = '',
-            Variable = '',
-            Property = '',
-
-            Class = '',
-            Interface = '',
-            Struct = '',
-            Module = '',
-
-            Unit = '',
-            Value = '',
-            Enum = '',
-            EnumMember = '',
-
-            Keyword = '',
-            Constant = '',
-
-            Snippet = '',
-            Color = '',
-            File = '',
-            Reference = '',
-            Folder = '',
-            Event = '',
-            Operator = '',
-            TypeParameter = '',
-        },
-    },
-
-    completion = { documentation = { auto_show = true } },
-
-    sources = {
-        default = { 'lsp', 'path', 'snippets', 'buffer' },
-    },
-
-    fuzzy = { implementation = "lua" }
 })
