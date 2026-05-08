@@ -73,7 +73,15 @@ require("snacks").setup({
     bigfile = { enabled = true }
 })
 
-require("oil").setup()
+require("oil").setup({
+    default_file_explorer = true,
+    columns = {
+        -- "icon",
+        "permissions",
+        "size",
+        "mtime",
+    },
+})
 
 require("telescope").setup({
     defaults = {
