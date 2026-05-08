@@ -67,6 +67,8 @@ vim.keymap.set("n", "<leader>t", "<CMD>%s/\\s\\+$//e<CR><CMD>:nohlsearch<CR>")
 -- Navigate tabs
 vim.keymap.set('n', '<A-o>', '<cmd>tabnext<cr>')
 vim.keymap.set('n', '<A-i>', '<cmd>tabprevious<cr>')
+vim.keymap.set('n', '<tab>', '<cmd>tabnext<cr>')
+vim.keymap.set('n', '<S-tab>', '<cmd>tabprevious<cr>')
 
 -- Create/Close tabs
 vim.keymap.set('n', '<A-t>', '<cmd>tabnew<cr>')
@@ -75,6 +77,14 @@ vim.keymap.set('n', '<A-w>', '<cmd>tabclose<cr>')
 -- Move tabs
 vim.keymap.set('n', '<A-O>', '<cmd>tabmove +1<cr>')
 vim.keymap.set('n', '<A-I>', '<cmd>tabmove -1<cr>')
+vim.keymap.set('n', '<C-tab>', '<cmd>tabmove +1<cr>')
+vim.keymap.set('n', '<C-S-tab>', '<cmd>tabmove -1<cr>')
+
+-- Change tabs
+for i=1,9 do
+    vim.keymap.set('n', '<A-' .. i .. '>', '<cmd>tabn '.. (i) .. '<cr>')
+end
+vim.keymap.set('n', '<A-0>', '<cmd>tabn 10<cr>')
 
 -- Auto pairs when tab
 --vim.keymap.set("i", '"<Tab>', '""<Left>')
