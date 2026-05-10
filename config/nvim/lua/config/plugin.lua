@@ -10,41 +10,33 @@ vim.pack.add({
     'https://github.com/windwp/nvim-ts-autotag',
 })
 
-local refused_langs = {}
-
 local ts = require('nvim-treesitter')
+local installed_langs = {}
+for _, v in ipairs(ts.get_installed()) do
+    installed_langs[v] = true
+end
+
+
 vim.api.nvim_create_autocmd("FileType", {
     group = vim.api.nvim_create_augroup("EnableTreesitterHighlighting", { clear = true }),
     desc = "Try to enable tree-sitter syntax highlighting",
     pattern = ts.get_available(),
     callback = function(event)
         local lang = event.match
-        if refused_langs[lang] ~= nil then
-            return
-        end
-
-        local installed = false
-        for _, v in ipairs(ts.get_installed()) do
-            if v == lang then
-                installed = true
-            end
-        end
-        if installed then
-            refused_langs[lang] = true
-            return
-        else
+        if not installed_langs[lang] then
             local choice = vim.fn.confirm("Treesitter parser for " .. lang .. " not found, do you want to install it?",
                 "&Yes\n&No")
             if choice == 0 then return end
             if choice == 1 or choice == 2 then
-                refused_langs[lang] = true
                 if choice == 2 then
+                    installed_langs[lang] = true
                     return
                 end
             end
 
             local ok, task = pcall(ts.install, { lang }, { summary = false })
             if not ok then return end
+            installed_langs[lang] = true
 
             task:wait(300000)
         end
