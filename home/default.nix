@@ -261,6 +261,7 @@
     neovim
     tree-sitter
     gcc
+    gnumake
     nodejs
     (python3.withPackages (
       ppkgs: with ppkgs; [
