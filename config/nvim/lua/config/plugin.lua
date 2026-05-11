@@ -34,11 +34,9 @@ vim.api.nvim_create_autocmd("FileType", {
                 end
             end
 
-            local ok, task = pcall(ts.install, { lang }, { summary = false })
+            local ok, _ = pcall(ts.install, { lang }, { summary = false })
             if not ok then return end
             installed_langs[lang] = true
-
-            task:wait(300000)
         end
 
         local ok, _ = pcall(vim.treesitter.start, event.buf, lang)
