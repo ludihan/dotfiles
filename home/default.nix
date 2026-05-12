@@ -290,6 +290,7 @@
     # julials
     # hls
     nil
+    clang-tools
     nixd
     rust-analyzer
     gopls

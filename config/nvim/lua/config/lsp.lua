@@ -44,9 +44,15 @@ vim.lsp.config('vtsls', vtsls_config)
 vim.lsp.config('vue_ls', vue_ls_config)
 vim.lsp.config('ts_ls', ts_ls_config)
 vim.lsp.enable({ 'vtsls', 'vue_ls' }) -- If using `ts_ls` replace `vtsls` to `ts_ls`
+vim.lsp.config('clangd', {
+    cmd = {
+        'clangd',
+    },
+})
 
 vim.lsp.enable({
     -- 'julials',
+    'clangd',
     'gopls',
     -- 'hls,',
     'nil_ls',
