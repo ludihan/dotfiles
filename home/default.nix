@@ -458,6 +458,8 @@
     enableBashIntegration = false;
   };
 
+  home.file.".clang-format".source = config.lib.file.mkOutOfStoreSymlink "${flakeLocation}/config/clang-format";
+
   xdg = {
     enable = true;
     configFile =
