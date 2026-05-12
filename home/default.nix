@@ -440,7 +440,7 @@
   };
 
   programs.mpv = {
-    enable = false;
+    enable = true;
     config = {
       keep-open = true;
     };
