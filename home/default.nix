@@ -231,6 +231,7 @@
     socat
     # quickemu
     tmux
+    asciinema
 
     ### graphical ###
     discord
