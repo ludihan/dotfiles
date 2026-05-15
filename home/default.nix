@@ -337,6 +337,8 @@
     # x42-gmsynth
     # x42-avldrums
     # sunvox
+    musescore
+    muse-sounds-manager
   ];
 
   services.udiskie = {
