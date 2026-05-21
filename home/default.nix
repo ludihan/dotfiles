@@ -287,6 +287,7 @@
     nix-init
     docker-compose
     docker-buildx
+    ngrok
 
     ### lsp servers ###
     # julials
