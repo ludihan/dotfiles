@@ -288,6 +288,7 @@
     docker-compose
     docker-buildx
     ngrok
+    xmake
 
     ### lsp servers ###
     # julials
