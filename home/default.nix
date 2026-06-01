@@ -339,7 +339,7 @@
     # setbfree
     # x42-gmsynth
     # x42-avldrums
-    # sunvox
+    sunvox
     musescore
     muse-sounds-manager
   ];
