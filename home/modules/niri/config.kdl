@@ -17,32 +17,36 @@ cursor {
 }
 
 layout {
-    // gaps 0
-    focus-ring {
+    always-center-single-column
+    gaps 0
+       focus-ring {
+           off
+           // active-color "#C9B990"
+       }
+
+    shadow {
+        off
+    }
+
+    border {
+        width 5
         active-color "#C9B990"
     }
-
-    shadow{
-        on
-    }
-
-    //  border {
-    //      width 4
-    //      active-color "#C9B990"
-    //  }
 
     background-color "transparent"
 
     // background-color "#222222"
 
     tab-indicator {
-        width 6
+        position "bottom"
+        width 10
+        place-within-column
     }
 
 }
 
 overview {
-    zoom 0.25
+    // zoom 0.25
     backdrop-color "00000000"
 }
 
