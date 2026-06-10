@@ -320,23 +320,28 @@
     xwayland-satellite
 
     # music
-    reaper
-    # vital
-    # dexed
+    # reaper
+    # reaper-sws-extension
+    # reaper-reapack-extension
+    renoise
+    vital
+    dexed
+    # qsampler
+    # qsynth
     # polyphone
     # cardinal
     # openutau
     # airwindows
     surge-xt
-    # odin2
+    odin2
     # helm
     # lsp-plugins
-    # carla
+    carla
     # calf
-    fluida-lv2
-    decent-sampler
+    # fluida-lv2
+    # decent-sampler
     sfizz-ui
-    # distrho-ports
+    distrho-ports
     # setbfree
     # x42-gmsynth
     # x42-avldrums
@@ -344,6 +349,11 @@
     # musescore
     # muse-sounds-manager
   ];
+
+  # home.file.".config/REAPER/UserPlugins/reaper_reapack-x86_64.so".source = "${pkgs.reaper-reapack-extension}/UserPlugins/reaper_reapack-x86_64.so";
+  # home.file.".config/REAPER/UserPlugins/reaper_sws-x86_64.so".source = "${pkgs.reaper-sws-extension}/UserPlugins/reaper_sws-x86_64.so";
+  # home.file.".config/REAPER/Scripts/sws_python.py".source = "${pkgs.reaper-sws-extension}/Scripts/sws_python.py";
+  # home.file.".config/REAPER/Scripts/sws_python64.py".source = "${pkgs.reaper-sws-extension}/Scripts/sws_python64.py";
 
   services.udiskie = {
     enable = true;
