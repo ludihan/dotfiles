@@ -135,6 +135,7 @@
 
   programs.bash = {
     enable = true;
+    enableCompletion = true;
     initExtra = ''
       # Provide a nice prompt if the terminal supports it.
       if [ "$TERM" != "dumb" ] || [ -n "$INSIDE_EMACS" ]; then

@@ -44,6 +44,7 @@
 
   fonts = {
     enableDefaultPackages = true;
+    fontDir.enable = true;
     packages = with pkgs; [
       iosevka
       noto-fonts
@@ -53,6 +54,7 @@
       noto-fonts-lgc-plus
       noto-fonts-emoji-blob-bin
       noto-fonts-monochrome-emoji
+      font-misc-misc
     ];
   };
 

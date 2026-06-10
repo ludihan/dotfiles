@@ -75,5 +75,6 @@ vim.lsp.enable({
     -- "docker_compose_language_service",
     "marksman",
     "yamlls",
+    'dartls',
     -- "omnisharp"
 })
