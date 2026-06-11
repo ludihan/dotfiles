@@ -36,53 +36,6 @@
             ]);
         });
       })
-      (final: prev: {
-        material-maker = prev.material-maker.overrideAttrs (
-          nfinal: nprev: {
-            version = "1.5";
-            nativeBuildInputs = with prev; [
-              godot_4_5
-              copyDesktopItems
-            ];
-            src = prev.fetchFromGitHub {
-              owner = "RodZill4";
-              repo = "material-maker";
-              rev = nfinal.version;
-              hash = "sha256-BnXkEma3J7myF115zMv/VAGtwbbt1asqLUVvRCvrGG8=";
-            };
-            buildInputs = with prev; [
-              vulkan-headers
-              vulkan-loader
-
-              libxinerama
-              libxcursor
-              libxext
-              libxrandr
-              libxrender
-              libx11
-              libxi
-              libxfixes
-            ];
-            buildPhase = ''
-              runHook preBuild
-
-              export HOME=$TMPDIR
-
-              mkdir -vp build
-              godot4 -v --headless --export-release 'Linux/X11' build/material-maker
-
-              runHook postBuild
-            '';
-            desktopItems = [
-              (prev.makeDesktopItem {
-                name = "material-maker";
-                desktopName = "Material Maker";
-                exec = "material-maker";
-              })
-            ];
-          }
-        );
-      })
     ];
     # Configure your nixpkgs instance
     config = {
