@@ -262,6 +262,7 @@
 
     ### dev ###
     neovim
+    jetbrains.idea
     tree-sitter
     gcc
     gnumake
