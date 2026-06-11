@@ -207,7 +207,7 @@
     nicotine-plus
     # mangohud
     foliate
-    vintagestory
+    # vintagestory
     nautilus
     aseprite
     krita
