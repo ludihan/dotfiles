@@ -216,6 +216,7 @@
     ### dev ###
     neovim
     jetbrains.idea
+    bruno
     tree-sitter
     gcc
     gnumake
