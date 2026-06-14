@@ -215,7 +215,6 @@
 
     ### dev ###
     neovim
-    jetbrains.idea
     bruno
     tree-sitter
     gcc
@@ -246,14 +245,16 @@
     ngrok
     xmake
 
-    # scala
+    jetbrains.idea
+    jdk
+    maven
+    gradle
     scala
     scala-cli
     sbt
     ammonite
     scalafmt
     # coursier
-    jdk
     metals
 
     ### lsp servers ###
