@@ -76,7 +76,7 @@
         NPM_CONFIG_USERCONFIG = configDir "npm/npmrc";
         DOCKER_CONFIG = configDir "docker";
         OMNISHARPHOME = configDir "omnisharp";
-        _JAVA_OPTIONS = "-Djava.util.prefs.userRoot=${config.home.homeDirectory}/.config/java";
+        # _JAVA_OPTIONS = "-Djava.util.prefs.userRoot=${config.home.homeDirectory}/.config/java";
 
         GHCUP_USE_XDG_DIRS = "true";
         EDITOR = "nvim";
@@ -245,13 +245,15 @@
     docker-buildx
     ngrok
     xmake
+
     # scala
     scala
     scala-cli
     sbt
     ammonite
     scalafmt
-    coursier
+    # coursier
+    jdk
     metals
 
     ### lsp servers ###
