@@ -74,6 +74,13 @@
         flake-registry = "";
         # Workaround for https://github.com/NixOS/nix/issues/9574
         nix-path = config.nix.nixPath;
+        substituters = [
+          "https://haskell-miso-cachix.cachix.org"
+        ];
+        trusted-public-keys = [
+          "haskell-miso-cachix.cachix.org-1:m8hN1cvFMJtYib4tj+06xkKt5ABMSGfe8W7s40x1kQ0="
+        ];
+
       };
       # Opinionated: disable channels
       channel.enable = false;

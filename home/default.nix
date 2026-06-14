@@ -245,6 +245,14 @@
     docker-buildx
     ngrok
     xmake
+    # scala
+    scala
+    scala-cli
+    sbt
+    ammonite
+    scalafmt
+    coursier
+    metals
 
     ### lsp servers ###
     # julials
