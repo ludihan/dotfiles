@@ -77,5 +77,5 @@ vim.lsp.enable({
     "yamlls",
     'dartls',
     -- "omnisharp"
-    'metals'
+    -- 'metals'
 })

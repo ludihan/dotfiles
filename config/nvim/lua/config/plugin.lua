@@ -8,6 +8,7 @@ vim.pack.add({
     'https://github.com/folke/snacks.nvim',
     'https://github.com/nvim-treesitter/nvim-treesitter',
     'https://github.com/windwp/nvim-ts-autotag',
+    'https://github.com/scalameta/nvim-metals',
 })
 
 local ts = require('nvim-treesitter')
@@ -86,4 +87,18 @@ require("telescope").setup({
         sorting_strategy = "ascending",
         layout_strategy = "bottom_pane",
     },
+})
+
+-- scala
+local metals_config = require("metals").bare_config()
+
+local nvim_metals_group =
+  vim.api.nvim_create_augroup("nvim-metals", { clear = true })
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "scala", "sbt", "java" },
+  callback = function()
+    require("metals").initialize_or_attach(metals_config)
+  end,
+  group = nvim_metals_group,
 })
