@@ -8,7 +8,8 @@ vim.pack.add({
     'https://github.com/folke/snacks.nvim',
     'https://github.com/nvim-treesitter/nvim-treesitter',
     'https://github.com/windwp/nvim-ts-autotag',
-    'https://github.com/scalameta/nvim-metals',
+    -- 'https://github.com/scalameta/nvim-metals',
+    -- 'https://github.com/elixir-tools/elixir-tools.nvim',
 })
 
 local ts = require('nvim-treesitter')
@@ -90,6 +91,7 @@ require("telescope").setup({
 })
 
 -- scala
+--[[
 local metals_config = require("metals").bare_config()
 
 local nvim_metals_group =
@@ -102,3 +104,4 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
   group = nvim_metals_group,
 })
+]]

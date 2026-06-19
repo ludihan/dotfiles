@@ -49,6 +49,11 @@ vim.lsp.config('clangd', {
         'clangd',
     },
 })
+vim.lsp.config('elixir-ls', {
+    cmd = {
+        'elixir-ls',
+    },
+})
 
 vim.lsp.enable({
     -- 'julials',
@@ -76,6 +81,8 @@ vim.lsp.enable({
     "marksman",
     "yamlls",
     'dartls',
+    'elp',
+    'elixirls',
     -- "omnisharp"
     -- 'metals'
 })

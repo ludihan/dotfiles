@@ -245,17 +245,23 @@
     ngrok
     xmake
 
-    jetbrains.idea
-    jdk
-    maven
-    gradle
-    scala
-    scala-cli
-    sbt
-    ammonite
-    scalafmt
+    # jetbrains.idea
+    # jdk
+    # maven
+    # gradle
+    # scala
+    # scala-cli
+    # sbt
+    # ammonite
+    # scalafmt
     # coursier
-    metals
+    # metals
+    erlang
+    erlang-language-platform
+    rebar3
+    elixir
+    elixir-ls
+    inotify-tools
 
     ### lsp servers ###
     # julials
