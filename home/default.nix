@@ -256,11 +256,8 @@
     # scalafmt
     # coursier
     # metals
-    erlang
-    erlang-language-platform
-    rebar3
-    elixir
-    elixir-ls
+    beam29Packages.elixir_1_20
+    beam29Packages.elixir-ls
     inotify-tools
 
     ### lsp servers ###
