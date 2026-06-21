@@ -212,6 +212,7 @@
     aseprite
     krita
     prismlauncher
+    libnotify
 
     ### dev ###
     neovim
