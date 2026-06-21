@@ -4,12 +4,8 @@ import Quickshell
 import Quickshell.Io
 import qs.Bar
 import qs.AudioOSD
-import qs.Background
 import qs.Mixer
-import qs.Launcher
-import qs.ReloadPopup
 import qs.Lock
-import qs.NotificationPopup
 
 ShellRoot {
     Loader {
@@ -52,8 +48,8 @@ ShellRoot {
     }
 
     Loader {
-        id: notificationPopup
-        sourceComponent: NotificationPopup {}
+        id: notification
+        sourceComponent: Notification {}
     }
 
     IpcHandler {
