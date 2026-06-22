@@ -66,7 +66,7 @@ vim.lsp.enable({
     'tinymist',
     "cssls",
     "emmet_language_server",
-    "html",
+    -- "html",
     "lua_ls",
     "pylsp",
     "taplo",
