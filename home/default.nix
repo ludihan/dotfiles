@@ -204,6 +204,7 @@
     tuxpaint
     woomer
     fooyin
+    spotify
     nicotine-plus
     # mangohud
     foliate
