@@ -186,6 +186,7 @@
     # quickemu
     tmux
     asciinema
+    tiny
 
     ### graphical ###
     discord
