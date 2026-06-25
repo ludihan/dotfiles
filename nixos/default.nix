@@ -150,7 +150,27 @@
 
   programs.nix-ld = {
     enable = true;
-    libraries = pkgs.steam-run.args.multiPkgs pkgs;
+    libraries =
+      (pkgs.steam-run.args.multiPkgs pkgs)
+      ++ (with pkgs; [
+        fontconfig
+        freetype
+        expat
+
+        wayland
+        libxkbcommon
+
+        libX11
+        libXcursor
+        libXi
+        libXrandr
+        libXrender
+        libXext
+        libXfixes
+        libXinerama
+        libXxf86vm
+        libxcb
+      ]);
   };
 
   # not present in home manager
