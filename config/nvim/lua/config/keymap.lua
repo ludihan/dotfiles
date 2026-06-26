@@ -110,3 +110,6 @@ vim.keymap.set("n", "<leader>z", builtin.help_tags)
 vim.keymap.set("n", "<leader>h", builtin.diagnostics)
 
 vim.keymap.set("n", "-", "<CMD>Oil<CR>")
+
+-- my terminal is messing me up
+vim.keymap.set('n', '<C-i>', '<C-i>', { noremap = true })
