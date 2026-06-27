@@ -199,8 +199,7 @@
     imv
     papers
     # krita
-    # mednafen
-    zsnes2
+    ares
     osu-lazer-bin
     pavucontrol
     networkmanagerapplet
