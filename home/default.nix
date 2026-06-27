@@ -200,6 +200,7 @@
     papers
     # krita
     # mednafen
+    zsnes2
     osu-lazer-bin
     pavucontrol
     networkmanagerapplet
