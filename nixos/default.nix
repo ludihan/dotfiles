@@ -195,7 +195,7 @@
   };
 
   programs.steam = {
-    enable = false;
+    enable = true;
     remotePlay.openFirewall = true;
     # gamescopeSession.enable = true;
   };
