@@ -218,6 +218,7 @@
     prismlauncher
     libnotify
     tetrio-desktop
+    onlyoffice-desktopeditors
 
     ### dev ###
     neovim
