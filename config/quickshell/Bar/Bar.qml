@@ -133,7 +133,7 @@ Scope {
                     Separator {}
 
                     CustomText {
-                        text: `BAT: ${UPower.displayDevice.percentage * 100}%`
+                        text: `BAT: ${(String(UPower.displayDevice.percentage * 100)).slice(0,4)}%`
                     }
 
                     Separator {}
