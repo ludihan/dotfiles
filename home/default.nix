@@ -187,6 +187,7 @@
     tmux
     asciinema
     tiny
+    batsignal
 
     ### graphical ###
     discord
@@ -196,7 +197,7 @@
     # spotify
     hyprpicker
     imv
-    papers
+    # papers
     # krita
     # mednafen
     osu-lazer-bin
@@ -204,14 +205,14 @@
     networkmanagerapplet
     tuxpaint
     woomer
-    fooyin
+    # fooyin
     spotify
     nicotine-plus
     # mangohud
     foliate
     vintagestory
     nautilus
-    aseprite
+    # aseprite
     krita
     prismlauncher
     libnotify

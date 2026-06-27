@@ -1,4 +1,5 @@
 pragma ComponentBehavior: Bound
+import Quickshell.Services.UPower
 import Quickshell.Services.Notifications
 import Quickshell
 import QtQuick
@@ -127,6 +128,12 @@ Scope {
 
                     Tray {
                         window: root
+                    }
+
+                    Separator {}
+
+                    CustomText {
+                        text: `BAT: ${UPower.displayDevice.percentage * 100}%`
                     }
 
                     Separator {}
