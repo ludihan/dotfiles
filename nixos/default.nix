@@ -101,10 +101,11 @@
   i18n.defaultLocale = "C.UTF-8";
 
   i18n.inputMethod = {
+    enable = true;
     type = "fcitx5";
-    enable = false;
     fcitx5.addons = with pkgs; [
-      fcitx5-mozc
+      # fcitx5-mozc
+      fcitx5-mozc-ut
       fcitx5-gtk
     ];
   };

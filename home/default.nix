@@ -200,6 +200,8 @@
     papers
     # krita
     ares
+    zsnes2
+    anki-bin
     osu-lazer-bin
     pavucontrol
     networkmanagerapplet
