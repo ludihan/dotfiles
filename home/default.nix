@@ -280,9 +280,10 @@
     gopls
     kdePackages.qtlanguageserver
     tinymist
-    vscode-css-languageserver
-    vscode-json-languageserver
-    # vscode-langservers-extracted.out
+    # vscode-css-languageserver
+    # vscode-json-languageserver
+    vscode-langservers-extracted.out
+    svelte-language-server
     emmet-language-server
     lua-language-server
     taplo

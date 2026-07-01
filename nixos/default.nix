@@ -117,6 +117,7 @@
       "networkmanager"
       "audio"
       "video"
+      "docker"
     ];
     shell = pkgs.bash;
   };
@@ -179,9 +180,8 @@
   programs.niri.enable = true;
   programs.xwayland.enable = true;
 
-  virtualisation.docker.rootless = {
+  virtualisation.docker = {
     enable = true;
-    setSocketVariable = true;
   };
 
   xdg.menus.enable = true;
