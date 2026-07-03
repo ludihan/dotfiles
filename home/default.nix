@@ -422,6 +422,7 @@
   };
   programs.discord.enable = true;
   programs.home-manager.enable = true;
+  programs.thunderbird.enable = true;
 
   services.easyeffects.enable = true;
 
