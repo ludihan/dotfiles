@@ -217,6 +217,7 @@
     nautilus
     aseprite
     krita
+    gimp
     prismlauncher
     libnotify
     tetrio-desktop
