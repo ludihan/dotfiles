@@ -222,6 +222,8 @@
     libnotify
     tetrio-desktop
     onlyoffice-desktopeditors
+    rustdesk-flutter
+    dufs
 
     ### dev ###
     neovim
