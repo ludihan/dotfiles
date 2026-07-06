@@ -222,7 +222,7 @@
     libnotify
     tetrio-desktop
     onlyoffice-desktopeditors
-    rustdesk-flutter
+    remmina
     dufs
 
     ### dev ###
