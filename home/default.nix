@@ -287,6 +287,7 @@
     # vscode-json-languageserver
     vscode-langservers-extracted.out
     svelte-language-server
+    tailwindcss-language-server
     emmet-language-server
     lua-language-server
     taplo
