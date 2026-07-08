@@ -188,6 +188,8 @@
     asciinema
     tiny
     batsignal
+    dufs
+    sqlite
 
     ### graphical ###
     discord
@@ -223,7 +225,7 @@
     tetrio-desktop
     onlyoffice-desktopeditors
     remmina
-    dufs
+    winbox
 
     ### dev ###
     neovim

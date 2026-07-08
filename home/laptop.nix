@@ -13,7 +13,6 @@
     (final: prev: {
       fooyin = prev.runCommand "empty" { } "mkdir $out";
       aseprite = prev.runCommand "empty" { } "mkdir $out";
-      papers = prev.runCommand "empty" { } "mkdir $out";
       renoise = prev.runCommand "empty" { } "mkdir $out";
     })
   ];
