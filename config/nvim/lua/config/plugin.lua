@@ -1,4 +1,5 @@
 vim.pack.add({
+    'https://github.com/akinsho/toggleterm.nvim',
     'https://github.com/ellisonleao/gruvbox.nvim',
     'https://github.com/neovim/nvim-lspconfig',
     'https://github.com/stevearc/oil.nvim',
@@ -115,6 +116,14 @@ require("telescope").setup({
         sorting_strategy = "ascending",
         layout_strategy = "bottom_pane",
     },
+})
+
+require("toggleterm").setup({
+    direction = "tab",
+    open_mapping = nil,
+    shade_terminals = false,
+    start_in_insert = true,
+    persist_size = false,
 })
 
 -- scala

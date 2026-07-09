@@ -71,7 +71,9 @@ vim.keymap.set('n', '<A-i>', '<cmd>tabprevious<cr>')
 -- vim.keymap.set('n', '<S-tab>', '<cmd>tabprevious<cr>')
 
 -- Create/Close tabs
-vim.keymap.set('n', '<A-t>', '<cmd>tabnew<cr>')
+vim.keymap.set('n', '<A-e>', '<cmd>tabclose<cr>')
+vim.keymap.set('n', '<A-t>', '<cmd>ToggleTerm<CR>')
+vim.keymap.set('t', '<A-t>', '<cmd>ToggleTerm<CR>')
 vim.keymap.set('n', '<A-w>', '<cmd>tabclose<cr>')
 
 -- Move tabs
