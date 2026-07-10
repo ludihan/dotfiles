@@ -465,13 +465,13 @@
   };
 
   home.file.".clang-format".source =
-    config.lib.file.mkOutOfStoreSymlink "${flakeLocation}/config/clang-format";
+    config.lib.file.mkOutOfStoreSymlink "${flakeLocation}/.config/clang-format";
 
   xdg = {
     enable = true;
     configFile =
       let
-        link = name: config.lib.file.mkOutOfStoreSymlink "${flakeLocation}/config/${name}";
+        link = name: config.lib.file.mkOutOfStoreSymlink "${flakeLocation}/.config/${name}";
       in
       {
         nvim.source = link "nvim";
