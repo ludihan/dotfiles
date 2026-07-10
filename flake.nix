@@ -38,7 +38,7 @@
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
-      flakeLocation = "/home/ludihan/.nixos-config";
+      flakeLocation = "/home/ludihan/.dotfiles";
       hmBase =
         hostPath:
         home-manager.lib.homeManagerConfiguration {
