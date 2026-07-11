@@ -190,6 +190,7 @@
     batsignal
     dufs
     sqlite
+    gitu
 
     ### graphical ###
     discord
