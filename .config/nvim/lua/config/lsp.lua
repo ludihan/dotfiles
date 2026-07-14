@@ -29,7 +29,7 @@ vim.lsp.enable({
     "html",
     "lua_ls",
     "pylsp",
-    "taplo",
+    "tombi",
     "templ",
     "vtsls",
     -- "vue_ls",
