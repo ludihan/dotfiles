@@ -115,3 +115,5 @@ vim.keymap.set("n", "-", "<CMD>Oil<CR>")
 
 -- my terminal is messing me up
 vim.keymap.set('n', '<C-i>', '<C-i>', { noremap = true })
+
+vim.keymap.set("n", "<A-r>", function() require('neogit').open() end)

@@ -11,6 +11,7 @@ vim.pack.add({
     'https://github.com/windwp/nvim-ts-autotag',
     'https://github.com/Saghen/blink.cmp',
     'https://github.com/saghen/blink.lib',
+    'https://github.com/NeogitOrg/neogit',
 })
 
 require('blink.cmp').setup({
