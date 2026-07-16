@@ -13,15 +13,44 @@
 (unless package-archive-contents
   (package-refresh-contents))
 
-(dolist (pkg '(gruvbox-theme magit which-key))
+(dolist (pkg '(use-package
+               gruvbox-theme
+               magit
+               which-key
+               go-mode
+               rust-mode
+               typescript-mode
+               svelte-mode
+               corfu
+               cape
+               yasnippet
+               yasnippet-capf
+               vertico
+               consult
+               orderless
+               marginalia
+               embark
+               embark-consult))
+
   (unless (package-installed-p pkg)
     (package-install pkg)))
 
-;;; which key
+(require 'use-package)
+
+(setq use-package-always-ensure t)
+
+;;; Which key ------------------------------------------------------------------
+
 (require 'which-key)
+
 (which-key-mode 1)
 
 (setq which-key-idle-delay 0.5)
+
+(which-key-add-key-based-replacements
+  "C-c" "custom commands"
+  "C-x g" "magit status")
+
 ;;; Appearance -----------------------------------------------------------------
 
 (menu-bar-mode -1)
@@ -38,56 +67,55 @@
 
 (blink-cursor-mode -1)
 
-;; Theme
 (load-theme 'gruvbox-dark-medium t)
 
-;; Font
 (set-face-attribute 'default nil
                     :family "Iosevka"
                     :height 140
                     :weight 'normal)
 
-;; Line numbers
 (global-display-line-numbers-mode 1)
+
 (column-number-mode 1)
+
 (setq display-line-numbers-type 'relative)
 
-;; Highlight current line
 (global-hl-line-mode 1)
 
-;; Matching parentheses
 (show-paren-mode 1)
 
-;; Visual wrapping
 (global-visual-line-mode 1)
+
 (setq visual-line-fringe-indicators '(nil right-arrow))
 
-;; Remove fringe clutter
 (setq-default indicate-buffer-boundaries nil)
 (setq-default indicate-empty-lines nil)
 
 ;;; Keybindings ----------------------------------------------------------------
 
-(global-set-key (kbd "C-c w") #'delete-trailing-whitespace)
-(global-set-key (kbd "C-x g") #'magit-status)
+(global-set-key (kbd "C-c w")
+                #'delete-trailing-whitespace)
 
-;; Better buffer list
-(global-set-key (kbd "C-x C-b") #'ibuffer)
+(global-set-key (kbd "C-x g")
+                #'magit-status)
 
-;; Reload init.el
-(global-set-key (kbd "C-c r")
-                (lambda ()
-                  (interactive)
-                  (load-file user-init-file)))
+(global-set-key (kbd "C-x C-b")
+                #'ibuffer)
 
-;; Open init.el
-(global-set-key (kbd "C-c e")
-                (lambda ()
-                  (interactive)
-                  (find-file user-init-file)))
+(global-set-key
+ (kbd "C-c r")
+ (lambda ()
+   (interactive)
+   (load-file user-init-file)))
 
-;; Comment line/region
-(global-set-key (kbd "C-;") #'comment-line)
+(global-set-key
+ (kbd "C-c e")
+ (lambda ()
+   (interactive)
+   (find-file user-init-file)))
+
+(global-set-key (kbd "C-;")
+                #'comment-line)
 
 ;;; Smooth scrolling -----------------------------------------------------------
 
@@ -110,24 +138,27 @@
 (setq tab-always-indent 'complete)
 
 (electric-pair-mode 1)
+
 (delete-selection-mode 1)
 
 (global-auto-revert-mode 1)
+
 (setq global-auto-revert-non-file-buffers t)
 
 (save-place-mode 1)
+
 (savehist-mode 1)
+
 (recentf-mode 1)
 
 (setq recentf-max-saved-items 200)
-
-(fido-vertical-mode 1)
 
 (setq enable-recursive-minibuffers t)
 
 (fset 'yes-or-no-p 'y-or-n-p)
 
 (set-language-environment "UTF-8")
+
 (prefer-coding-system 'utf-8)
 
 ;;; Sensible defaults ----------------------------------------------------------
@@ -143,51 +174,330 @@
 
 (setq vc-follow-symlinks t)
 
-;;; Language indentation -------------------------------------------------------
+;;; Completion -----------------------------------------------------------------
 
-(add-hook 'python-mode-hook
-          (lambda ()
-            (setq-local python-indent-offset 4)))
+(use-package vertico
+  :init
+  (vertico-mode))
 
-(add-hook 'c-mode-common-hook
-          (lambda ()
-            (setq-local c-basic-offset 4)))
+(use-package orderless
+  :custom
+  (completion-styles '(orderless basic))
+  (completion-category-defaults nil)
+  (completion-category-overrides
+   '((file (styles basic partial-completion)))))
+
+(use-package marginalia
+  :after vertico
+  :init
+  (marginalia-mode))
+
+(use-package consult
+  :bind
+  (("C-s" . consult-line)
+   ("C-x b" . consult-buffer)
+   ("C-c f" . consult-project-buffer)
+   ("C-c s" . consult-ripgrep)
+   ("C-c g" . consult-grep)
+   ("C-c m" . consult-mode-command))
+
+  :custom
+  (consult-preview-key "M-."))
+
+(use-package embark
+  :bind
+  (("C-." . embark-act)
+   ("C-h B" . embark-bindings)))
+
+(use-package embark-consult
+  :after (embark consult))
+
+(use-package corfu
+  :init
+  (global-corfu-mode)
+
+  :custom
+  (corfu-auto t)
+  (corfu-cycle t)
+  (corfu-preselect 'prompt)
+  (corfu-preview-current nil)
+
+  :config
+  (corfu-popupinfo-mode 1))
+
+(with-eval-after-load 'corfu
+  (define-key corfu-map
+              (kbd "C-h")
+              #'corfu-popupinfo-toggle))
+
+(use-package cape
+  :after corfu
+
+  :config
+  (add-to-list 'completion-at-point-functions
+               #'cape-file)
+
+  (add-to-list 'completion-at-point-functions
+               #'cape-dabbrev))
+
+(use-package yasnippet
+  :config
+  (yas-global-mode 1))
+
+(use-package yasnippet-capf
+  :after (yasnippet corfu)
+
+  :config
+  (add-to-list 'completion-at-point-functions
+               #'yasnippet-capf))
+
+;;; Project navigation ---------------------------------------------------------
+
+(use-package project
+  :ensure nil
+
+  :bind
+  (("C-c p f" . project-find-file)
+   ("C-c p s" . project-find-regexp)))
+;;; Documentation --------------------------------------------------------------
+
+(setq eldoc-idle-delay 0.2)
+
+(add-hook 'eglot-managed-mode-hook
+          #'eldoc-mode)
+
+;;; LSP ------------------------------------------------------------------------
+
+(use-package eglot
+  :ensure nil
+
+  :hook
+  ((go-mode
+    rust-mode
+    js-mode
+    js-ts-mode
+    typescript-mode
+    typescript-ts-mode
+    tsx-ts-mode
+    html-mode
+    css-mode
+    svelte-mode) . eglot-ensure))
+
+
+(with-eval-after-load 'eglot
+
+  ;; Language servers
+
+  (add-to-list 'eglot-server-programs
+               '(go-mode . ("gopls")))
+
+  (add-to-list 'eglot-server-programs
+               '(rust-mode . ("rust-analyzer")))
+
+
+  (add-to-list 'eglot-server-programs
+               '((js-mode
+                  js-ts-mode
+                  typescript-mode
+                  typescript-ts-mode
+                  tsx-ts-mode)
+                 "typescript-language-server"
+                 "--stdio"))
+
+
+  (add-to-list 'eglot-server-programs
+               '((html-mode
+                  html-ts-mode)
+                 "vscode-html-language-server"
+                 "--stdio"))
+
+
+  (add-to-list 'eglot-server-programs
+               '((css-mode
+                  css-ts-mode)
+                 "vscode-css-language-server"
+                 "--stdio"))
+
+
+  (add-to-list 'eglot-server-programs
+               '(svelte-mode
+                 "svelteserver"
+                 "--stdio"))
+
+
+  ;; LSP keybindings
+
+  (define-key eglot-mode-map
+              (kbd "C-c l r")
+              #'eglot-rename)
+
+  (define-key eglot-mode-map
+              (kbd "C-c l a")
+              #'eglot-code-actions)
+
+  (define-key eglot-mode-map
+              (kbd "C-c l f")
+              #'eglot-format-buffer)
+
+  (define-key eglot-mode-map
+              (kbd "C-c l d")
+              #'eldoc-doc-buffer)
+
+
+  ;; Which-key labels
+
+  (which-key-add-key-based-replacements
+    "C-c l" "language server"
+    "C-c l r" "rename symbol"
+    "C-c l a" "code actions"
+    "C-c l f" "format buffer"
+    "C-c l d" "show documentation"))
+
+
+;;; Language modes -------------------------------------------------------------
+
+(use-package go-mode
+  :mode "\\.go\\'"
+
+  :hook
+  (go-mode . (lambda ()
+               (setq-local tab-width 4))))
+
+
+(use-package rust-mode
+  :mode "\\.rs\\'"
+
+  :hook
+  (rust-mode . (lambda ()
+                 (setq-local rust-format-on-save t))))
+
+
+(use-package typescript-mode
+  :mode ("\\.ts\\'"
+         "\\.tsx\\'")
+
+  :custom
+  (typescript-indent-level 2))
+
+
+(use-package svelte-mode
+  :mode "\\.svelte\\'")
+
 
 (add-hook 'js-mode-hook
           (lambda ()
             (setq-local js-indent-level 2)))
 
+
 (add-hook 'css-mode-hook
           (lambda ()
             (setq-local css-indent-offset 2)))
 
-(add-hook 'rust-mode-hook
-          (lambda ()
-            (setq-local rust-indent-offset 4)))
+
+;;; Tree-sitter ----------------------------------------------------------------
+
+(setq treesit-language-source-alist
+      '((bash
+         "https://github.com/tree-sitter/tree-sitter-bash")
+
+        (css
+         "https://github.com/tree-sitter/tree-sitter-css")
+
+        (go
+         "https://github.com/tree-sitter/tree-sitter-go")
+
+        (html
+         "https://github.com/tree-sitter/tree-sitter-html")
+
+        (javascript
+         "https://github.com/tree-sitter/tree-sitter-javascript")
+
+        (json
+         "https://github.com/tree-sitter/tree-sitter-json")
+
+        (rust
+         "https://github.com/tree-sitter/tree-sitter-rust")
+
+        (tsx
+         "https://github.com/tree-sitter/tree-sitter-typescript"
+         "master"
+         "tsx/src")
+
+        (typescript
+         "https://github.com/tree-sitter/tree-sitter-typescript"
+         "master"
+         "typescript/src")))
+
+
+(add-to-list 'major-mode-remap-alist
+             '(javascript-mode . js-ts-mode))
+
+
+(add-to-list 'major-mode-remap-alist
+             '(typescript-mode . typescript-ts-mode))
+
+
+(add-to-list 'major-mode-remap-alist
+             '(typescriptreact-mode . tsx-ts-mode))
+
+
+(add-to-list 'major-mode-remap-alist
+             '(css-mode . css-ts-mode))
+
+
+(add-to-list 'major-mode-remap-alist
+             '(html-mode . html-ts-mode))
+
 
 ;;; Files ----------------------------------------------------------------------
 
 (setq create-lockfiles nil)
 
+
 (setq backup-directory-alist
-      `(("." . ,(expand-file-name "backups/" user-emacs-directory))))
+      `(("." .
+         ,(expand-file-name
+           "backups/"
+           user-emacs-directory))))
+
 
 (setq auto-save-file-name-transforms
-      `((".*" ,(expand-file-name "auto-save/" user-emacs-directory) t)))
+      `((".*"
+         ,(expand-file-name
+           "auto-save/"
+           user-emacs-directory)
+         t)))
 
-(make-directory (expand-file-name "backups/" user-emacs-directory) t)
-(make-directory (expand-file-name "auto-save/" user-emacs-directory) t)
+
+(make-directory
+ (expand-file-name "backups/"
+                   user-emacs-directory)
+ t)
+
+
+(make-directory
+ (expand-file-name "auto-save/"
+                   user-emacs-directory)
+ t)
+
 
 ;;; Dired ----------------------------------------------------------------------
 
 (setq dired-listing-switches "-alh")
 
+
 ;;; Customize ------------------------------------------------------------------
 
-(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
+(setq custom-file
+      (expand-file-name
+       "custom.el"
+       user-emacs-directory))
+
 
 (when (file-exists-p custom-file)
   (load custom-file))
 
+
 (provide 'init)
+
 ;;; init.el ends here

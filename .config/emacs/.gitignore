@@ -9,3 +9,5 @@
 !lisp/*.el
 
 !README.md
+
+!early-init.el
