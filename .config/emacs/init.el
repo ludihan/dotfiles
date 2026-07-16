@@ -21,6 +21,9 @@
                rust-mode
                typescript-mode
                svelte-mode
+               lsp-mode
+               lsp-ui
+               treesit-auto
                corfu
                cape
                yasnippet
@@ -263,14 +266,9 @@
 
 (setq eldoc-idle-delay 0.2)
 
-(add-hook 'eglot-managed-mode-hook
-          #'eldoc-mode)
-
 ;;; LSP ------------------------------------------------------------------------
 
-(use-package eglot
-  :ensure nil
-
+(use-package lsp-mode
   :hook
   ((go-mode
     rust-mode
@@ -281,77 +279,32 @@
     tsx-ts-mode
     html-mode
     css-mode
-    svelte-mode) . eglot-ensure))
+    svelte-mode) . lsp-deferred)
 
+  :custom
+  (lsp-keymap-prefix "C-c l")
+  (lsp-idle-delay 0.5)
+  (lsp-enable-symbol-highlighting t)
+  (lsp-headerline-breadcrumb-segments '(path-up-to-project file symbols))
+  (lsp-headerline-breadcrumb-enable t)
+  (lsp-enable-on-type-formatting nil)
+  (lsp-enable-indentation nil)
+  (lsp-enable-snippet nil)
+  (lsp-modeline-code-actions-enable t)
+  (lsp-completion-provider :capf)
 
-(with-eval-after-load 'eglot
+  :config
+  (lsp-enable-which-key-integration t))
 
-  ;; Language servers
-
-  (add-to-list 'eglot-server-programs
-               '(go-mode . ("gopls")))
-
-  (add-to-list 'eglot-server-programs
-               '(rust-mode . ("rust-analyzer")))
-
-
-  (add-to-list 'eglot-server-programs
-               '((js-mode
-                  js-ts-mode
-                  typescript-mode
-                  typescript-ts-mode
-                  tsx-ts-mode)
-                 "typescript-language-server"
-                 "--stdio"))
-
-
-  (add-to-list 'eglot-server-programs
-               '((html-mode
-                  html-ts-mode)
-                 "vscode-html-language-server"
-                 "--stdio"))
-
-
-  (add-to-list 'eglot-server-programs
-               '((css-mode
-                  css-ts-mode)
-                 "vscode-css-language-server"
-                 "--stdio"))
-
-
-  (add-to-list 'eglot-server-programs
-               '(svelte-mode
-                 "svelteserver"
-                 "--stdio"))
-
-
-  ;; LSP keybindings
-
-  (define-key eglot-mode-map
-              (kbd "C-c l r")
-              #'eglot-rename)
-
-  (define-key eglot-mode-map
-              (kbd "C-c l a")
-              #'eglot-code-actions)
-
-  (define-key eglot-mode-map
-              (kbd "C-c l f")
-              #'eglot-format-buffer)
-
-  (define-key eglot-mode-map
-              (kbd "C-c l d")
-              #'eldoc-doc-buffer)
-
-
-  ;; Which-key labels
-
-  (which-key-add-key-based-replacements
-    "C-c l" "language server"
-    "C-c l r" "rename symbol"
-    "C-c l a" "code actions"
-    "C-c l f" "format buffer"
-    "C-c l d" "show documentation"))
+(use-package lsp-ui
+  :after lsp-mode
+  :custom
+  (lsp-ui-doc-enable t)
+  (lsp-ui-doc-position 'at-point)
+  (lsp-ui-sideline-enable t)
+  (lsp-ui-sideline-show-diagnostics t)
+  (lsp-ui-sideline-show-hover nil)
+  (lsp-ui-sideline-show-code-actions t))
 
 
 ;;; Language modes -------------------------------------------------------------
@@ -396,57 +349,9 @@
 
 ;;; Tree-sitter ----------------------------------------------------------------
 
-(setq treesit-language-source-alist
-      '((bash
-         "https://github.com/tree-sitter/tree-sitter-bash")
-
-        (css
-         "https://github.com/tree-sitter/tree-sitter-css")
-
-        (go
-         "https://github.com/tree-sitter/tree-sitter-go")
-
-        (html
-         "https://github.com/tree-sitter/tree-sitter-html")
-
-        (javascript
-         "https://github.com/tree-sitter/tree-sitter-javascript")
-
-        (json
-         "https://github.com/tree-sitter/tree-sitter-json")
-
-        (rust
-         "https://github.com/tree-sitter/tree-sitter-rust")
-
-        (tsx
-         "https://github.com/tree-sitter/tree-sitter-typescript"
-         "master"
-         "tsx/src")
-
-        (typescript
-         "https://github.com/tree-sitter/tree-sitter-typescript"
-         "master"
-         "typescript/src")))
-
-
-(add-to-list 'major-mode-remap-alist
-             '(javascript-mode . js-ts-mode))
-
-
-(add-to-list 'major-mode-remap-alist
-             '(typescript-mode . typescript-ts-mode))
-
-
-(add-to-list 'major-mode-remap-alist
-             '(typescriptreact-mode . tsx-ts-mode))
-
-
-(add-to-list 'major-mode-remap-alist
-             '(css-mode . css-ts-mode))
-
-
-(add-to-list 'major-mode-remap-alist
-             '(html-mode . html-ts-mode))
+(use-package treesit-auto
+  :config
+  (global-treesit-auto-mode 1))
 
 
 ;;; Files ----------------------------------------------------------------------
