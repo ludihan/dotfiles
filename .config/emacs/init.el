@@ -87,7 +87,7 @@
                   (find-file user-init-file)))
 
 ;; Comment line/region
-(global-set-key (kbd "C-/") #'comment-line)
+(global-set-key (kbd "C-;") #'comment-line)
 
 ;;; Smooth scrolling -----------------------------------------------------------
 
