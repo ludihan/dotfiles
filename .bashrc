@@ -19,6 +19,7 @@ export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
 
 export GOPATH="$XDG_DATA_HOME"/go
 
+export PATH="$HOME/.local/bin:$PATH"
 export PATH="$CARGO_HOME/bin:$PATH"
 export PATH="$GOPATH/bin:$PATH"
 export PATH="$XDG_DATA_HOME/npm-global/bin:$PATH"

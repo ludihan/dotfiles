@@ -1,0 +1,10 @@
+NetworkManager
+agetty-tty2
+agetty-tty3
+agetty-tty4
+agetty-tty5
+agetty-tty6
+chronyd
+dbus
+sddm
+udevd

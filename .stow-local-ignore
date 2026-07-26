@@ -1,0 +1,3 @@
+^\.git(/|$)
+^packages\.txt$
+^services\.txt$
