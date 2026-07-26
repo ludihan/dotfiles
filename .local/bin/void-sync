@@ -7,7 +7,7 @@ mkdir -p "$DOTFILES_DIR"
 ls /var/service/ > "$DOTFILES_DIR/services.txt" 2>/dev/null
 
 # Save explicitly installed packages
-xbps-query -m > "$DOTFILES_DIR/packages.txt"
+xpkg -m > "$DOTFILES_DIR/packages.txt"
 
 echo "Saved:"
 echo "  Services -> $DOTFILES_DIR/services.txt"
