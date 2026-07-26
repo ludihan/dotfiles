@@ -1,3 +1,10 @@
+# .bashrc
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+
 PS1='\[\e[92m\]\u\[\e[0m\]@\[\e[92m\]\h\[\e[0m\]:\[\e[92m\]\w\[\e[0m\]> '
 
 export HISTFILE="$XDG_STATE_HOME"/bash/history
