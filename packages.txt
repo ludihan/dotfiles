@@ -45,7 +45,10 @@ ripgrep
 rustup
 spectacle
 stow
+tmux
 tree-sitter-cli
+typst
+vlc
 void-repo-multilib
 void-repo-multilib-nonfree
 void-repo-nonfree
