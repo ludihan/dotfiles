@@ -3,7 +3,10 @@ Vulkan-Tools
 ark
 base-system
 bash-completion
+brother-brlaser
 chrony
+cups
+cups-filters
 dbus
 docker
 docker-compose
@@ -13,12 +16,15 @@ ffmpegthumbs
 firefox
 flatpak
 font-iosevka
+foomatic-db
+foomatic-db-nonfree
 gcc
 git
 github-cli
 gitu
 go
 grub-x86_64-efi
+gutenprint
 gwenview
 htop
 kde-baseapps

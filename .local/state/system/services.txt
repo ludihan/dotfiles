@@ -5,6 +5,8 @@ agetty-tty4
 agetty-tty5
 agetty-tty6
 chronyd
+cupsd
 dbus
+docker
 sddm
 udevd
