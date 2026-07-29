@@ -25,14 +25,12 @@ kde-baseapps
 kde-plasma
 kdegraphics-thumbnailers
 kwayland
-labwc
 libvdpau-va-gl
 mesa-dri
 mesa-vaapi
 mesa-vulkan-nouveau
 neovim
 nerd-fonts-symbols-ttf
-niri
 nodejs
 noto-fonts-cjk
 ocean-sound-theme
