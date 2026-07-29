@@ -1,14 +1,12 @@
 #!/usr/bin/env bash
 
-DOTFILES_DIR="${HOME}/.dotfiles"
+SYSTEM_DIR="${XDG_STATE_HOME:-$HOME/.local/state}/system"
 
-mkdir -p "$DOTFILES_DIR"
+mkdir -p "$SYSTEM_DIR"
 
-ls /var/service/ > "$DOTFILES_DIR/services.txt" 2>/dev/null
-
-# Save explicitly installed packages
-xpkg -m > "$DOTFILES_DIR/packages.txt"
+ls /var/service/ > "$SYSTEM_DIR/services.txt" 2>/dev/null
+xpkg -m > "$SYSTEM_DIR/packages.txt"
 
 echo "Saved:"
-echo "  Services -> $DOTFILES_DIR/services.txt"
-echo "  Packages -> $DOTFILES_DIR/packages.txt"
+echo "  Services -> $SYSTEM_DIR/services.txt"
+echo "  Packages -> $SYSTEM_DIR/packages.txt"

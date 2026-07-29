@@ -5,6 +5,7 @@
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+alias dotf='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 PS1='\[\e[92m\]\u\[\e[0m\]@\[\e[92m\]\h\[\e[0m\]:\[\e[92m\]\w\[\e[0m\]> '
 
