@@ -9,3 +9,5 @@
 	email = 65617704+ludihan@users.noreply.github.com
 [init]
 	defaultBranch = main
+[pull]
+	rebase = true
