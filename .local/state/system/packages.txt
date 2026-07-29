@@ -39,6 +39,7 @@ pipewire
 plasma-browser-integration
 qt5-wayland
 qt6-wayland
+remmina
 ripgrep
 rustup
 spectacle
