@@ -21,6 +21,7 @@ font-iosevka
 foomatic-db
 foomatic-db-nonfree
 gcc
+gimp
 git
 github-cli
 gitu

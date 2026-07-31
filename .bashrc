@@ -6,6 +6,7 @@
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias d='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias docker-nuke='docker stop $(docker ps -aq) 2>/dev/null; docker system prune -a --volumes -f'
 
 PS1='\[\e[92m\]\u\[\e[0m\]@\[\e[92m\]\h\[\e[0m\]:\[\e[92m\]\w\[\e[0m\]> '
 
