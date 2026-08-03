@@ -40,6 +40,7 @@ mesa-vaapi
 mesa-vulkan-nouveau
 neovim
 nerd-fonts-symbols-ttf
+netris
 nodejs
 noto-fonts-cjk
 ocean-sound-theme
