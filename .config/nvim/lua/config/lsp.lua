@@ -12,6 +12,8 @@ require("mason-lspconfig").setup {
         "cssls",
         "emmet_language_server",
         "html",
+        "templ",
+        "htmx",
         "lua_ls",
         "pylsp",
         "tombi",
