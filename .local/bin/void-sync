@@ -6,7 +6,9 @@ mkdir -p "$SYSTEM_DIR"
 
 ls /var/service/ > "$SYSTEM_DIR/services.txt" 2>/dev/null
 xpkg -m > "$SYSTEM_DIR/packages.txt"
+groups > "$SYSTEM_DIR/groups.txt"
 
 echo "Saved:"
 echo "  Services -> $SYSTEM_DIR/services.txt"
 echo "  Packages -> $SYSTEM_DIR/packages.txt"
+echo "  Groups   -> $SYSTEM_DIR/groups.txt"
