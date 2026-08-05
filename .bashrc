@@ -1,3 +1,8 @@
+# how to setup this repo:
+# git clone --bare https://github.com/ludihan/dotfiles $HOME/.dotfiles
+# alias d='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+# d config --local status.showUntrackedFiles no
+
 # .bashrc
 
 # If not running interactively, don't do anything

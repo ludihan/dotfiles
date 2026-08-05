@@ -52,6 +52,7 @@ qt5-wayland
 qt6-wayland
 remmina
 ripgrep
+rtkit
 rustup
 spectacle
 stow
