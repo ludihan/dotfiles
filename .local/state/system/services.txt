@@ -1,12 +1,32 @@
-NetworkManager
-agetty-tty2
-agetty-tty3
-agetty-tty4
-agetty-tty5
-agetty-tty6
-chronyd
-cupsd
-dbus
-docker
-sddm
-udevd
+appstream-sync-cache.service        enabled enabled
+audit-rules.service                 enabled enabled
+auditd.service                      enabled enabled
+avahi-daemon.service                enabled enabled
+blk-availability.service            enabled enabled
+bluetooth.service                   enabled disabled
+chronyd.service                     enabled enabled
+cleanoldsepoldir.service            enabled enabled
+cups.service                        enabled enabled
+dbus-broker.service                 enabled enabled
+display-manager-legacy.service      enabled enabled
+drkonqi-coredump-processor@.service enabled enabled
+getty@.service                      enabled enabled
+irqbalance.service                  enabled enabled
+kbdsettings.service                 enabled enabled
+lvm2-monitor.service                enabled enabled
+mcelog.service                      enabled enabled
+ModemManager.service                enabled enabled
+NetworkManager-dispatcher.service   enabled disabled
+NetworkManager-wait-online.service  enabled disabled
+NetworkManager.service              enabled disabled
+nvmefc-boot-connections.service     enabled enabled
+nvmf-autoconnect.service            enabled enabled
+purge-kernels.service               enabled enabled
+smartd.service                      enabled enabled
+soft-reboot-cleanup.service         enabled enabled
+switcheroo-control.service          enabled enabled
+systemd-pstore.service              enabled enabled
+update-desktop-database.service     enabled enabled
+wtmpdb-update-boot.service          enabled enabled
+YaST2-Firstboot.service             enabled enabled
+YaST2-Second-Stage.service          enabled enabled
