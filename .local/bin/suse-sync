@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+SYSTEM_DIR="${XDG_STATE_HOME:-$HOME/.local/state}/system"
+
+mkdir -p "$SYSTEM_DIR"
+
+systemctl list-unit-files --state=enabled --type=service --no-legend --no-pager > "$SYSTEM_DIR/services.txt" 2>/dev/null
+systemctl list-timers --all --no-legend --no-pager > "$SYSTEM_DIR/timers.txt" 2>/dev/null
+zypper packages --installed-only | awk '$1 == "i+" { print $5 }' > "$SYSTEM_DIR/packages.txt"
+groups > "$SYSTEM_DIR/groups.txt"
+getent passwd | awk -F: '$3 >= 1000 { print $1 "\t" $3 "\t" $6 "\t" $7 }' > "$SYSTEM_DIR/users.txt"
+cp /etc/fstab "$SYSTEM_DIR/fstab.txt" 2>/dev/null
+crontab -l > "$SYSTEM_DIR/crontab.txt" 2>/dev/null
+uname -a > "$SYSTEM_DIR/kernel.txt"
+
+if command -v flatpak >/dev/null 2>&1; then
+    flatpak list --app --columns=application,origin,version > "$SYSTEM_DIR/flatpak.txt" 2>/dev/null
+else
+    echo "flatpak not installed" > "$SYSTEM_DIR/flatpak.txt"
+fi
+
+echo "Saved to $SYSTEM_DIR:"
+echo "  Services          -> services.txt"
+echo "  Timers            -> timers.txt"
+echo "  Packages          -> packages.txt"
+echo "  Groups            -> groups.txt"
+echo "  Users             -> users.txt"
+echo "  fstab             -> fstab.txt"
+echo "  crontab           -> crontab.txt"
+echo "  Kernel            -> kernel.txt"
+echo "  Flatpak           -> flatpak.txt"

@@ -1,0 +1,15 @@
+Fri 2026-08-07 17:44:03 -04          13min Fri 2026-08-07 16:44:03 -04 46min ago snapper-cleanup.timer           snapper-cleanup.service
+Fri 2026-08-07 18:00:00 -04          29min Fri 2026-08-07 17:00:40 -04 29min ago snapper-timeline.timer          snapper-timeline.service
+Fri 2026-08-07 21:27:38 -04       3h 57min Thu 2026-08-06 12:15:42 -04         - man-db.timer                    man-db.service
+Sat 2026-08-08 00:02:43 -04             6h Fri 2026-08-07 08:54:13 -04    7h ago backup-rpmdb.timer              backup-rpmdb.service
+Sat 2026-08-08 00:07:16 -04             6h Fri 2026-08-07 08:35:27 -04    7h ago logrotate.timer                 logrotate.service
+Sat 2026-08-08 00:32:38 -04             7h Fri 2026-08-07 08:54:13 -04    7h ago backup-sysconfig.timer          backup-sysconfig.service
+Sat 2026-08-08 01:44:46 -04             8h Fri 2026-08-07 08:52:44 -04    7h ago check-battery.timer             check-battery.service
+Sat 2026-08-08 09:45:40 -04            16h Fri 2026-08-07 08:48:09 -04    7h ago systemd-tmpfiles-clean.timer    systemd-tmpfiles-clean.service
+Mon 2026-08-10 01:29:57 -04         2 days Thu 2026-08-06 12:15:42 -04         - fstrim.timer                    fstrim.service
+Tue 2026-09-01 00:00:00 -04 3 weeks 3 days Thu 2026-08-06 12:15:42 -04         - btrfs-balance.timer             btrfs-balance.service
+Tue 2026-09-01 00:00:00 -04 3 weeks 3 days Thu 2026-08-06 12:15:42 -04         - btrfs-defrag.timer              btrfs-defrag.service
+Tue 2026-09-01 00:00:00 -04 3 weeks 3 days Thu 2026-08-06 12:15:42 -04         - btrfs-scrub.timer               btrfs-scrub.service
+Tue 2026-09-01 00:00:00 -04 3 weeks 3 days Thu 2026-08-06 12:15:42 -04         - btrfs-trim.timer                btrfs-trim.service
+Tue 2026-09-01 00:14:40 -04 3 weeks 3 days Thu 2026-08-06 12:15:42 -04         - wtmpdb-rotate.timer             wtmpdb-rotate.service
+-                                        - -                                   - openSUSE-build-key-import.timer openSUSE-build-key-import.service

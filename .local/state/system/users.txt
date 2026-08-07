@@ -1,0 +1,2 @@
+nobody	65534	/var/lib/nobody	/usr/sbin/nologin
+ludihan	1000	/home/ludihan	/bin/bash
