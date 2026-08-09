@@ -9,6 +9,7 @@ gh
 git
 glibc
 go
+google-noto-sans-cjk-fonts
 iosevka-fonts
 irqbalance
 kernel-default
