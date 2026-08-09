@@ -36,3 +36,4 @@ shim
 snapper
 systemd-boot
 tmux
+typst

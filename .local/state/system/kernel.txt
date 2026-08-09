@@ -1,1 +1,0 @@
-Linux ludihan-desktop 7.1.5-1-default #1 SMP PREEMPT_DYNAMIC Tue Jul 28 09:31:57 UTC 2026 (862e13e) x86_64 x86_64 x86_64 GNU/Linux
