@@ -10,6 +10,7 @@ cups.service                        enabled enabled
 dbus-broker.service                 enabled enabled
 display-manager-legacy.service      enabled enabled
 drkonqi-coredump-processor@.service enabled enabled
+firewalld.service                   enabled enabled
 getty@.service                      enabled enabled
 irqbalance.service                  enabled enabled
 kbdsettings.service                 enabled enabled
