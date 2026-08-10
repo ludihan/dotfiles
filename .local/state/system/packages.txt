@@ -23,6 +23,7 @@ NetworkManager
 nodejs26
 numactl
 nvme-cli
+onefetch
 openSUSE-release
 patterns-base-base
 patterns-base-enhanced_base
@@ -32,6 +33,7 @@ patterns-desktop-mobile
 patterns-kde-kde
 patterns-yast-x11_yast
 patterns-yast-yast2_basis
+remmina
 ripgrep
 rpm
 rustup
