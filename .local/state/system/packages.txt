@@ -23,6 +23,7 @@ NetworkManager
 nodejs26
 numactl
 nvme-cli
+ollama
 onefetch
 openSUSE-release
 patterns-base-base
