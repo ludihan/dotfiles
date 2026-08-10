@@ -10,6 +10,7 @@ gh
 git
 glibc
 go
+godot
 google-noto-sans-cjk-fonts
 iosevka-fonts
 irqbalance
