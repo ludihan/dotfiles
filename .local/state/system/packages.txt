@@ -1,4 +1,5 @@
 btrfsprogs
+discord
 dosfstools
 dracut
 e2fsprogs
@@ -15,6 +16,7 @@ irqbalance
 kernel-default
 kernel-default
 kexec-tools
+libresprite
 neovim
 NetworkManager
 nodejs26

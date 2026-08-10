@@ -10,7 +10,6 @@ cups.service
 dbus-broker.service
 display-manager-legacy.service
 drkonqi-coredump-processor@.service
-firewalld.service
 getty@.service
 irqbalance.service
 kbdsettings.service
