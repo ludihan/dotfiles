@@ -5,6 +5,6 @@ SYSTEM_DIR="${XDG_STATE_HOME:-$HOME/.local/state}/system"
 mkdir -p "$SYSTEM_DIR"
 
 systemctl list-unit-files --state=enabled --type=service --no-legend --no-pager | awk '{ print $1 }' > "$SYSTEM_DIR/services.txt"
-zypper packages --installed-only | awk '$1 == "i+" { print $5 }' > "$SYSTEM_DIR/packages.txt"
+zypper packages --installed-only | awk '$1 == "i+" { print $5 }' | uniq > "$SYSTEM_DIR/packages.txt"
 flatpak list --app --columns=application > "$SYSTEM_DIR/flatpak.txt"
 groups > "$SYSTEM_DIR/groups.txt"

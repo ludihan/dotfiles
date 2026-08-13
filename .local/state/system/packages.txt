@@ -16,7 +16,6 @@ htop
 iosevka-fonts
 irqbalance
 kernel-default
-kernel-default
 kexec-tools
 libresprite
 MozillaThunderbird
