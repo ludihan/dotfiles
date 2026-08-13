@@ -12,12 +12,14 @@ glibc
 go
 godot
 google-noto-sans-cjk-fonts
+htop
 iosevka-fonts
 irqbalance
 kernel-default
 kernel-default
 kexec-tools
 libresprite
+MozillaThunderbird
 neovim
 NetworkManager
 nodejs26
