@@ -29,7 +29,7 @@ require("mason-lspconfig").setup {
         "marksman",
         "yamlls",
         'tailwindcss',
-        'ols',
+        -- 'ols',
         -- 'eslint-lsp',
         -- 'dartls',
         -- 'elp',
