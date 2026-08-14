@@ -19,6 +19,12 @@ irqbalance
 kernel-default
 kexec-tools
 libresprite
+libX11-devel
+libXcursor-devel
+libXi-devel
+libXinerama-devel
+libXrandr-devel
+make
 MozillaThunderbird
 neovim
 NetworkManager
