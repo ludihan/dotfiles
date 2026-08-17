@@ -1,6 +1,5 @@
 btrfsprogs
 clang
-discord
 dosfstools
 dracut
 e2fsprogs
