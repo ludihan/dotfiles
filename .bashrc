@@ -20,6 +20,7 @@ export VISUAL="nvim"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
 export PATH="$HOME/.npm-global/bin:$PATH"
+export PATH="$HOME/.local/share/odin:$PATH"
 
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
