@@ -1,5 +1,7 @@
+alsa-devel
 btrfsprogs
 clang
+discord
 dosfstools
 dracut
 e2fsprogs
@@ -23,7 +25,10 @@ libXcursor-devel
 libXi-devel
 libXinerama-devel
 libXrandr-devel
+libXxf86vm-devel
 make
+Mesa-libGL-devel
+Mesa-libGLESv3-devel
 MozillaThunderbird
 neovim
 NetworkManager
@@ -47,7 +52,9 @@ rpm
 rustup
 sdbootutil
 shim
+sl
 snapper
 systemd-boot
+systemd-devel
 tmux
 typst
