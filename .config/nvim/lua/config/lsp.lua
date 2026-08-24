@@ -20,6 +20,7 @@ require("mason-lspconfig").setup {
         "tombi",
         "templ",
         "ts_ls",
+        "elixirls",
         -- "vue_ls",
         "svelte",
         "bashls",
@@ -33,7 +34,6 @@ require("mason-lspconfig").setup {
         -- 'eslint-lsp',
         -- 'dartls',
         -- 'elp',
-        -- 'elixirls',
         -- "omnisharp"
         -- 'metals'
     },
