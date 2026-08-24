@@ -6,6 +6,7 @@ docker-compose
 dosfstools
 dracut
 e2fsprogs
+elixir
 fd
 firewalld
 gh
@@ -32,6 +33,8 @@ patterns-desktop-mobile
 patterns-gnome-gnome
 patterns-yast-x11_yast
 patterns-yast-yast2_basis
+postgresql
+postgresql-server
 remmina
 ripgrep
 rpm
