@@ -1,3 +1,4 @@
+apparmor.service
 appstream-sync-cache.service
 audit-rules.service
 auditd.service
@@ -8,8 +9,8 @@ chronyd.service
 cleanoldsepoldir.service
 cups.service
 dbus-broker.service
-display-manager-legacy.service
-drkonqi-coredump-processor@.service
+firewalld.service
+gdm.service
 getty@.service
 irqbalance.service
 kbdsettings.service
@@ -24,9 +25,6 @@ nvmf-autoconnect.service
 purge-kernels.service
 smartd.service
 soft-reboot-cleanup.service
-switcheroo-control.service
 systemd-pstore.service
 update-desktop-database.service
 wtmpdb-update-boot.service
-YaST2-Firstboot.service
-YaST2-Second-Stage.service

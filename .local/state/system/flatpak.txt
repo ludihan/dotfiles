@@ -1,2 +1,1 @@
 com.usebruno.Bruno
-sh.ppy.osu
