@@ -13,6 +13,7 @@ git
 glibc
 go
 google-noto-sans-cjk-fonts
+htop
 iosevka-fonts
 irqbalance
 kernel-default
