@@ -1,6 +1,6 @@
 vim.pack.add({
     'https://github.com/akinsho/toggleterm.nvim',
-    'https://github.com/ellisonleao/gruvbox.nvim',
+    -- 'https://github.com/ellisonleao/gruvbox.nvim',
     'https://github.com/neovim/nvim-lspconfig',
     'https://github.com/mason-org/mason.nvim',
     'https://github.com/mason-org/mason-lspconfig.nvim',
@@ -97,8 +97,8 @@ require('nvim-ts-autotag').setup({
     },
 })
 
-require("gruvbox").setup()
-vim.cmd.colorscheme('gruvbox')
+-- require("gruvbox").setup()
+vim.cmd.colorscheme('retrobox')
 
 require("snacks").setup({
     bigfile = { enabled = true }

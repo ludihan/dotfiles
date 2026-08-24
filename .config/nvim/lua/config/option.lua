@@ -36,7 +36,7 @@ vim.filetype.add({
 
 vim.opt.signcolumn = "yes"
 vim.opt.cursorline = true
-vim.opt.colorcolumn = "80"
+-- vim.opt.colorcolumn = "80"
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
