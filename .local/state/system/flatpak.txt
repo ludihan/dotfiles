@@ -1,1 +1,3 @@
+at.vintagestory.VintageStory
 com.usebruno.Bruno
+sh.ppy.osu
