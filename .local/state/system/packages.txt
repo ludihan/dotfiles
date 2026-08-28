@@ -1,4 +1,5 @@
 btrfsprogs
+clang
 discord
 docker
 docker-buildx
@@ -12,13 +13,16 @@ firewalld
 gh
 git
 glibc
+gnu_parallel
 go
 google-noto-sans-cjk-fonts
 htop
+(openSUSE_Tumbleweed)
 iosevka-fonts
 irqbalance
 kernel-default
 kexec-tools
+nautilus-extension-papers
 neovim
 nerdfonts-symbolsonly-fonts
 NetworkManager
@@ -26,6 +30,7 @@ nodejs26
 numactl
 nvme-cli
 openSUSE-release
+papers
 patterns-base-base
 patterns-base-enhanced_base
 patterns-base-selinux

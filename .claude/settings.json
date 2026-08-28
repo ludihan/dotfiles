@@ -3,5 +3,10 @@
     "commit": "",
     "pr": ""
   },
-  "theme": "auto"
+  "theme": "auto",
+  "modelSettings": {
+    "claude-sonnet-5": {
+      "effortLevel": "medium"
+    }
+  }
 }
