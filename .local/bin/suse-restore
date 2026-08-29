@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+SYSTEM_DIR="${XDG_STATE_HOME:-$HOME/.local/state}/system"
+
+DRY_RUN=0
+if [[ "${1:-}" == "-n" || "${1:-}" == "--dry-run" ]]; then
+    DRY_RUN=1
+fi
+
+run() {
+    if [[ "$DRY_RUN" == 1 ]]; then
+        printf 'would run:'
+        printf ' %q' "$@"
+        printf '\n'
+    else
+        "$@"
+    fi
+}
+
+read_list() {
+    # print non-empty, non-comment lines of a state file (if it exists)
+    local file="$1"
+    [[ -f "$file" ]] || return 0
+    grep -vE '^\s*(#|$)' "$file" || true
+}
+
+mapfile -t packages < <(read_list "$SYSTEM_DIR/packages.txt")
+if [[ ${#packages[@]} -eq 0 ]]; then
+    echo "No packages listed in $SYSTEM_DIR/packages.txt" >&2
+    exit 1
+fi
+
+echo "==> Installing ${#packages[@]} packages"
+run sudo zypper install --no-confirm --no-recommends "${packages[@]}"
+
+if [[ "$DRY_RUN" == 1 ]]; then
+    echo "==> Done (dry run)"
+else
+    echo "==> Done"
+fi

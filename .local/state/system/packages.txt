@@ -18,6 +18,7 @@ go
 google-noto-fonts
 google-noto-sans-cjk-fonts
 htop
+imapsync
 iosevka-fonts
 irqbalance
 kernel-default

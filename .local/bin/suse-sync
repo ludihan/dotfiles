@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 SYSTEM_DIR="${XDG_STATE_HOME:-$HOME/.local/state}/system"
 
 mkdir -p "$SYSTEM_DIR"
 
-systemctl list-unit-files --state=enabled --type=service --no-legend --no-pager | awk '{ print $1 }' > "$SYSTEM_DIR/services.txt"
-zypper packages --installed-only | awk '$1 == "i+" { print $5 }' | uniq > "$SYSTEM_DIR/packages.txt"
-flatpak list --app --columns=application > "$SYSTEM_DIR/flatpak.txt"
-groups > "$SYSTEM_DIR/groups.txt"
+systemctl list-unit-files --state=enabled --type=service --no-legend --no-pager | awk '{ print $1 }' | sort > "$SYSTEM_DIR/services.txt"
+zypper --quiet packages --installed-only | awk -F' *\\| *' '$1 == "i+" { print $3 }' | sort -u > "$SYSTEM_DIR/packages.txt"
+flatpak list --app --columns=application | sort > "$SYSTEM_DIR/flatpak.txt"
+groups | tr ' ' '\n' | sort > "$SYSTEM_DIR/groups.txt"

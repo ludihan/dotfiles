@@ -1,7 +1,7 @@
 apparmor.service
 appstream-sync-cache.service
-audit-rules.service
 auditd.service
+audit-rules.service
 avahi-daemon.service
 blk-availability.service
 bluetooth.service
@@ -18,8 +18,8 @@ lvm2-monitor.service
 mcelog.service
 ModemManager.service
 NetworkManager-dispatcher.service
-NetworkManager-wait-online.service
 NetworkManager.service
+NetworkManager-wait-online.service
 nvmefc-boot-connections.service
 nvmf-autoconnect.service
 purge-kernels.service
