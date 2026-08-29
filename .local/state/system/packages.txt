@@ -15,9 +15,9 @@ git
 glibc
 gnu_parallel
 go
+google-noto-fonts
 google-noto-sans-cjk-fonts
 htop
-(openSUSE_Tumbleweed)
 iosevka-fonts
 irqbalance
 kernel-default
