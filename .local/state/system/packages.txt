@@ -48,6 +48,7 @@ rustup
 sdbootutil
 shim
 snapper
+sushi
 systemd-boot
 tmux
 typst
