@@ -25,3 +25,25 @@ export PATH="$HOME/.local/share/odin:$PATH"
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+vc() {
+    if [ -f .venv/bin/activate ]; then
+        echo "Error: Virtual environment already found in the current directory."
+    elif [ -f venv/bin/activate ]; then
+        echo "Error: Virtual environment already found in the current directory."
+    else
+        python3 -m venv .venv
+    fi
+}
+
+va() {
+    if [ -f .venv/bin/activate ]; then
+        source .venv/bin/activate
+    elif [ -f venv/bin/activate ]; then
+        source venv/bin/activate
+    else
+        echo "Error: No virtual environment found in the current directory."
+    fi
+}
+
+alias vd=deactivate
