@@ -21,6 +21,7 @@ htop
 imapsync
 iosevka-fonts
 irqbalance
+jpegoptim
 kernel-default
 kexec-tools
 nautilus-extension-papers
