@@ -5,10 +5,24 @@
     "sessionUrl": false
   },
   "includeCoAuthoredBy": false,
-  "theme": "auto",
+  "enabledPlugins": {
+    "typesafe@typesafe-ai": true
+  },
+  "extraKnownMarketplaces": {
+    "typesafe-ai": {
+      "source": {
+        "source": "github",
+        "repo": "typesafe-ai/skills"
+      }
+    }
+  },
   "modelSettings": {
     "claude-sonnet-5": {
       "effortLevel": "medium"
+    },
+    "claude-opus-5-5": {
+      "effortLevel": "high"
     }
-  }
+  },
+  "theme": "auto"
 }
