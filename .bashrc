@@ -46,6 +46,10 @@ va() {
     fi
 }
 
-alias vd=deactivate
+# alias vd=deactivate
 
 alias activate-idf="source '/home/ludihan/.espressif/tools/activate_idf_v6.1.sh'"
+
+# bun
+export BUN_INSTALL="$HOME/.local/share/reflex/bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
