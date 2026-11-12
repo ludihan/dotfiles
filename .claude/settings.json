@@ -1,9 +1,13 @@
 {
+  "env": {
+    "CLAUDE_CODE_SCROLL_SPEED": "0.25"
+  },
   "attribution": {
     "commit": "",
     "pr": "",
     "sessionUrl": false
   },
   "includeCoAuthoredBy": false,
-  "theme": "auto"
+  "theme": "auto",
+  "wheelScrollAccelerationEnabled": false
 }
