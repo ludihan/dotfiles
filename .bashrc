@@ -26,6 +26,10 @@ export PATH="$HOME/.mix/escripts:$PATH"
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
+export PATH=$PATH:$ANDROID_HOME/build-tools/37.0.0
+export ANDROID_NDK_HOME=$ANDROID_HOME/ndk/30.0.16248370
+export PATH=$PATH:$ANDROID_NDK_HOME
 
 vc() {
     if [ -f .venv/bin/activate ]; then

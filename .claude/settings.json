@@ -8,6 +8,15 @@
     "sessionUrl": false
   },
   "includeCoAuthoredBy": false,
+  "enabledPlugins": {
+    "frontend-design@claude-plugins-official": true
+  },
+  "modelSettings": {
+    "claude-opus-5-5": {
+      "effortLevel": "medium"
+    }
+  },
   "theme": "auto",
-  "wheelScrollAccelerationEnabled": false
+  "wheelScrollAccelerationEnabled": false,
+  "agentPushNotifEnabled": true
 }
