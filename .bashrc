@@ -62,3 +62,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # Added by Antigravity CLI installer
 export PATH="/home/ludihan/.local/bin:$PATH"
+
+# opencode
+export PATH=/home/ludihan/.opencode/bin:$PATH
